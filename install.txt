@@ -1,105 +1,87 @@
 /////////////////////////////////
-///       OpenCart V2.x     ///
-///    Install Instructions   ///
-///  http://www.opencart.com  ///
+///       OpenCart V3.x       ///
+///  Инструкции по установке  ///
+///   https://opencart.name   ///
 /////////////////////////////////
 
 
-NOTE: THIS IS FOR NEW INSTALL ONLY!
-IF UPGRADING YOUR EXISTING CART, BE SURE TO READ THE UPGRADE.TXT FILE INSTEAD
+ПРИМЕЧАНИЕ: ЭТО ТОЛЬКО ДЛЯ НОВОЙ УСТАНОВКИ!
+ЕСЛИ ВЫ ОБНОВЛЯЕТЕ ВАШ СУЩЕСТВУЮЩИЙ МАГАЗИН, ОБЯЗАТЕЛЬНО ПРОЧИТАЙТЕ ФАЙЛ UPGRADE.TXT ВМЕСТО ЭТОГО.
 
 
 -------
-INSTALL
+УСТАНОВКА
 -------
-These instructions are for a manual installation using FTP, cPanel or other web hosting Control Panel.
+Эти инструкции предназначены для ручной установки с помощью FTP, cPanel или другой панели управления веб-хостингом.
 
-- Linux Install -
+- Установка на Linux -
 
-1. Upload all of the files and folders to your server from the "Upload" folder, place them in your web root. The web root is different on some servers, cPanel it should be public_html/ and on Plesk it should be httpdocs/.
+1. Загрузите все файлы и папки на свой сервер из папки «Upload», поместите их в корневой веб-каталог. На некоторых серверах веб-корень отличается, на cPanel должен быть public_html/, а в Plesk - httpdocs/.
 
-2. Rename config-dist.php to config.php and admin/config-dist.php to admin/config.php
+2. Убедитесь, что у Вашего веб-пользователя есть права на чтение, запись и выполнение всех каталогов в корневом каталоге.
 
-3. For Linux/Unix make sure the following folders and files are writable.
+3. Переименуйте config-dist.php в config.php, а admin/config-dist.php в admin/config.php.
 
-		chmod 0755 or 0777 system/storage/cache/
-		chmod 0755 or 0777 system/storage/download/
-		chmod 0755 or 0777 system/storage/logs/
-		chmod 0755 or 0777 system/storage/modification/
-		chmod 0755 or 0777 system/storage/session/
-		chmod 0755 or 0777 system/storage/upload/
-		chmod 0755 or 0777 system/storage/vendor/
-		chmod 0755 or 0777 image/
-		chmod 0755 or 0777 image/cache/
-		chmod 0755 or 0777 image/catalog/
-		chmod 0755 or 0777 config.php
-		chmod 0755 or 0777 admin/config.php
+4. Для Linux/Unix убедитесь, что следующие папки и файлы доступны для записи.
 
-		If 0755 does not work try 0777.
+		chmod 0755 или 0777 config.php
+		chmod 0755 или 0777 admin/config.php
 
-4. Make sure you have installed a MySQL Database which has a user assigned to it
-	DO NOT USE YOUR ROOT USERNAME AND ROOT PASSWORD
+		Если 0755 не работает, попробуйте 0777.
 
-5. Visit the store homepage e.g. http://www.example.com or http://www.example.com/store/
+5. Убедитесь, что вы установили базу данных MySQL, для которой назначен пользователь
+	НЕ ИСПОЛЬЗУЙТЕ ВАШЕ ИМЯ ПОЛЬЗОВАТЕЛЯ ROOT И ПАРОЛЬ ROOT
 
-6. You should be taken to the installer page. Follow the on screen instructions.
+6. Посетите домашнюю страницу магазина, например http://www.example.com или http://www.example.com/store/
 
-7. After successful install, delete the /install/ directory from ftp.
+7. Вы должны перейти на страницу установщика. Следуйте инструкциям на экране.
 
-8. If you have downloaded the compiled version with a folder called "vendor" - this should be uploaded above the webroot (so the same folder where the public_html or httpdocs is)
+8. После успешной установки удалите каталог /install/ с помощью ftp.
+
+9. Если Вы скачали скомпилированную версию с папкой «vendor» - она должна быть загружена над корневой директорией (так же, как папка public_html или httpdocs)
 
 
-- Windows Install -
+- Установка на Windows -
 
-1. Upload all the files and folders to your server from the "Upload" folder. This can be to anywhere of your choice. e.g. /wwwroot/store or /wwwroot
+1. Загрузите все файлы и папки на свой сервер из папки «Upload». Это может быть в любом месте по Вашему выбору. например /wwwroot/store или /wwwroot
 
-2. Rename config-dist.php to config.php and admin/config-dist.php to admin/config.php
+2. Переименуйте config-dist.php в config.php, а admin/config-dist.php в admin/config.php.
 
-3. For Windows make sure the following folders and files permissions allow Read and Write.
+3. Для Windows убедитесь, что следующие папки и файлы разрешают Чтение и Запись.
 
-		system/storage/cache/
-		system/storage/download/
-		system/storage/logs/
-		system/storage/modification/
-		system/storage/session/
-		system/storage/upload/
-		system/storage/vendor/
-		image/
-		image/cache/
-		image/catalog/
 		config.php
 		admin/config.php
 
-4. Make sure you have installed a MySQL Database which has a user assigned to it
-	DO NOT USE YOUR ROOT USERNAME AND ROOT PASSWORD
+4. Убедитесь, что вы установили базу данных MySQL, для которой назначен пользователь
+	НЕ ИСПОЛЬЗУЙТЕ ВАШЕ ИМЯ ПОЛЬЗОВАТЕЛЯ ROOT И ПАРОЛЬ ROOT
 
-5. You should be taken to the installer page. Follow the on screen instructions.
+5. Вы должны перейти на страницу установщика. Следуйте инструкциям на экране.
 
-6. After successful install, delete the /install/ directory.
+6. После успешной установки удалите каталог /install/.
 
-- Local Install -
+- Локальная установка -
 
-There are many all-in-one web servers out there and most of them should work with OpenCart out of the box. Some examples...
+Существует множество веб-серверов «все в одном», и большинство из них должны работать с OpenCart «из коробки». Некоторые примеры...
 
+https://ospanel.io/
 http://www.apachefriends.org/en/xampp.html
 http://www.ampps.com/
 http://www.usbwebserver.net
 http://www.wampserver.com/en/
 
- - Notes -
+ - Примечания -
 
 Godaddy Issues
 
-If your hosting on godaddy you might need to rename the php.ini to user.ini
+Если Ваш хостинг на Godaddy, Вам может понадобиться переименовать php.ini в user.ini.
 
-It seems godadddy has started changing the industry standard names of files.
+Кажется, Godaddy начал менять стандартные имена файлов.
 
 ----------------------------
-COMPOSER OR NOT TO COMPOSER
+COMPOSER ИЛИ НЕ COMPOSER
 ----------------------------
-From version 2.2 composer has been added to aid developers who want to use composer libraries. 2 versions of OpenCart
-will become available, one compiled and one non-compiled (composer.json only - no files in vendor folder).
+С версии 2.2 был добавлен composer, чтобы помочь разработчикам, которые хотят использовать библиотеки composer-а. Будут доступны 2 версии OpenCart, одна скомпилированная и одна не скомпилированная (только composer.json - в папке vendor нет файлов).
 
-We STRONGLY advise leaving the vendor folder outside of the webroot - so files cannot be accessed directly.
+Мы НАСТОЯТЕЛЬНО рекомендуем оставить папку vendor вне корневой директории, чтобы к файлам нельзя было получить прямой доступ.
 
-Composer installing is extremely simple - https://getcomposer.org
+Установка Composer чрезвычайно проста - https://getcomposer.org
