@@ -148,6 +148,7 @@ CREATE TABLE `oc_attribute_description` (
 -- Dumping data for table `oc_attribute_description`
 --
 
+-- en
 INSERT INTO `oc_attribute_description` (`attribute_id`, `language_id`, `name`) VALUES
 (1, 1, 'Description'),
 (2, 1, 'No. of Cores'),
@@ -160,6 +161,20 @@ INSERT INTO `oc_attribute_description` (`attribute_id`, `language_id`, `name`) V
 (10, 1, 'test 7'),
 (11, 1, 'test 8'),
 (3, 1, 'Clockspeed');
+
+-- ru
+INSERT INTO `oc_attribute_description` (`attribute_id`, `language_id`, `name`) VALUES
+(1, 2, 'Описание'),
+(2, 2, 'Количество ядер'),
+(4, 2, 'тест 1'),
+(5, 2, 'тест 2'),
+(6, 2, 'тест 3'),
+(7, 2, 'тест 4'),
+(8, 2, 'тест 5'),
+(9, 2, 'тест 6'),
+(10, 2, 'тест 7'),
+(11, 2, 'тест 8'),
+(3, 2, 'Тактовая частота');
 
 -----------------------------------------------------------
 
@@ -202,11 +217,19 @@ CREATE TABLE `oc_attribute_group_description` (
 -- Dumping data for table `oc_attribute_group_description`
 --
 
+-- en
 INSERT INTO `oc_attribute_group_description` (`attribute_group_id`, `language_id`, `name`) VALUES
 (3, 1, 'Memory'),
 (4, 1, 'Technical'),
 (5, 1, 'Motherboard'),
 (6, 1, 'Processor');
+
+-- ru
+INSERT INTO `oc_attribute_group_description` (`attribute_group_id`, `language_id`, `name`) VALUES
+(3, 2, 'Память'),
+(4, 2, 'Технический'),
+(5, 2, 'Системная плата'),
+(6, 2, 'Процессор');
 
 -----------------------------------------------------------
 
@@ -227,9 +250,9 @@ CREATE TABLE `oc_banner` (
 --
 
 INSERT INTO `oc_banner` (`banner_id`, `name`, `status`) VALUES
-(6, 'HP Products', 1),
-(7, 'Home Page Slideshow', 1),
-(8, 'Manufacturers', 1);
+(6, 'Продукты HP', 1),
+(7, 'Слайд-шоу на главной странице', 1),
+(8, 'Производители', 1);
 
 -----------------------------------------------------------
 
@@ -253,6 +276,7 @@ CREATE TABLE `oc_banner_image` (
 -- Dumping data for table `oc_banner_image`
 --
 
+-- en
 INSERT INTO `oc_banner_image` (`banner_image_id`, `banner_id`, `language_id`, `title`, `link`, `image`, `sort_order`) VALUES
 (79, 7, 1, 'iPhone 6', 'index.php?route=product/product&amp;path=57&amp;product_id=49', 'catalog/demo/banners/iPhone6.jpg', 0),
 (87, 6, 1, 'HP Banner', 'index.php?route=product/manufacturer/info&amp;manufacturer_id=7', 'catalog/demo/compaq_presario.jpg', 0),
@@ -268,6 +292,23 @@ INSERT INTO `oc_banner_image` (`banner_image_id`, `banner_id`, `language_id`, `t
 (80, 7, 1, 'MacBookAir', '', 'catalog/demo/banners/MacBookAir.jpg', 0),
 (97, 8, 1, 'Starbucks', '', 'catalog/demo/manufacturer/starbucks.png', 0),
 (98, 8, 1, 'Nintendo', '', 'catalog/demo/manufacturer/nintendo.png', 0);
+
+-- ru
+INSERT INTO `oc_banner_image` (`banner_image_id`, `banner_id`, `language_id`, `title`, `link`, `image`, `sort_order`) VALUES
+(99, 7, 2, 'iPhone 6', 'index.php?route=product/product&amp;path=57&amp;product_id=49', 'catalog/demo/banners/iPhone6.jpg', 0),
+(107, 6, 2, 'HP Banner', 'index.php?route=product/manufacturer/info&amp;manufacturer_id=7', 'catalog/demo/compaq_presario.jpg', 0),
+(114, 8, 2, 'NFL', '', 'catalog/demo/manufacturer/nfl.png', 0),
+(115, 8, 2, 'RedBull', '', 'catalog/demo/manufacturer/redbull.png', 0),
+(116, 8, 2, 'Sony', '', 'catalog/demo/manufacturer/sony.png', 0),
+(111, 8, 2, 'Coca Cola', '', 'catalog/demo/manufacturer/cocacola.png', 0),
+(112, 8, 2, 'Burger King', '', 'catalog/demo/manufacturer/burgerking.png', 0),
+(113, 8, 2, 'Canon', '', 'catalog/demo/manufacturer/canon.png', 0),
+(108, 8, 2, 'Harley Davidson', '', 'catalog/demo/manufacturer/harley.png', 0),
+(109, 8, 2, 'Dell', '', 'catalog/demo/manufacturer/dell.png', 0),
+(110, 8, 2, 'Disney', '', 'catalog/demo/manufacturer/disney.png', 0),
+(100, 7, 2, 'MacBookAir', '', 'catalog/demo/banners/MacBookAir.jpg', 0),
+(117, 8, 2, 'Starbucks', '', 'catalog/demo/manufacturer/starbucks.png', 0),
+(118, 8, 2, 'Nintendo', '', 'catalog/demo/manufacturer/nintendo.png', 0);
 
 -----------------------------------------------------------
 
@@ -378,6 +419,7 @@ CREATE TABLE `oc_category_description` (
 -- Dumping data for table `oc_category_description`
 --
 
+-- en
 INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
 (28, 1, 'Monitors', '', 'Monitors', '', ''),
 (33, 1, 'Cameras', '', 'Cameras', '', ''),
@@ -417,6 +459,47 @@ INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `de
 (56, 1, 'test 24', '', 'test 24', '', ''),
 (57, 1, 'Tablets', '', 'Tablets', '', ''),
 (58, 1, 'test 25', '', 'test 25', '', '');
+
+-- ru
+INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
+(28, 2, 'Мониторы', '', 'Мониторы', '', ''),
+(33, 2, 'Камеры', '', 'Камеры', '', ''),
+(32, 2, 'Веб-камеры', '', 'Веб-камеры', '', ''),
+(31, 2, 'Сканеры', '', 'Сканеры', '', ''),
+(30, 2, 'Принтеры', '', 'Принтеры', '', ''),
+(29, 2, 'Мыши и трекболы', '', 'Мыши и трекболы', '', ''),
+(27, 2, 'Mac', '', 'Mac', '', ''),
+(26, 2, 'ПК', '', 'ПК', '', ''),
+(17, 2, 'Програмное обеспечение', '', 'Програмное обеспечение', '', ''),
+(25, 2, 'Компоненты', '', 'Компоненты', '', ''),
+(24, 2, 'Телефоны и КПК', '', 'Телефоны и КПК', '', ''),
+(20, 2, 'Настольные компьютеры', '&lt;p&gt;\r\n	Пример текста описания категории&lt;/p&gt;\r\n', 'Настольные компьютеры', 'Пример описания категории', ''),
+(35, 2, 'тест 1', '', 'тест 1', '', ''),
+(36, 2, 'тест 2', '', 'тест 2', '', ''),
+(37, 2, 'тест 5', '', 'тест 5', '', ''),
+(38, 2, 'тест 4', '', 'тест 4', '', ''),
+(39, 2, 'тест 6', '', 'тест 6', '', ''),
+(40, 2, 'тест 7', '', 'тест 7', '', ''),
+(41, 2, 'тест 8', '', 'тест 8', '', ''),
+(42, 2, 'тест 9', '', 'тест 9', '', ''),
+(43, 2, 'тест 11', '', 'тест 11', '', ''),
+(34, 2, 'Mp3-плееры', '&lt;p&gt;\r\n	Магазин «Лэптоп» предлагает только лучшие на рынке предложения для ноутбуков. Сравнивая предложения ноутбуков от таких компаний, как PC World, Comet, Dixons, The Link и Carphone Warehouse, Shop Laptop предлагает наиболее полный выбор ноутбуков в Интернете. В магазине ноутбуков мы гордимся тем, что предлагаем клиентам самые лучшие предложения ноутбуков. Shop Laptop - отреставрированные ноутбуки до нетбуков - гарантирует, что каждый ноутбук - любого цвета, стиля, размера и технических характеристик - будет представлен на сайте по самой низкой цене.&lt;/p&gt;\r\n', 'Mp3-плееры', '', ''),
+(18, 2, 'Лэптопы и Ноутбуки', '&lt;p&gt;\r\n	Магазин «Лэптоп» предлагает только лучшие на рынке предложения для ноутбуков. Сравнивая предложения ноутбуков от таких компаний, как PC World, Comet, Dixons, The Link и Carphone Warehouse, Shop Laptop предлагает наиболее полный выбор ноутбуков в Интернете. В магазине ноутбуков мы гордимся тем, что предлагаем клиентам самые лучшие предложения ноутбуков. Shop Laptop - отреставрированные ноутбуки до нетбуков - гарантирует, что каждый ноутбук - любого цвета, стиля, размера и технических характеристик - будет представлен на сайте по самой низкой цене.&lt;/p&gt;\r\n', 'Лэптопы и Ноутбуки', '', ''),
+(44, 2, 'тест 12', '', 'тест 12', '', ''),
+(45, 2, 'Windows', '', 'Windows', '', ''),
+(46, 2, 'Macs', '', 'Macs', '', ''),
+(47, 2, 'тест 15', '', 'тест 15', '', ''),
+(48, 2, 'тест 16', '', 'тест 16', '', ''),
+(49, 2, 'тест 17', '', 'тест 17', '', ''),
+(50, 2, 'тест 18', '', 'тест 18', '', ''),
+(51, 2, 'тест 19', '', 'тест 19', '', ''),
+(52, 2, 'тест 20', '', 'тест 20', '', ''),
+(53, 2, 'тест 21', '', 'тест 21', '', ''),
+(54, 2, 'тест 22', '', 'тест 22', '', ''),
+(55, 2, 'тест 23', '', 'тест 23', '', ''),
+(56, 2, 'тест 24', '', 'тест 24', '', ''),
+(57, 2, 'Tablets', '', 'Tablets', '', ''),
+(58, 2, 'тест 25', '', 'тест 25', '', '');
 
 -----------------------------------------------------------
 
@@ -641,16 +724,16 @@ INSERT INTO `oc_country` (`country_id`, `name`, `iso_code_2`, `iso_code_3`, `add
 (8, 'Antarctica', 'AQ', 'ATA', '', 0, 1),
 (9, 'Antigua and Barbuda', 'AG', 'ATG', '', 0, 1),
 (10, 'Argentina', 'AR', 'ARG', '', 0, 1),
-(11, 'Armenia', 'AM', 'ARM', '', 0, 1),
+(11, 'Армения', 'AM', 'ARM', '', 0, 1),
 (12, 'Aruba', 'AW', 'ABW', '', 0, 1),
 (13, 'Australia', 'AU', 'AUS', '', 0, 1),
 (14, 'Austria', 'AT', 'AUT', '', 0, 1),
-(15, 'Azerbaijan', 'AZ', 'AZE', '', 0, 1),
+(15, 'Азербайджан', 'AZ', 'AZE', '', 0, 1),
 (16, 'Bahamas', 'BS', 'BHS', '', 0, 1),
 (17, 'Bahrain', 'BH', 'BHR', '', 0, 1),
 (18, 'Bangladesh', 'BD', 'BGD', '', 0, 1),
 (19, 'Barbados', 'BB', 'BRB', '', 0, 1),
-(20, 'Belarus', 'BY', 'BLR', '', 0, 1),
+(20, 'Беларусь', 'BY', 'BLR', '', 0, 1),
 (21, 'Belgium', 'BE', 'BEL', '{firstname} {lastname}\r\n{company}\r\n{address_1}\r\n{address_2}\r\n{postcode} {city}\r\n{country}', 0, 1),
 (22, 'Belize', 'BZ', 'BLZ', '', 0, 1),
 (23, 'Benin', 'BJ', 'BEN', '', 0, 1),
@@ -709,7 +792,7 @@ INSERT INTO `oc_country` (`country_id`, `name`, `iso_code_2`, `iso_code_3`, `add
 (77, 'French Southern Territories', 'TF', 'ATF', '', 0, 1),
 (78, 'Gabon', 'GA', 'GAB', '', 0, 1),
 (79, 'Gambia', 'GM', 'GMB', '', 0, 1),
-(80, 'Georgia', 'GE', 'GEO', '', 0, 1),
+(80, 'Грузия', 'GE', 'GEO', '', 0, 1),
 (81, 'Germany', 'DE', 'DEU', '{company}\r\n{firstname} {lastname}\r\n{address_1}\r\n{address_2}\r\n{postcode} {city}\r\n{country}', 1, 1),
 (82, 'Ghana', 'GH', 'GHA', '', 0, 1),
 (83, 'Gibraltar', 'GI', 'GIB', '', 0, 1),
@@ -738,13 +821,13 @@ INSERT INTO `oc_country` (`country_id`, `name`, `iso_code_2`, `iso_code_3`, `add
 (106, 'Jamaica', 'JM', 'JAM', '', 0, 1),
 (107, 'Japan', 'JP', 'JPN', '', 0, 1),
 (108, 'Jordan', 'JO', 'JOR', '', 0, 1),
-(109, 'Kazakhstan', 'KZ', 'KAZ', '', 0, 1),
+(109, 'Казахстан', 'KZ', 'KAZ', '', 0, 1),
 (110, 'Kenya', 'KE', 'KEN', '', 0, 1),
 (111, 'Kiribati', 'KI', 'KIR', '', 0, 1),
 (112, 'North Korea', 'KP', 'PRK', '', 0, 1),
 (113, 'South Korea', 'KR', 'KOR', '', 0, 1),
 (114, 'Kuwait', 'KW', 'KWT', '', 0, 1),
-(115, 'Kyrgyzstan', 'KG', 'KGZ', '', 0, 1),
+(115, 'Киргизия', 'KG', 'KGZ', '', 0, 1),
 (116, 'Lao People''s Democratic Republic', 'LA', 'LAO', '', 0, 1),
 (117, 'Latvia', 'LV', 'LVA', '', 0, 1),
 (118, 'Lebanon', 'LB', 'LBN', '', 0, 1),
@@ -769,7 +852,7 @@ INSERT INTO `oc_country` (`country_id`, `name`, `iso_code_2`, `iso_code_3`, `add
 (137, 'Mayotte', 'YT', 'MYT', '', 0, 1),
 (138, 'Mexico', 'MX', 'MEX', '', 0, 1),
 (139, 'Micronesia, Federated States of', 'FM', 'FSM', '', 0, 1),
-(140, 'Moldova, Republic of', 'MD', 'MDA', '', 0, 1),
+(140, 'Молдова', 'MD', 'MDA', '', 0, 1),
 (141, 'Monaco', 'MC', 'MCO', '', 0, 1),
 (142, 'Mongolia', 'MN', 'MNG', '', 0, 1),
 (143, 'Montserrat', 'MS', 'MSR', '', 0, 1),
@@ -805,7 +888,7 @@ INSERT INTO `oc_country` (`country_id`, `name`, `iso_code_2`, `iso_code_3`, `add
 (173, 'Qatar', 'QA', 'QAT', '', 0, 1),
 (174, 'Reunion', 'RE', 'REU', '', 0, 1),
 (175, 'Romania', 'RO', 'ROM', '', 0, 1),
-(176, 'Russian Federation', 'RU', 'RUS', '', 0, 1),
+(176, 'Российская Федерация', 'RU', 'RUS', '', 0, 1),
 (177, 'Rwanda', 'RW', 'RWA', '', 0, 1),
 (178, 'Saint Kitts and Nevis', 'KN', 'KNA', '', 0, 1),
 (179, 'Saint Lucia', 'LC', 'LCA', '', 0, 1),
@@ -836,7 +919,7 @@ INSERT INTO `oc_country` (`country_id`, `name`, `iso_code_2`, `iso_code_3`, `add
 (204, 'Switzerland', 'CH', 'CHE', '', 0, 1),
 (205, 'Syrian Arab Republic', 'SY', 'SYR', '', 0, 1),
 (206, 'Taiwan', 'TW', 'TWN', '', 0, 1),
-(207, 'Tajikistan', 'TJ', 'TJK', '', 0, 1),
+(207, 'Таджикистан', 'TJ', 'TJK', '', 0, 1),
 (208, 'Tanzania, United Republic of', 'TZ', 'TZA', '', 0, 1),
 (209, 'Thailand', 'TH', 'THA', '', 0, 1),
 (210, 'Togo', 'TG', 'TGO', '', 0, 1),
@@ -849,13 +932,13 @@ INSERT INTO `oc_country` (`country_id`, `name`, `iso_code_2`, `iso_code_3`, `add
 (217, 'Turks and Caicos Islands', 'TC', 'TCA', '', 0, 1),
 (218, 'Tuvalu', 'TV', 'TUV', '', 0, 1),
 (219, 'Uganda', 'UG', 'UGA', '', 0, 1),
-(220, 'Ukraine', 'UA', 'UKR', '', 0, 1),
+(220, 'Украина', 'UA', 'UKR', '', 0, 1),
 (221, 'United Arab Emirates', 'AE', 'ARE', '', 0, 1),
 (222, 'United Kingdom', 'GB', 'GBR', '', 1, 1),
 (223, 'United States', 'US', 'USA', '{firstname} {lastname}\r\n{company}\r\n{address_1}\r\n{address_2}\r\n{city}, {zone} {postcode}\r\n{country}', 0, 1),
 (224, 'United States Minor Outlying Islands', 'UM', 'UMI', '', 0, 1),
 (225, 'Uruguay', 'UY', 'URY', '', 0, 1),
-(226, 'Uzbekistan', 'UZ', 'UZB', '', 0, 1),
+(226, 'Узбекистан', 'UZ', 'UZB', '', 0, 1),
 (227, 'Vanuatu', 'VU', 'VUT', '', 0, 1),
 (228, 'Vatican City State (Holy See)', 'VA', 'VAT', '', 0, 1),
 (229, 'Venezuela', 'VE', 'VEN', '', 0, 1),
@@ -987,10 +1070,15 @@ CREATE TABLE `oc_currency` (
 -- Dumping data for table `oc_currency`
 --
 
+-- en
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
-(1, 'Pound Sterling', 'GBP', '£', '', '2', 0.61250001, 1, '2014-09-25 14:40:00'),
-(2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2014-09-25 14:40:00'),
-(3, 'Euro', 'EUR', '', '€', '2', 0.78460002, 1, '2014-09-25 14:40:00');
+(1, 'Pound Sterling', 'GBP', '£', '', '2', 0.0108300, 1, '2020-04-28 21:00:00'),
+(2, 'US Dollar', 'USD', '$', '', '2', 0.01348000, 1, '2020-04-28 21:00:00'),
+(3, 'Euro', 'EUR', '', '€', '2', 0.01244000, 1, '2020-04-28 21:00:00');
+
+-- ru
+INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
+(4, 'Рубль', 'RUB', '', '₽', '0', 1.00000000, 1, '2020-04-28 21:00:00');
 
 -----------------------------------------------------------
 
@@ -1125,8 +1213,13 @@ CREATE TABLE `oc_customer_group_description` (
 -- Dumping data for table `oc_customer_group_description`
 --
 
+-- en
 INSERT INTO `oc_customer_group_description` (`customer_group_id`, `language_id`, `name`, `description`) VALUES
 (1, 1, 'Default', 'test');
+
+-- ru
+INSERT INTO `oc_customer_group_description` (`customer_group_id`, `language_id`, `name`, `description`) VALUES
+(1, 2, 'По умолчанию', 'тест');
 
 -----------------------------------------------------------
 
@@ -1647,9 +1740,14 @@ CREATE TABLE `oc_geo_zone` (
 -- Dumping data for table `oc_geo_zone`
 --
 
+-- en
 INSERT INTO `oc_geo_zone` (`geo_zone_id`, `name`, `description`, `date_modified`, `date_added`) VALUES
 (3, 'UK VAT Zone', 'UK VAT', '2010-02-26 22:33:24', '2009-01-06 23:26:25'),
 (4, 'UK Shipping', 'UK Shipping Zones', '2010-12-15 15:18:13', '2009-06-23 01:14:53');
+
+-- ru
+INSERT INTO `oc_geo_zone` (`geo_zone_id`, `name`, `description`, `date_modified`, `date_added`) VALUES
+(5, 'Зона НДС РФ', 'Облагаемые НДС в РФ', '2020-04-26 21:00:00', '2020-04-26 21:00:00');
 
 -----------------------------------------------------------
 
@@ -1698,11 +1796,19 @@ CREATE TABLE `oc_information_description` (
 -- Dumping data for table `oc_information_description`
 --
 
+-- en
 INSERT INTO `oc_information_description` (`information_id`, `language_id`, `title`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
 (4, 1, 'About Us', '&lt;p&gt;\r\n	About Us&lt;/p&gt;\r\n', 'About Us', '', ''),
 (5, 1, 'Terms &amp; Conditions', '&lt;p&gt;\r\n	Terms &amp;amp; Conditions&lt;/p&gt;\r\n', 'Terms &amp; Conditions', '', ''),
 (3, 1, 'Privacy Policy', '&lt;p&gt;\r\n	Privacy Policy&lt;/p&gt;\r\n', 'Privacy Policy', '', ''),
 (6, 1, 'Delivery Information', '&lt;p&gt;\r\n	Delivery Information&lt;/p&gt;\r\n', 'Delivery Information', '', '');
+
+-- ru
+INSERT INTO `oc_information_description` (`information_id`, `language_id`, `title`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
+(4, 2, 'О нас', '&lt;p&gt;\r\n	О нас&lt;/p&gt;\r\n', 'О нас', '', ''),
+(5, 2, 'Условия и положения', '&lt;p&gt;\r\n	Условия и положения&lt;/p&gt;\r\n', 'Условия и положения', '', ''),
+(3, 2, 'Политика конфиденциальности', '&lt;p&gt;\r\n	Политика конфиденциальности&lt;/p&gt;\r\n', 'Политика конфиденциальности', '', ''),
+(6, 2, 'Информация о доставке', '&lt;p&gt;\r\n	Информация о доставке&lt;/p&gt;\r\n', 'Информация о доставке', '', '');
 
 -----------------------------------------------------------
 
@@ -1765,8 +1871,13 @@ CREATE TABLE `oc_language` (
 -- Dumping data for table `oc_language`
 --
 
+-- en
 INSERT INTO `oc_language` (`language_id`, `name`, `code`, `locale`, `image`, `directory`, `sort_order`, `status`) VALUES
 (1, 'English', 'en-gb', 'en-US,en_US.UTF-8,en_US,en-gb,english', 'gb.png', 'english', 1, 1);
+
+-- ru
+INSERT INTO `oc_language` (`language_id`, `name`, `code`, `locale`, `image`, `directory`, `sort_order`, `status`) VALUES
+(2, 'Русский', 'ru-ru', 'ru-RU,ru_RU.UTF-8,ru_RU,ru-ru,russian', 'ru.png', 'russian', 1, 1);
 
 -----------------------------------------------------------
 
@@ -1907,10 +2018,17 @@ CREATE TABLE `oc_length_class_description` (
 -- Dumping data for table `oc_length_class_description`
 --
 
+-- en
 INSERT INTO `oc_length_class_description` (`length_class_id`, `language_id`, `title`, `unit`) VALUES
 (1, 1, 'Centimeter', 'cm'),
 (2, 1, 'Millimeter', 'mm'),
 (3, 1, 'Inch', 'in');
+
+-- ru
+INSERT INTO `oc_length_class_description` (`length_class_id`, `language_id`, `title`, `unit`) VALUES
+(1, 2, 'Сантиметр', 'см'),
+(2, 2, 'Миллиметр', 'мм'),
+(3, 2, 'Дюйм', 'дюйм');
 
 -----------------------------------------------------------
 
@@ -2097,6 +2215,7 @@ CREATE TABLE `oc_option_description` (
 -- Dumping data for table `oc_option_description`
 --
 
+-- en
 INSERT INTO `oc_option_description` (`option_id`, `language_id`, `name`) VALUES
 (1, 1, 'Radio'),
 (2, 1, 'Checkbox'),
@@ -2109,6 +2228,20 @@ INSERT INTO `oc_option_description` (`option_id`, `language_id`, `name`) VALUES
 (10, 1, 'Date &amp; Time'),
 (12, 1, 'Delivery Date'),
 (11, 1, 'Size');
+
+-- ru
+INSERT INTO `oc_option_description` (`option_id`, `language_id`, `name`) VALUES
+(1, 2, 'Переключатели'),
+(2, 2, 'Флажки'),
+(4, 2, 'Текстовое поле'),
+(6, 2, 'Многострочный текст'),
+(8, 2, 'Дата'),
+(7, 2, 'Файл'),
+(5, 2, 'Список'),
+(9, 2, 'Время'),
+(10, 2, 'Дата и Время'),
+(12, 2, 'Дата доставки'),
+(11, 2, 'Размер');
 
 -----------------------------------------------------------
 
@@ -2164,6 +2297,7 @@ CREATE TABLE `oc_option_value_description` (
 -- Dumping data for table `oc_option_value_description`
 --
 
+-- en
 INSERT INTO `oc_option_value_description` (`option_value_id`, `language_id`, `option_id`, `name`) VALUES
 (43, 1, 1, 'Large'),
 (32, 1, 1, 'Small'),
@@ -2179,6 +2313,23 @@ INSERT INTO `oc_option_value_description` (`option_value_id`, `language_id`, `op
 (48, 1, 11, 'Large'),
 (47, 1, 11, 'Medium'),
 (46, 1, 11, 'Small');
+
+-- ru
+INSERT INTO `oc_option_value_description` (`option_value_id`, `language_id`, `option_id`, `name`) VALUES
+(43, 2, 1, 'Большой'),
+(32, 2, 1, 'Маленький'),
+(45, 2, 2, 'Флажок 4'),
+(44, 2, 2, 'Флажок 3'),
+(31, 2, 1, 'Средний'),
+(42, 2, 5, 'Желтый'),
+(41, 2, 5, 'Зеленый'),
+(39, 2, 5, 'Красный'),
+(40, 2, 5, 'Синий'),
+(23, 2, 2, 'Флажок 1'),
+(24, 2, 2, 'Флажок 2'),
+(48, 2, 11, 'Большой'),
+(47, 2, 11, 'Средний'),
+(46, 2, 11, 'Маленький');
 
 -----------------------------------------------------------
 
@@ -2418,6 +2569,7 @@ CREATE TABLE `oc_order_status` (
 -- Dumping data for table `oc_order_status`
 --
 
+-- en
 INSERT INTO `oc_order_status` (`order_status_id`, `language_id`, `name`) VALUES
 (2, 1, 'Processing'),
 (3, 1, 'Shipped'),
@@ -2433,6 +2585,23 @@ INSERT INTO `oc_order_status` (`order_status_id`, `language_id`, `name`) VALUES
 (16, 1, 'Voided'),
 (15, 1, 'Processed'),
 (14, 1, 'Expired');
+
+-- ru
+INSERT INTO `oc_order_status` (`order_status_id`, `language_id`, `name`) VALUES
+(2, 2, 'Обрабатывается'),
+(3, 2, 'Отправлен'),
+(7, 2, 'Отменен'),
+(5, 2, 'Завершен'),
+(8, 2, 'Отказан'),
+(9, 2, 'Отменено Аннулирование'),
+(10, 2, 'Не удался'),
+(11, 2, 'Возвращено'),
+(12, 2, 'Аннулировано'),
+(13, 2, 'Возврат платежа'),
+(1, 2, 'Ожидает'),
+(16, 2, 'Аннулирован'),
+(15, 2, 'Обработан'),
+(14, 2, 'Истек');
 
 -----------------------------------------------------------
 
@@ -2627,12 +2796,21 @@ CREATE TABLE `oc_product_attribute` (
 -- Dumping data for table `oc_product_attribute`
 --
 
+-- en
 INSERT INTO `oc_product_attribute` (`product_id`, `attribute_id`, `language_id`, `text`) VALUES
 (43, 2, 1, '1'),
 (47, 4, 1, '16GB'),
 (43, 4, 1, '8gb'),
 (42, 3, 1, '100mhz'),
 (47, 2, 1, '4');
+
+-- ru
+INSERT INTO `oc_product_attribute` (`product_id`, `attribute_id`, `language_id`, `text`) VALUES
+(43, 2, 2, '1'),
+(47, 4, 2, '16Гб'),
+(43, 4, 2, '8Гб'),
+(42, 3, 2, '100МГц'),
+(47, 2, 2, '4');
 
 -----------------------------------------------------------
 
@@ -2658,6 +2836,7 @@ CREATE TABLE `oc_product_description` (
 -- Dumping data for table `oc_product_description`
 --
 
+-- en
 INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `tag`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
 (35, 1, 'Product 8', '&lt;p&gt;\r\n	Product 8&lt;/p&gt;\r\n', '', 'Product 8', '', ''),
 (48, 1, 'iPod Classic', '&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;More room to move.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Cover Flow.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Browse through your music collection by flipping through album art. Select an album to turn it over and see the track list.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Enhanced interface.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Experience a whole new way to browse and view your music and video.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Sleeker design.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Beautiful, durable, and sleeker than ever, iPod classic now features an anodized aluminum and polished stainless steel enclosure with rounded edges.&lt;/p&gt;\r\n	&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;', '', 'iPod Classic', '', ''),
@@ -2678,6 +2857,29 @@ INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `desc
 (49, 1, 'Samsung Galaxy Tab 10.1', '&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1, is the world&amp;rsquo;s thinnest tablet, measuring 8.6 mm thickness, running with Android 3.0 Honeycomb OS on a 1GHz dual-core Tegra 2 processor, similar to its younger brother Samsung Galaxy Tab 8.9.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 gives pure Android 3.0 experience, adding its new TouchWiz UX or TouchWiz 4.0 &amp;ndash; includes a live panel, which lets you to customize with different content, such as your pictures, bookmarks, and social feeds, sporting a 10.1 inches WXGA capacitive touch screen with 1280 x 800 pixels of resolution, equipped with 3 megapixel rear camera with LED flash and a 2 megapixel front camera, HSPA+ connectivity up to 21Mbps, 720p HD video recording capability, 1080p HD playback, DLNA support, Bluetooth 2.1, USB 2.0, gyroscope, Wi-Fi 802.11 a/b/g/n, micro-SD slot, 3.5mm headphone jack, and SIM slot, including the Samsung Stick &amp;ndash; a Bluetooth microphone that can be carried in a pocket like a pen and sound dock with powered subwoofer.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 will come in 16GB / 32GB / 64GB verities and pre-loaded with Social Hub, Reader&amp;rsquo;s Hub, Music Hub and Samsung Mini Apps Tray &amp;ndash; which gives you access to more commonly used apps to help ease multitasking and it is capable of Adobe Flash Player 10.2, powered by 6860mAh battery that gives you 10hours of video-playback time.&amp;nbsp;&amp;auml;&amp;ouml;&lt;/p&gt;\r\n', '', 'Samsung Galaxy Tab 10.1', '', ''),
 (42, 1, 'Apple Cinema 30&quot;', '&lt;p&gt;\r\n	&lt;font face=&quot;helvetica,geneva,arial&quot; size=&quot;2&quot;&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed specifically for the creative professional, this display provides more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this display with a Mac Pro, MacBook Pro, or PowerMac G5 and there''s no limit to what you can achieve. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The Cinema HD features an active-matrix liquid crystal display that produces flicker-free images that deliver twice the brightness, twice the sharpness and twice the contrast ratio of a typical CRT display. Unlike other flat panels, it''s designed with a pure digital interface to deliver distortion-free images that never need adjusting. With over 4 million digital pixels, the display is uniquely suited for scientific and technical applications such as visualizing molecular structures or analyzing geological data. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;Offering accurate, brilliant color performance, the Cinema HD delivers up to 16.7 million colors across a wide gamut allowing you to see subtle nuances between colors from soft pastels to rich jewel tones. A wide viewing angle ensures uniform color from edge to edge. Apple''s ColorSync technology allows you to create custom profiles to maintain consistent color onscreen and in print. The result: You can confidently use this display in all your color-critical applications. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;Housed in a new aluminum design, the display has a very thin bezel that enhances visual accuracy. Each display features two FireWire 400 ports and two USB 2.0 ports, making attachment of desktop peripherals, such as iSight, iPod, digital and still cameras, hard drives, printers and scanners, even more accessible and convenient. Taking advantage of the much thinner and lighter footprint of an LCD, the new displays support the VESA (Video Electronics Standards Association) mounting interface standard. Customers with the optional Cinema Display VESA Mount Adapter kit gain the flexibility to mount their display in locations most appropriate for their work environment. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The Cinema HD features a single cable design with elegant breakout for the USB 2.0, FireWire 400 and a pure digital connection using the industry standard Digital Video Interface (DVI) interface. The DVI connection allows for a direct pure-digital connection.&lt;br&gt;\r\n	&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;\r\n&lt;h3&gt;\r\n	Features:&lt;/h3&gt;\r\n&lt;p&gt;\r\n	Unrivaled display performance&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch (viewable) active-matrix liquid crystal display provides breathtaking image quality and vivid, richly saturated color.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for 2560-by-1600 pixel resolution for display of high definition still and video imagery.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Wide-format design for simultaneous display of two full pages of text and graphics.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Industry standard DVI connector for direct attachment to Mac- and Windows-based desktops and notebooks&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Incredibly wide (170 degree) horizontal and vertical viewing angle for maximum visibility and color performance.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Lightning-fast pixel response for full-motion digital video playback.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for 16.7 million saturated colors, for use in all graphics-intensive applications.&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Simple setup and operation&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Single cable with elegant breakout for connection to DVI, USB and FireWire ports&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Built-in two-port USB 2.0 hub for easy connection of desktop peripheral devices.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Two FireWire 400 ports to support iSight and other desktop peripherals&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Sleek, elegant design&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Huge virtual workspace, very small footprint.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Narrow Bezel design to minimize visual impact of using dual displays&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Unique hinge design for effortless adjustment&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for VESA mounting solutions (Apple Cinema Display VESA Mount Adapter sold separately)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;h3&gt;\r\n	Technical specifications&lt;/h3&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen size (diagonal viewable image size)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Apple Cinema HD Display: 30 inches (29.7-inch viewable)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen type&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Thin film transistor (TFT) active-matrix liquid crystal display (AMLCD)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Resolutions&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		2560 x 1600 pixels (optimum resolution)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		2048 x 1280&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1920 x 1200&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1280 x 800&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1024 x 640&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Display colors (maximum)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		16.7 million&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Viewing angle (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		170° horizontal; 170° vertical&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Brightness (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch Cinema HD Display: 400 cd/m2&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Contrast ratio (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		700:1&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Response time (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		16 ms&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Pixel pitch&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch Cinema HD Display: 0.250 mm&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen treatment&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Antiglare hardcoat&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;User controls (hardware and software)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Display Power,&lt;/li&gt;\r\n	&lt;li&gt;\r\n		System sleep, wake&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Brightness&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Monitor tilt&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Connectors and cables&lt;/b&gt;&lt;br&gt;\r\n	Cable&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		DVI (Digital Visual Interface)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		FireWire 400&lt;/li&gt;\r\n	&lt;li&gt;\r\n		USB 2.0&lt;/li&gt;\r\n	&lt;li&gt;\r\n		DC power (24 V)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Connectors&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Two-port, self-powered USB 2.0 hub&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Two FireWire 400 ports&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Kensington security port&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;VESA mount adapter&lt;/b&gt;&lt;br&gt;\r\n	Requires optional Cinema Display VESA Mount Adapter (M9649G/A)&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Compatible with VESA FDMI (MIS-D, 100, C) compliant mounting solutions&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Electrical requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Input voltage: 100-240 VAC 50-60Hz&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Maximum power when operating: 150W&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Energy saver mode: 3W or less&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Environmental requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Operating temperature: 50° to 95° F (10° to 35° C)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Storage temperature: -40° to 116° F (-40° to 47° C)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Operating humidity: 20% to 80% noncondensing&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Maximum operating altitude: 10,000 feet&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Agency approvals&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		FCC Part 15 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN55022 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN55024&lt;/li&gt;\r\n	&lt;li&gt;\r\n		VCCI Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		AS/NZS 3548 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		CNS 13438 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ICES-003 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ISO 13406 part 2&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MPR II&lt;/li&gt;\r\n	&lt;li&gt;\r\n		IEC 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		UL 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		CSA 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ENERGY STAR&lt;/li&gt;\r\n	&lt;li&gt;\r\n		TCO ''03&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Size and weight&lt;/b&gt;&lt;br&gt;\r\n	30-inch Apple Cinema HD Display&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Height: 21.3 inches (54.3 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Width: 27.2 inches (68.8 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Depth: 8.46 inches (21.5 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Weight: 27.5 pounds (12.5 kg)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;System Requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Mac Pro, all graphic options&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MacBook Pro&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI-X) with ATI Radeon 9650 or better or NVIDIA GeForce 6800 GT DDL or better&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI Express), all graphics options&lt;/li&gt;\r\n	&lt;li&gt;\r\n		PowerBook G4 with dual-link DVI support&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Windows PC and graphics card that supports DVI ports with dual-link digital bandwidth and VESA DDC standard for plug-and-play setup&lt;/li&gt;\r\n&lt;/ul&gt;\r\n', '', 'Apple Cinema 30', '', ''),
 (30, 1, 'Canon EOS 5D', '&lt;p&gt;\r\n	Canon''s press material for the EOS 5D states that it ''defines (a) new D-SLR category'', while we''re not typically too concerned with marketing talk this particular statement is clearly pretty accurate. The EOS 5D is unlike any previous digital SLR in that it combines a full-frame (35 mm sized) high resolution sensor (12.8 megapixels) with a relatively compact body (slightly larger than the EOS 20D, although in your hand it feels noticeably ''chunkier''). The EOS 5D is aimed to slot in between the EOS 20D and the EOS-1D professional digital SLR''s, an important difference when compared to the latter is that the EOS 5D doesn''t have any environmental seals. While Canon don''t specifically refer to the EOS 5D as a ''professional'' digital SLR it will have obvious appeal to professionals who want a high quality digital SLR in a body lighter than the EOS-1D. It will also no doubt appeal to current EOS 20D owners (although lets hope they''ve not bought too many EF-S lenses...) äë&lt;/p&gt;\r\n', '', 'sdf', '', '');
+
+-- ru
+INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `tag`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
+(35, 2, 'Продукт 8', '&lt;p&gt;\r\n	Продукт 8&lt;/p&gt;\r\n', '', 'Продукт 8', '', ''),
+(48, 2, 'iPod Classic', '&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Больше места для перемещения.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			С 80ГБ или 160ГБ памяти и до 40 часов автономной работы, новый iPod classic позволяет Вам прослушивать до 40 000 песен или до 200 часов видео или любой комбинации в любом месте, где бы Вы ни находились.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Поток покрытия.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Просмотрите свою музыкальную коллекцию, пролистывая обложки альбомов. Выберите альбом, чтобы перевернуть его и увидеть список треков.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Улучшенный интерфейс.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Испытайте совершенно новый способ просмотра и просмотра музыки и видео.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Более изящный дизайн.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Красивый, прочный и изящный, как никогда, iPod classic теперь имеет корпус из анодированного алюминия и полированной нержавеющей стали с закругленными краями.&lt;/p&gt;\r\n	&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;', '', 'iPod Classic', '', ''),
+(40, 2, 'iPhone', '&lt;p class=&quot;intro&quot;&gt;\r\n	iPhone - это революционно новый мобильный телефон, который позволяет совершать вызовы, просто нажав имя или номер в адресной книге, списке избранного или журнале вызовов. Он также автоматически синхронизирует все Ваши контакты с ПК, Mac или интернет-службы. И это позволяет Вам выбирать и прослушивать сообщения голосовой почты в любом порядке, как Вы хотите, как электронная почта.&lt;/p&gt;\r\n', '', 'iPhone', '', ''),
+(28, 2, 'HTC Touch HD', '&lt;p&gt;\r\n	HTC Touch - в высоком разрешении. Просматривайте музыкальные видео и потоковое содержимое с впечатляющей четкостью в высоком разрешении для мобильных устройств, о которых Вы никогда не думали, что это возможно. HTC Touch HD обладает привлекательным внешним видом и обеспечивает мобильную функциональность нового поколения простым прикосновением. Полностью интегрированный с Windows Mobile Professional 6.1, сверхскоростной 3.5G, GPS, 5-мегапиксельная камера и многое другое - все это доступно на потрясающе четком 3,8-дюймовом сенсорном WVGA-экране - Вы можете управлять своим мобильным миром с помощью HTC Touch HD.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Особенности&lt;/strong&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Процессор Qualcomm&amp;reg; MSM 7201A&amp;trade; 528 МГц&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Операционная система Windows Mobile&amp;reg; 6.1 Professional&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Память: 512 МБ ПЗУ, 288 МБ ОЗУ&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Размеры: 115 мм x 62.8 мм x 12 мм / 146.4 г&lt;/li&gt;\r\n	&lt;li&gt;\r\n		3,8-дюймовый TFT-LCD плоский сенсорный экран с разрешением 480 x 800 WVGA&lt;/li&gt;\r\n	&lt;li&gt;\r\n		HSDPA/WCDMA: Европа/Азия: 900/2100 МГц; Скорость восходящего соединения до 2 Мбит/с и скорость нисходящего канала 7,2 Мбит/с&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Четырехдиапазонный GSM/GPRS/EDGE: Европа/Азия: 850/900/1800/1900МГц (частота полосы, доступность HSUPA и скорость передачи данных зависят от оператора.)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Управление устройством через HTC TouchFLO&amp;trade; 3D &amp;amp; Сенсорные кнопки на передней панели&lt;/li&gt;\r\n	&lt;li&gt;\r\n		GPS и A-GPS ready&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Bluetooth&amp;reg; 2.0 с повышенной скоростью передачи данных и A2DP для беспроводных стереогарнитур&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Wi-Fi&amp;reg;: IEEE 802.11 b/g&lt;/li&gt;\r\n	&lt;li&gt;\r\n		HTC ExtUSB&amp;trade; (11-пин мини-USB 2.0)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		5-мегапиксельная цветная камера с автофокусом&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Цветная камера VGA CMOS&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Встроенный аудиоразъем 3,5 мм, микрофон, динамик и FM-радио&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Форматы мелодий звонка: AAC, AAC+, eAAC+, AMR-NB, AMR-WB, QCP, MP3, WMA, WAV&lt;/li&gt;\r\n	&lt;li&gt;\r\n		40 полифонических и стандартных форматов 0 и 1 (SMF)/SP MIDI&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Перезаряжаемая литий-ионная или литий-ионная полимерная батарея емкостью 1350мАч&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Слот расширения: карта памяти microSD&amp;trade; (совместимая с SD 2.0)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Адаптер переменного тока Диапазон/частота напряжения: 100 ~ 240В переменного тока, выход 50/60Гц постоянного тока: 5В и 1А&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Особенности: FM-радио, G-Sensor&lt;/li&gt;\r\n&lt;/ul&gt;\r\n', '', '	 HTC Touch HD', '', ''),
+(44, 2, 'MacBook Air', '&lt;div&gt;\r\n	MacBook Air - ультратонкий, ультрапортативный и ультра в отличие от всего остального. Но Вы не потеряете ни дюйма, ни фунта за ночь. Это результат переосмысления соглашений. Из множества беспроводных инноваций. И прорывного дизайна. С MacBook Air мобильные вычисления неожиданно обрели новый стандарт.&lt;/div&gt;\r\n', '', 'MacBook Air', '', ''),
+(45, 2, 'MacBook Pro', '&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Новейшая мобильная архитектура Intel&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Новый CoreBook Duo MacBook Pro на базе самых современных мобильных процессоров Intel на 50% быстрее, чем оригинальный Core Duo MacBook Pro, и теперь поддерживает до 4 ГБ оперативной памяти.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Передовая графика&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			NVIDIA GeForce 8600M GT обеспечивает исключительную производительность графической обработки. Для идеального творческого холста Вы даже можете настроить 17-дюймовую модель с дисплеем с разрешением 1920 x 1200.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Предназначен для жизни на дороге&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Инновации, такие как подключение к магнитному источнику питания и клавиатура с подсветкой и датчиком внешней освещенности, превращают MacBook Pro в отдельный класс.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Подключайся. Создавай. Общайся.&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Быстро настроить видеоконференцию с помощью встроенной камеры iSight. Управляйте презентациями и мультимедиа на расстоянии до 30 футов с помощью прилагаемого пульта Apple Remote. Подключайтесь к периферийным устройствам с высокой пропускной способностью с FireWire 800 и DVI.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Беспроводная связь следующего поколения&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Благодаря беспроводной технологии 802.11n, MacBook Pro обеспечивает пятикратную производительность и вдвое больший диапазон технологий предыдущего поколения..&lt;/p&gt;\r\n	&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;', '', 'MacBook Pro', '', ''),
+(29, 2, 'Palm Treo Pro', '&lt;p&gt;\r\n	Пересмотрите свой рабочий день со смартфоном Palm Treo Pro. Идеально сбалансированный, Вы можете отвечать на деловую и личную электронную почту, быть в курсе встреч и контактов и использовать Wi-Fi или GPS, когда Вы в пути. Затем посмотрите видео на YouTube, узнайте новости и спорт в Интернете или послушайте несколько песен. Сбалансируйте свою работу и играйте так, как Вам нравится, с Palm Treo Pro.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Особенности&lt;/strong&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Windows Mobile&amp;reg; 6.1 Professional Edition&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Процессор Qualcomm&amp;reg; MSM7201 400МГц&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Цветной TFT сенсорный экран 320x320&lt;/li&gt;\r\n	&lt;li&gt;\r\n		HSDPA/UMTS/EDGE/GPRS/GSM радио&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Трехдиапазонный UMTS &amp;mdash; 850МГц, 1900МГц, 2100МГц&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Четырехдиапазонный GSM &amp;mdash; 850/900/1800/1900&lt;/li&gt;\r\n	&lt;li&gt;\r\n		802.11b/g с аутентификацией WPA, WPA2 и 801.1x&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Встроенный GPS&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Версия Bluetooth: 2.0 + повышенная скорость передачи данных&lt;/li&gt;\r\n	&lt;li&gt;\r\n		256 МБ памяти (доступно 100 МБ), 128 МБ ОЗУ&lt;/li&gt;\r\n	&lt;li&gt;\r\n		2,0-мегапиксельная камера, 8-кратный цифровой зум и захват видео&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Съемный литий-ионный аккумулятор 1500 мАч&lt;/li&gt;\r\n	&lt;li&gt;\r\n		До 5 часов в режиме разговора и до 250 часов в режиме ожидания&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Расширение карты MicroSDHC (поддерживается до 32 ГБ)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MicroUSB 2.0 для синхронизации и зарядки&lt;/li&gt;\r\n	&lt;li&gt;\r\n		3,5 мм разъем для стереогарнитуры&lt;/li&gt;\r\n	&lt;li&gt;\r\n		60мм (Ш) x 114мм (Д) x 13.5мм (Т) / 133г&lt;/li&gt;\r\n&lt;/ul&gt;\r\n', '', 'Palm Treo Pro', '', ''),
+(36, 2, 'iPod Nano', '&lt;div&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Видео в Вашем кармане.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Это маленький iPod с одной очень большой идеей: видео. Самый популярный в мире музыкальный проигрыватель теперь позволяет смотреть фильмы, телепередачи и многое другое на двухдюймовом дисплее, который на 65% ярче, чем раньше.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Обложка.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Просмотрите свою музыкальную коллекцию, пролистывая обложки альбомов. Выберите альбом, чтобы перевернуть его и увидеть список треков.&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Улучшенный интерфейс.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Испытайте совершенно новый способ просмотра и просмотра музыки и видео.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Гладкий и красочный.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		IPod nano с корпусом из анодированного алюминия и полированной нержавеющей стали и возможностью выбора из пяти цветов способен произвести впечатление.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;iTunes.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Доступный для бесплатной загрузки, iTunes позволяет легко просматривать и покупать миллионы песен, фильмов, телешоу, аудиокниг и игр, а также загружать бесплатные подкасты в iTunes Store. И Вы можете импортировать свою собственную музыку, управлять всей медиатекой и синхронизировать iPod или iPhone с легкостью.&lt;/p&gt;\r\n&lt;/div&gt;\r\n', '', 'iPod Nano', '', ''),
+(46, 2, 'Sony VAIO', '&lt;div&gt;\r\n	Беспрецедентная сила. Следующее поколение технологий обработки пришло. В новейшие ноутбуки VAIO заложены последние, самые мощные инновации Intel&amp;#39;s, процессорная технология: Intel&amp;reg; Centrino&amp;reg; 2. Обладая невероятной скоростью, расширенной беспроводной связью, расширенной поддержкой мультимедиа и большей эффективностью энергопотребления, все высокопроизводительные компоненты легко объединяются в один чип.&lt;/div&gt;\r\n', '', 'Sony VAIO', '', ''),
+(47, 2, 'HP LP3065', '&lt;p&gt;\r\n	Остановите своих коллег на своем пути с потрясающим новым 30-дюймовым диагональным плоскопанельным монитором HP LP3065. Этот флагманский монитор обладает лучшими в своем классе характеристиками производительности и презентаций на огромном широкоформатном экране, позволяя Вам работать максимально комфортно - Вы даже можете забыть, что находитесь в офисе&lt;/p&gt;\r\n', '', 'HP LP3065', '', ''),
+(32, 2, 'iPod Touch', '&lt;p&gt;\r\n	&lt;strong&gt;Революционный мультитач интерфейс.&lt;/strong&gt;&lt;br /&gt;\r\n	В iPod touch используется та же технология мультитач, что и в iPhone. Щепотка, чтобы увеличить фотографию. Прокрутите свои песни и видео с движением. Пролистайте свою библиотеку по обложкам альбомов с Cover Flow.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Великолепный 3,5-дюймовый широкоформатный дисплей.&lt;/strong&gt;&lt;br /&gt;\r\n	Смотрите свои фильмы, телепередачи и фотографии с яркими и яркими цветами на дисплее с разрешением 320 х 480 пикселей.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Загрузка музыки прямо из iTunes.&lt;/strong&gt;&lt;br /&gt;\r\n	Совершайте покупки в музыкальном магазине iTunes Wi-Fi из любой точки мира с помощью Wi-Fi.1. Найдите или найдите нужную музыку, просмотрите ее и купите ее одним касанием..&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Посижу в интернете с Wi-Fi.&lt;/strong&gt;&lt;br /&gt;\r\n	Просматривайте веб-страницы с помощью Safari и смотрите видео YouTube на первом iPod со встроенным Wi-Fi&lt;br /&gt;\r\n	&amp;nbsp;&lt;/p&gt;\r\n', '', '	 iPod Touch', '', ''),
+(41, 2, 'iMac', '&lt;div&gt;\r\n	Просто, когда Вы думали, что у iMac есть все, теперь еще больше. Более мощные процессоры Intel Core 2 Duo. И еще стандарт памяти. Объедините это с Mac OS X Leopard и iLife &acute;08, и это больше, чем когда-либо. iMac обеспечивает потрясающую производительность в невероятно компактном пространстве.&lt;/div&gt;\r\n', '', 'iMac', '', ''),
+(33, 2, 'Samsung SyncMaster 941BW', '&lt;div&gt;\r\n	Представьте себе преимущества роста без замедления. Большой 19-дюймовый монитор 941BW сочетает в себе широкий формат изображения с быстрым временем отклика пикселей, что позволяет получать более крупные изображения, больше места для работы и четкое движение. Кроме того, эксклюзивные технологии MagicBright 2, MagicColor и MagicTune помогают обеспечить идеальное изображение в любой ситуации, а Гладкие узкие рамки и регулируемые подставки обеспечивают стильный дизайн в соответствии с Вашими потребностями.С широкоформатным аналоговым/цифровым ЖК-монитором Samsung 941BW это не сложно представить.&lt;/div&gt;\r\n', '', 'Samsung SyncMaster 941BW', '', ''),
+(34, 2, 'iPod Shuffle', '&lt;div&gt;\r\n	&lt;strong&gt;Рожденный носить.&lt;/strong&gt;\r\n	&lt;p&gt;\r\n		Клип на самый носимый музыкальный проигрыватель в мире и взять с собой до 240 песен в любом месте. Выберите один из пяти цветов, включая четыре новых оттенка, чтобы сделать Ваше музыкальное выражение моды.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Рандом встречает ритм.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Благодаря автозаполнению iTunes iPod shuffle может доставить новый музыкальный опыт при каждой синхронизации. Для большей случайности Вы можете перемешивать песни во время воспроизведения с помощью ползунка переключателя.&lt;/p&gt;\r\n	&lt;strong&gt;Все легко.&lt;/strong&gt;\r\n	&lt;p&gt;\r\n		Зарядка и синхронизация с USB-док-станцией. Управляйте элементами управления iPod shuffle одной рукой. Наслаждайтесь музыкой в течение 12 часов без пропусков.&lt;/p&gt;\r\n&lt;/div&gt;\r\n', '', 'iPod Shuffle', '', ''),
+(43, 2, 'MacBook', '&lt;div&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Процессор Intel Core 2 Duo&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Работающий на процессоре Intel Core 2 Duo со скоростью до 2,16 ГГц, новый MacBook является самым быстрым.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;1 ГБ
+памяти, большие жесткие диски&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Новый MacBook теперь поставляется со стандартным объемом памяти 1 ГБ и большими жесткими дисками для всей линейки, что идеально подходит для запуска большего количества Ваших любимых приложений и хранения растущих медиа-коллекций.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Гладкий, 1,08-дюймовый тонкий дизайн&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		MacBook позволяет легко отправиться в путь благодаря прочному поликарбонатному корпусу, встроенным беспроводным технологиям и инновационному адаптеру питания MagSafe, который автоматически отключается, если кто-то случайно споткнется о шнур.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Встроенная камера iSight&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Прямо из коробки Вы можете пообщаться в видеочате с друзьями или семьей, 2 записать видео на своем столе или сделать веселые снимки с помощью Photo Booth&lt;/p&gt;\r\n&lt;/div&gt;\r\n', '', 'MacBook', '', ''),
+(31, 2, 'Nikon D300', '&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		D300 с технологией 12,3 мегапикселя и эффективными функциями, созданными на профессиональном уровне, сочетает в себе совершенно новые технологии с расширенными функциями, унаследованными от недавно анонсированной профессиональной цифровой зеркальной камеры D3 Nikon, и предлагает серьезным фотографам замечательную производительность в сочетании с маневренностью.&lt;br /&gt;\r\n		&lt;br /&gt;\r\n		Подобно D3, D300 оснащен эксклюзивной системой обработки изображений EXPEED от Nikon, которая играет ключевую роль в обеспечении скорости и вычислительной мощности, необходимых для многих новых функций камеры. D300 оснащен новой 51-точечной системой автофокусировки с функцией отслеживания фокуса 3D Nikon и двумя новыми режимами съемки LiveView, которые позволяют пользователям делать снимки с помощью ЖК-монитора с высоким разрешением камеры. D300 использует ту же систему распознавания сцен, что и D3; он обещает значительно повысить точность автофокуса, автоэкспозиции и автоматического баланса белого, распознавая фотографируемый объект или сцену и применяя эту информацию к вычислениям для трех функций.&lt;br /&gt;\r\n		&lt;br /&gt;\r\n		D300 реагирует с молниеносной скоростью, включается всего за 0,13 секунды и снимает с незаметной задержкой срабатывания затвора в 45 миллисекунд. D300 способен снимать со скоростью шесть кадров в секунду и может развивать скорость до восьми кадров в секунду, если используется дополнительный аккумуляторный блок питания MB-D10. В непрерывном режиме D300 может делать до 100 снимков с полным разрешением 12,3 мегапикселя. (Настройка изображения NORMAL-LARGE с использованием карты памяти SanDisk Extreme IV 1 ГБ CompactFlash.)&lt;br /&gt;\r\n		&lt;br /&gt;\r\n		D300 включает в себя ряд инновационных технологий и функций, которые значительно улучшат точность, контроль и производительность, которые фотографы могут получить от своего оборудования. В новой системе распознавания сюжетов используется известный датчик Nikon с 1 005 сегментами, позволяющий распознавать цвета и узоры света, которые помогают камере определять объект и тип снимаемой сцены перед съемкой. Эта информация используется для повышения точности функций автофокуса, автоэкспозиции и автоматического баланса белого в D300. Например, камера может лучше отслеживать движущиеся объекты и, идентифицируя их, она также может автоматически выбирать точки фокусировки быстрее и с большей точностью. Он также может анализировать блики и более точно определять экспозицию, а также определять источники света для более точного определения баланса белого.&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;', '', 'Nikon D300', '', ''),
+(49, 2, 'Samsung Galaxy Tab 10.1', '&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 - самый тонкий в мире планшет с толщиной 8,6 мм, работающий под управлением ОС Android 3.0 Honeycomb на двухъядерном процессоре Tegra 2 с тактовой частотой 1 ГГц, аналогичном младшему брату Samsung Galaxy Tab 8.9.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 обеспечивает чистый опыт работы с Android 3.0, добавив новый TouchWiz UX или TouchWiz 4.0 - включает в себя панель в реальном времени, которая позволяет настраивать различный контент, например фотографии, закладки и социальные сети, с емкостью 10,1 дюйма WXGA. сенсорный экран с разрешением 1280 x 800 пикселей, оснащенный 3-мегапиксельной задней камерой со светодиодной вспышкой и 2-мегапиксельной фронтальной камерой, возможностью подключения HSPA + до 21 Мбит / с, возможностью записи видео 720p HD, воспроизведения HD-видео 1080p, поддержкой DLNA, Bluetooth 2.1, USB 2.0 , гироскоп, Wi-Fi 802.11 a / b / g / n, слот micro-SD, разъем для наушников 3,5 мм и слот для SIM-карты, включая Samsung Stick - микрофон Bluetooth, который можно носить в кармане, например, ручку и звуковую док-станцию. с активным сабвуфером.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 выпускается в версиях 16ГБ/32ГБ/64ГБ и предварительно загружен с Social Hub, Reader&amp;rsquo;s Hub, Music Hub и Samsung Mini Apps Tray - что дает вам доступ к более часто используемым приложениям, облегчающим многозадачность, и способно Adobe Flash Player 10.2, работает от батареи 6860 мАч, что дает вам 10 часов времени воспроизведения видео.&lt;/p&gt;\r\n', '', 'Samsung Galaxy Tab 10.1', '', ''),
+(42, 2, 'Apple Cinema 30&quot;', '&lt;p&gt;\r\n	&lt;font face=&quot;helvetica,geneva,arial&quot; size=&quot;2&quot;&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;30-дюймовый дисплей Apple Cinema HD обеспечивает потрясающее разрешение 2560 x 1600 пикселей. Разработанный специально для творческого профессионала, этот дисплей обеспечивает больше места для более удобного доступа ко всем инструментам и палитрам, необходимым для редактирования, форматирования и компоновки Вашей работы. Объедините этот дисплей с Mac Pro, MacBook Pro или PowerMac G5, и нет предела тому, чего Вы можете достичь. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;Cinema HD оснащен жидкокристаллическим дисплеем с активной матрицей, который создает изображения без мерцания, обеспечивающие вдвое большую яркость, вдвое большую четкость и удвоенный коэффициент контрастности по сравнению с обычным ЭЛТ-дисплеем. В отличие от других плоских панелей, он разработан с чисто цифровым интерфейсом, что позволяет получать изображения без искажений, которые никогда не нуждаются в настройке. Дисплей с более чем 4 миллионами цифровых пикселей идеально подходит для научных и технических приложений, таких как визуализация молекулярных структур или анализ геологических данных. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;Предлагая точную, блестящую цветопередачу, Cinema HD обеспечивает до 16,7 миллионов цветов по широкой гамме, позволяя увидеть тонкие нюансы между цветами от мягких пастельных оттенков до насыщенных оттенков драгоценных камней. Широкий угол обзора обеспечивает равномерный цвет от края до края. Технология Apple ColorSync позволяет создавать пользовательские профили, чтобы поддерживать постоянный цвет на экране и при печати. Результат: Вы можете уверенно использовать этот дисплей во всех Ваших цветных приложениях. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;Дисплей имеет новый алюминиевый дизайн и имеет очень тонкую рамку, которая повышает визуальную точность. Каждый дисплей оснащен двумя портами FireWire 400 и двумя портами USB 2.0, что делает подключение периферийных устройств, таких как iSight, iPod, цифровые и фотокамеры, жесткие диски, принтеры и сканеры, еще более доступным и удобным. Используя преимущества более тонкого и легкого размера ЖК-дисплея, новые дисплеи поддерживают стандарт интерфейса монтажа VESA (Ассоциация стандартов видеоэлектроники). Клиенты с дополнительным комплектом адаптеров VESA для крепления к кинотеатру Cinema Display получают возможность устанавливать свои дисплеи в местах, наиболее подходящих для их рабочей среды. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;Cinema HD имеет единый дизайн кабеля с элегантным разъемом для USB 2.0, FireWire 400 и чисто цифровое соединение с использованием интерфейса цифрового видеоинтерфейса (DVI) промышленного стандарта. Соединение DVI позволяет прямое чисто цифровое соединение.&lt;br&gt;\r\n	&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;\r\n&lt;h3&gt;\r\n	Особенности:&lt;/h3&gt;\r\n&lt;p&gt;\r\n	Непревзойденная производительность дисплея&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-дюймовый жидкокристаллический дисплей с активной матрицей обеспечивает потрясающее качество изображения и насыщенный насыщенный цвет.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Поддержка разрешения 2560 на 1600 пикселей для отображения неподвижных и видеоизображений высокой четкости.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Широкоформатный дизайн для одновременного отображения двух полных страниц текста и графики.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Разъем DVI промышленного стандарта для прямого подключения к настольным компьютерам и ноутбукам на базе Mac и Windows&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Невероятно широкий (170 градусов) горизонтальный и вертикальный угол обзора для максимальной видимости и цветопередачи.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Молниеносный пиксельный отклик для полноценного воспроизведения цифрового видео.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Поддержка 16,7 миллионов насыщенных цветов для использования во всех графических приложениях.&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Простая настройка и эксплуатация&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Один кабель с элегантным разъемом для подключения к портам DVI, USB и FireWire&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Встроенный двухпортовый концентратор USB 2.0 для простого подключения периферийных устройств настольного компьютера.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Два порта FireWire 400 для поддержки iSight и других настольных периферийных устройств&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Гладкий, элегантный дизайн&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Огромное виртуальное рабочее пространство, очень маленькая площадь.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Узкий дизайн лицевой панели для минимизации визуального воздействия при использовании двух дисплеев&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Уникальный дизайн петель для легкой регулировки&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Поддержка решений VESA для монтажа (Apple Cinema Display VESA Mount Adapter продается отдельно)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;h3&gt;\r\n	Технические характеристики&lt;/h3&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Размер экрана (размер изображения по диагонали)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Дисплей Apple Cinema HD: 30 дюймов (для просмотра 29,7 дюйма)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Тип экрана&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Тонкопленочный транзисторный (TFT) жидкокристаллический дисплей с активной матрицей (AMLCD)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Разрешения&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		2560 x 1600 пикселей (оптимальное разрешение)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		2048 x 1280&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1920 x 1200&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1280 x 800&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1024 x 640&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Цвета дисплея (максимум)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		16.7 миллиона&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Угол обзора (типичный)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		170° по горизонтали; 170° по вертикали&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Яркость (типичная)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-дюймовый Cinema HD дисплей: 400 кд/м2&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Коэффициент контрастности (типичный)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		700:1&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Время отклика (типичное)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		16 ms&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Шаг пикселя&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-дюймовый дисплей Cinema HD: 0,250 мм&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Обработка экрана&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Антибликовое покрытие&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Пользовательские элементы управления (аппаратное и программное обеспечение)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Включение дисплея,&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Система сна, пробуждения&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Яркость&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Наклон монитора&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Разъемы и кабели&lt;/b&gt;&lt;br&gt;\r\n	Кабель&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		DVI (цифровой визуальный интерфейс)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		FireWire 400&lt;/li&gt;\r\n	&lt;li&gt;\r\n		USB 2.0&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Мощность постоянного тока (24 В)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Соединители&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Двухпортовый концентратор USB 2.0 с автономным питанием&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Два порта FireWire 400&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Порт безопасности Kensington&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;VESA адаптер для крепления&lt;/b&gt;&lt;br&gt;\r\n	Требуется дополнительный монтажный адаптер VESA Cinema Display (M9649G/A)&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Совместим с монтажными решениями, совместимыми с VESA FDMI (MIS-D, 100, C)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Электрические требования&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Входное напряжение: 100-240 В перем. Тока 50-60 Гц&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Максимальная мощность при работе: 150 Вт&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Режим энергосбережения: 3 Вт или менее&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Требования к окружающей среде&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Рабочая температура: от 50° до 95° F (от 10° до 35° C)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Температура хранения: -40° до 116° F (-40° до 47° C)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Рабочая влажность: от 20% до 80% без конденсации&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Максимальная рабочая высота: 10000 футов&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Одобрения агентства&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		FCC Part 15 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN55022 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN55024&lt;/li&gt;\r\n	&lt;li&gt;\r\n		VCCI Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		AS/NZS 3548 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		CNS 13438 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ICES-003 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ISO 13406 part 2&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MPR II&lt;/li&gt;\r\n	&lt;li&gt;\r\n		IEC 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		UL 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		CSA 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ENERGY STAR&lt;/li&gt;\r\n	&lt;li&gt;\r\n		TCO ''03&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Размер и вес&lt;/b&gt;&lt;br&gt;\r\n	30-дюймовый дисплей Apple Cinema HD&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Высота: 21,3 дюйма (54,3 см)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Ширина: 27,2 дюйма (68,8 см)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Глубина: 8,46 дюймов (21,5 см)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Вес: 27,5 фунтов (12,5 кг)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Системные Требования&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Mac Pro, все графические опции&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MacBook Pro&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI-X) с ATI Radeon 9650 или выше или NVIDIA GeForce 6800 GT DDL или лучше&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI Express), все графические опции&lt;/li&gt;\r\n	&lt;li&gt;\r\n		PowerBook G4 с поддержкой двухканальной DVI&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ПК с Windows и графическая карта с поддержкой портов DVI с двойной полосой пропускания и стандартом VESA DDC для настройки plug-and-play&lt;/li&gt;\r\n&lt;/ul&gt;\r\n', '', 'Apple Cinema 30', '', ''),
+(30, 2, 'Canon EOS 5D', '&lt;p&gt;\r\n	В пресс-материале Canon для EOS 5D говорится, что он «определяет (а) новую категорию D-SLR», в то время как мы, как правило, не слишком заинтересованы в маркетинговых разговорах, это конкретное утверждение явно довольно точно. EOS 5D отличается от любых предыдущих цифровых зеркальных фотокамер тем, что в нем сочетаются полнокадровый (размером 35 мм) сенсор высокого разрешения (12,8 мегапикселя) с относительно компактным корпусом (чуть больше, чем у EOS 20D, хотя в вашей руке он ощущается заметно ». более короткий "). EOS 5D предназначен для установки между EOS 20D и профессиональными цифровыми зеркальными фотокамерами EOS-1D. Важное отличие по сравнению с последним заключается в том, что EOS 5D не имеет никаких уплотнений окружающей среды. Хотя Canon специально не называет EOS 5D «профессиональной» цифровой зеркальной фотокамерой, она, несомненно, понравится профессионалам, которые хотят иметь высококачественную цифровую зеркальную фотокамеру с корпусом легче, чем EOS-1D. Это также, несомненно, понравится нынешним владельцам EOS 20D (хотя, будем надеяться, они не купили слишком много объективов EF-S...)&lt;/p&gt;\r\n', '', 'sdf', '', '');
 
 -----------------------------------------------------------
 
@@ -3189,10 +3391,17 @@ CREATE TABLE `oc_return_action` (
 -- Dumping data for table `oc_return_action`
 --
 
+-- en
 INSERT INTO `oc_return_action` (`return_action_id`, `language_id`, `name`) VALUES
 (1, 1, 'Refunded'),
 (2, 1, 'Credit Issued'),
 (3, 1, 'Replacement Sent');
+
+-- ru
+INSERT INTO `oc_return_action` (`return_action_id`, `language_id`, `name`) VALUES
+(1, 2, 'Возмещено'),
+(2, 2, 'Выдан Кредит'),
+(3, 2, 'Замена Отправлена');
 
 -----------------------------------------------------------
 
@@ -3229,12 +3438,21 @@ CREATE TABLE `oc_return_reason` (
 -- Dumping data for table `oc_return_reason`
 --
 
+-- en
 INSERT INTO `oc_return_reason` (`return_reason_id`, `language_id`, `name`) VALUES
 (1, 1, 'Dead On Arrival'),
 (2, 1, 'Received Wrong Item'),
 (3, 1, 'Order Error'),
 (4, 1, 'Faulty, please supply details'),
 (5, 1, 'Other, please supply details');
+
+-- ru
+INSERT INTO `oc_return_reason` (`return_reason_id`, `language_id`, `name`) VALUES
+(1, 2, 'Мертв по прибытии'),
+(2, 2, 'Получен неверный элемент'),
+(3, 2, 'Ошибка заказа'),
+(4, 2, 'Неисправность, пожалуйста, предоставьте информацию'),
+(5, 2, 'Другое, пожалуйста, предоставьте детали');
 
 -----------------------------------------------------------
 
@@ -3254,10 +3472,17 @@ CREATE TABLE `oc_return_status` (
 -- Dumping data for table `oc_return_status`
 --
 
+-- en
 INSERT INTO `oc_return_status` (`return_status_id`, `language_id`, `name`) VALUES
 (1, 1, 'Pending'),
 (3, 1, 'Complete'),
 (2, 1, 'Awaiting Products');
+
+-- ru
+INSERT INTO `oc_return_status` (`return_status_id`, `language_id`, `name`) VALUES
+(1, 2, 'В ожидании'),
+(3, 2, 'Выполнен'),
+(2, 2, 'В ожидании Продуктов');
 
 -----------------------------------------------------------
 
@@ -3356,16 +3581,16 @@ INSERT INTO `oc_setting` (`store_id`, `code`, `key`, `value`, `serialized`) VALU
 (0, 'config', 'config_ftp_username', '', 0),
 (0, 'config', 'config_ftp_port', '21', 0),
 (0, 'config', 'config_ftp_hostname', '', 0),
-(0, 'config', 'config_meta_title', 'Your Store', 0),
-(0, 'config', 'config_meta_description', 'My Store', 0),
+(0, 'config', 'config_meta_title', 'Ваш магазин', 0),
+(0, 'config', 'config_meta_description', 'Мой магазин', 0),
 (0, 'config', 'config_meta_keyword', '', 0),
 (0, 'config', 'config_theme', 'default', 0),
 (0, 'config', 'config_layout_id', '4', 0),
-(0, 'config', 'config_country_id', '222', 0),
-(0, 'config', 'config_zone_id', '3563', 0),
-(0, 'config', 'config_language', 'en-gb', 0),
-(0, 'config', 'config_admin_language', 'en-gb', 0),
-(0, 'config', 'config_currency', 'USD', 0),
+(0, 'config', 'config_country_id', '176', 0),
+(0, 'config', 'config_zone_id', '2730', 0),
+(0, 'config', 'config_language', 'ru-ru', 0),
+(0, 'config', 'config_admin_language', 'ru-ru', 0),
+(0, 'config', 'config_currency', 'RUB', 0),
 (0, 'config', 'config_currency_auto', '1', 0),
 (0, 'config', 'config_length_class_id', '1', 0),
 (0, 'config', 'config_weight_class_id', '1', 0),
@@ -3385,7 +3610,7 @@ INSERT INTO `oc_setting` (`store_id`, `code`, `key`, `value`, `serialized`) VALU
 (0, 'config', 'config_customer_group_display', '["1"]', 1),
 (0, 'config', 'config_customer_price', '0', 0),
 (0, 'config', 'config_account_id', '3', 0),
-(0, 'config', 'config_invoice_prefix', 'INV-2013-00', 0),
+(0, 'config', 'config_invoice_prefix', 'INV-2020-00', 0),
 (0, 'config', 'config_api_id', '1', 0),
 (0, 'config', 'config_cart_weight', '1', 0),
 (0, 'config', 'config_checkout_guest', '1', 0),
@@ -3411,9 +3636,9 @@ INSERT INTO `oc_setting` (`store_id`, `code`, `key`, `value`, `serialized`) VALU
 (0, 'config', 'config_telephone', '123456789', 0),
 (0, 'config', 'config_email', 'demo@opencart.com', 0),
 (0, 'config', 'config_geocode', '', 0),
-(0, 'config', 'config_owner', 'Your Name', 0),
-(0, 'config', 'config_address', 'Address 1', 0),
-(0, 'config', 'config_name', 'Your Store', 0),
+(0, 'config', 'config_owner', 'Ваше имя', 0),
+(0, 'config', 'config_address', 'Адрес 1', 0),
+(0, 'config', 'config_name', 'Ваш магазин', 0),
 (0, 'config', 'config_seo_url', '0', 0),
 (0, 'config', 'config_file_max_size', '300000', 0),
 (0, 'config', 'config_file_ext_allowed', 'zip\r\ntxt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc', 0),
@@ -3563,11 +3788,19 @@ CREATE TABLE `oc_stock_status` (
 -- Dumping data for table `oc_stock_status`
 --
 
+-- en
 INSERT INTO `oc_stock_status` (`stock_status_id`, `language_id`, `name`) VALUES
 (7, 1, 'In Stock'),
 (8, 1, 'Pre-Order'),
 (5, 1, 'Out Of Stock'),
 (6, 1, '2-3 Days');
+
+-- ru
+INSERT INTO `oc_stock_status` (`stock_status_id`, `language_id`, `name`) VALUES
+(7, 2, 'В наличии'),
+(8, 2, 'Предварительный заказ'),
+(5, 2, 'Нет на складе'),
+(6, 2, '2-3 дня');
 
 -----------------------------------------------------------
 
@@ -3604,9 +3837,14 @@ CREATE TABLE `oc_tax_class` (
 -- Dumping data for table `oc_tax_class`
 --
 
+-- en
 INSERT INTO `oc_tax_class` (`tax_class_id`, `title`, `description`, `date_added`, `date_modified`) VALUES
 (9, 'Taxable Goods', 'Taxed goods', '2009-01-06 23:21:53', '2011-09-23 14:07:50'),
 (10, 'Downloadable Products', 'Downloadable', '2011-09-21 22:19:39', '2011-09-22 10:27:36');
+
+-- ru
+INSERT INTO `oc_tax_class` (`tax_class_id`, `title`, `description`, `date_added`, `date_modified`) VALUES
+(11, 'Налоги НДС', 'Налог на добавленную стоимость', '2020-04-26 21:00:00', '2020-04-26 21:00:00');
 
 -----------------------------------------------------------
 
@@ -3630,9 +3868,14 @@ CREATE TABLE `oc_tax_rate` (
 -- Dumping data for table `oc_tax_rate`
 --
 
+-- en
 INSERT INTO `oc_tax_rate` (`tax_rate_id`, `geo_zone_id`, `name`, `rate`, `type`, `date_added`, `date_modified`) VALUES
 (86, 3, 'VAT (20%)', '20.0000', 'P', '2011-03-09 21:17:10', '2011-09-22 22:24:29'),
 (87, 3, 'Eco Tax (-2.00)', '2.0000', 'F', '2011-09-21 21:49:23', '2011-09-23 00:40:19');
+
+-- ru
+INSERT INTO `oc_tax_rate` (`tax_rate_id`, `geo_zone_id`, `name`, `rate`, `type`, `date_added`, `date_modified`) VALUES
+(88, 5, 'НДС (20%)', '20.0000', 'P', '2020-04-26 21:00:00', '2020-04-26 21:00:00');
 
 -----------------------------------------------------------
 
@@ -3651,9 +3894,14 @@ CREATE TABLE `oc_tax_rate_to_customer_group` (
 -- Dumping data for table `oc_tax_rate_to_customer_group`
 --
 
+-- en
 INSERT INTO `oc_tax_rate_to_customer_group` (`tax_rate_id`, `customer_group_id`) VALUES
 (86, 1),
 (87, 1);
+
+-- ru
+INSERT INTO `oc_tax_rate_to_customer_group` (`tax_rate_id`, `customer_group_id`) VALUES
+(88, 1);
 
 -----------------------------------------------------------
 
@@ -3754,13 +4002,14 @@ CREATE TABLE `oc_seo_url` (
 -- Dumping data for table `oc_seo_url`
 --
 
+-- en
 INSERT INTO `oc_seo_url` (`seo_url_id`, `store_id`, `language_id`, `query`, `keyword`) VALUES
 (824, 0, 1, 'product_id=48', 'ipod-classic'),
 (836, 0, 1, 'category_id=20', 'desktops'),
 (834, 0, 1, 'category_id=26', 'pc'),
 (835, 0, 1, 'category_id=27', 'mac'),
 (730, 0, 1, 'manufacturer_id=8', 'apple'),
-(772, 0, 1, 'information_id=4', 'about_us'),
+(772, 0, 1, 'information_id=4', 'about-us'),
 (768, 0, 1, 'product_id=42', 'test'),
 (789, 0, 1, 'category_id=34', 'mp3-players'),
 (781, 0, 1, 'category_id=36', 'test2'),
@@ -3823,6 +4072,76 @@ INSERT INTO `oc_seo_url` (`seo_url_id`, `store_id`, `language_id`, `query`, `key
 (842, 0, 1, 'information_id=3', 'privacy'),
 (843, 0, 1, 'information_id=5', 'terms');
 
+-- ru
+INSERT INTO `oc_seo_url` (`seo_url_id`, `store_id`, `language_id`, `query`, `keyword`) VALUES
+(1024, 0, 2, 'product_id=48', 'ipod-classic_ru'),
+(1036, 0, 2, 'category_id=20', 'desktops_ru'),
+(1034, 0, 2, 'category_id=26', 'pc_ru'),
+(1035, 0, 2, 'category_id=27', 'mac_ru'),
+(930, 0, 2, 'manufacturer_id=8', 'apple_ru'),
+(972, 0, 2, 'information_id=4', 'about-us_ru'),
+(968, 0, 2, 'product_id=42', 'test_ru'),
+(989, 0, 2, 'category_id=34', 'mp3-players_ru'),
+(981, 0, 2, 'category_id=36', 'test2_ru'),
+(974, 0, 2, 'category_id=18', 'laptop-notebook_ru'),
+(975, 0, 2, 'category_id=46', 'macs_ru'),
+(976, 0, 2, 'category_id=45', 'windows_ru'),
+(977, 0, 2, 'category_id=25', 'component_ru'),
+(978, 0, 2, 'category_id=29', 'mouse_ru'),
+(979, 0, 2, 'category_id=28', 'monitor_ru'),
+(980, 0, 2, 'category_id=35', 'test1_ru'),
+(982, 0, 2, 'category_id=30', 'printer_ru'),
+(983, 0, 2, 'category_id=31', 'scanner_ru'),
+(984, 0, 2, 'category_id=32', 'web-camera_ru'),
+(985, 0, 2, 'category_id=57', 'tablet_ru'),
+(986, 0, 2, 'category_id=17', 'software_ru'),
+(987, 0, 2, 'category_id=24', 'smartphone_ru'),
+(988, 0, 2, 'category_id=33', 'camera_ru'),
+(990, 0, 2, 'category_id=43', 'test11_ru'),
+(991, 0, 2, 'category_id=44', 'test12_ru'),
+(992, 0, 2, 'category_id=47', 'test15_ru'),
+(993, 0, 2, 'category_id=48', 'test16_ru'),
+(994, 0, 2, 'category_id=49', 'test17_ru'),
+(995, 0, 2, 'category_id=50', 'test18_ru'),
+(996, 0, 2, 'category_id=51', 'test19_ru'),
+(997, 0, 2, 'category_id=52', 'test20_ru'),
+(998, 0, 2, 'category_id=58', 'test25_ru'),
+(999, 0, 2, 'category_id=53', 'test21_ru'),
+(1000, 0, 2, 'category_id=54', 'test22_ru'),
+(1001, 0, 2, 'category_id=55', 'test23_ru'),
+(1002, 0, 2, 'category_id=56', 'test24_ru'),
+(1003, 0, 2, 'category_id=38', 'test4_ru'),
+(1004, 0, 2, 'category_id=37', 'test5_ru'),
+(1005, 0, 2, 'category_id=39', 'test6_ru'),
+(1006, 0, 2, 'category_id=40', 'test7_ru'),
+(1007, 0, 2, 'category_id=41', 'test8_ru'),
+(1008, 0, 2, 'category_id=42', 'test9_ru'),
+(1009, 0, 2, 'product_id=30', 'canon-eos-5d_ru'),
+(1040, 0, 2, 'product_id=47', 'hp-lp3065_ru'),
+(1011, 0, 2, 'product_id=28', 'htc-touch-hd_ru'),
+(1012, 0, 2, 'product_id=43', 'macbook_ru'),
+(1013, 0, 2, 'product_id=44', 'macbook-air_ru'),
+(1014, 0, 2, 'product_id=45', 'macbook-pro_ru'),
+(1016, 0, 2, 'product_id=31', 'nikon-d300_ru'),
+(1017, 0, 2, 'product_id=29', 'palm-treo-pro_ru'),
+(1018, 0, 2, 'product_id=35', 'product-8_ru'),
+(1019, 0, 2, 'product_id=49', 'samsung-galaxy-tab-10-1_ru'),
+(1020, 0, 2, 'product_id=33', 'samsung-syncmaster-941bw_ru'),
+(1021, 0, 2, 'product_id=46', 'sony-vaio_ru'),
+(1037, 0, 2, 'product_id=41', 'imac_ru'),
+(1023, 0, 2, 'product_id=40', 'iphone_ru'),
+(1025, 0, 2, 'product_id=36', 'ipod-nano_ru'),
+(1026, 0, 2, 'product_id=34', 'ipod-shuffle_ru'),
+(1027, 0, 2, 'product_id=32', 'ipod-touch_ru'),
+(1028, 0, 2, 'manufacturer_id=9', 'canon_ru'),
+(1029, 0, 2, 'manufacturer_id=5', 'htc_ru'),
+(1030, 0, 2, 'manufacturer_id=7', 'hewlett-packard_ru'),
+(1031, 0, 2, 'manufacturer_id=6', 'palm_ru'),
+(1032, 0, 2, 'manufacturer_id=10', 'sony_ru'),
+(1041, 0, 2, 'information_id=6', 'delivery_ru'),
+(1042, 0, 2, 'information_id=3', 'privacy_ru'),
+(1043, 0, 2, 'information_id=5', 'terms_ru');
+
 -----------------------------------------------------------
 
 --
@@ -3866,7 +4185,8 @@ CREATE TABLE `oc_user_group` (
 --
 
 INSERT INTO `oc_user_group` (`user_group_id`, `name`, `permission`) VALUES
-(1, 'Administrator', '{"access":["catalog\\/attribute","catalog\\/attribute_group","catalog\\/category","catalog\\/download","catalog\\/filter","catalog\\/information","catalog\\/manufacturer","catalog\\/option","catalog\\/product","catalog\\/recurring","catalog\\/review","common\\/column_left","common\\/developer","common\\/filemanager","common\\/profile","common\\/security","customer\\/custom_field","customer\\/customer","customer\\/customer_approval","customer\\/customer_group","design\\/banner","design\\/layout","design\\/theme","design\\/translation","design\\/seo_url","event\\/statistics","event\\/theme","extension\\/advertise\\/google","extension\\/analytics\\/google","extension\\/captcha\\/basic","extension\\/captcha\\/google","extension\\/dashboard\\/activity","extension\\/dashboard\\/chart","extension\\/dashboard\\/customer","extension\\/dashboard\\/map","extension\\/dashboard\\/online","extension\\/dashboard\\/order","extension\\/dashboard\\/recent","extension\\/dashboard\\/sale","extension\\/extension\\/advertise","extension\\/extension\\/analytics","extension\\/extension\\/captcha","extension\\/extension\\/dashboard","extension\\/extension\\/feed","extension\\/extension\\/fraud","extension\\/extension\\/menu","extension\\/extension\\/module","extension\\/extension\\/payment","extension\\/extension\\/report","extension\\/extension\\/shipping","extension\\/extension\\/theme","extension\\/extension\\/total","extension\\/feed\\/google_base","extension\\/feed\\/google_sitemap","extension\\/feed\\/openbaypro","extension\\/fraud\\/fraudlabspro","extension\\/fraud\\/ip","extension\\/fraud\\/maxmind","extension\\/marketing\\/remarketing","extension\\/module\\/account","extension\\/module\\/amazon_login","extension\\/module\\/amazon_pay","extension\\/module\\/banner","extension\\/module\\/bestseller","extension\\/module\\/carousel","extension\\/module\\/category","extension\\/module\\/divido_calculator","extension\\/module\\/ebay_listing","extension\\/module\\/featured","extension\\/module\\/filter","extension\\/module\\/google_hangouts","extension\\/module\\/html","extension\\/module\\/information","extension\\/module\\/klarna_checkout_module","extension\\/module\\/latest","extension\\/module\\/laybuy_layout","extension\\/module\\/pilibaba_button","extension\\/module\\/sagepay_direct_cards","extension\\/module\\/sagepay_server_cards","extension\\/module\\/slideshow","extension\\/module\\/special","extension\\/module\\/store","extension\\/openbay\\/amazon","extension\\/openbay\\/amazon_listing","extension\\/openbay\\/amazon_product","extension\\/openbay\\/amazonus","extension\\/openbay\\/amazonus_listing","extension\\/openbay\\/amazonus_product","extension\\/openbay\\/ebay","extension\\/openbay\\/ebay_profile","extension\\/openbay\\/ebay_template","extension\\/openbay\\/etsy","extension\\/openbay\\/etsy_product","extension\\/openbay\\/etsy_shipping","extension\\/openbay\\/etsy_shop","extension\\/openbay\\/fba","extension\\/payment\\/amazon_login_pay","extension\\/payment\\/authorizenet_aim","extension\\/payment\\/authorizenet_sim","extension\\/payment\\/bank_transfer","extension\\/payment\\/bluepay_hosted","extension\\/payment\\/bluepay_redirect","extension\\/payment\\/cardconnect","extension\\/payment\\/cardinity","extension\\/payment\\/cheque","extension\\/payment\\/cod","extension\\/payment\\/divido","extension\\/payment\\/eway","extension\\/payment\\/firstdata","extension\\/payment\\/firstdata_remote","extension\\/payment\\/free_checkout","extension\\/payment\\/g2apay","extension\\/payment\\/globalpay","extension\\/payment\\/globalpay_remote","extension\\/payment\\/klarna_account","extension\\/payment\\/klarna_checkout","extension\\/payment\\/klarna_invoice","extension\\/payment\\/laybuy","extension\\/payment\\/liqpay","extension\\/payment\\/nochex","extension\\/payment\\/paymate","extension\\/payment\\/paypoint","extension\\/payment\\/payza","extension\\/payment\\/perpetual_payments","extension\\/payment\\/pilibaba","extension\\/payment\\/realex","extension\\/payment\\/realex_remote","extension\\/payment\\/sagepay_direct","extension\\/payment\\/sagepay_server","extension\\/payment\\/sagepay_us","extension\\/payment\\/securetrading_pp","extension\\/payment\\/securetrading_ws","extension\\/payment\\/skrill","extension\\/payment\\/twocheckout","extension\\/payment\\/web_payment_software","extension\\/payment\\/worldpay","extension\\/module\\/pp_braintree_button","extension\\/payment\\/pp_braintree","extension\\/report\\/customer_activity","extension\\/report\\/customer_order","extension\\/report\\/customer_reward","extension\\/report\\/customer_search","extension\\/report\\/customer_transaction","extension\\/report\\/marketing","extension\\/report\\/product_purchased","extension\\/report\\/product_viewed","extension\\/report\\/sale_coupon","extension\\/report\\/sale_order","extension\\/report\\/sale_return","extension\\/report\\/sale_shipping","extension\\/report\\/sale_tax","extension\\/shipping\\/auspost","extension\\/shipping\\/ec_ship","extension\\/shipping\\/fedex","extension\\/shipping\\/flat","extension\\/shipping\\/free","extension\\/shipping\\/item","extension\\/shipping\\/parcelforce_48","extension\\/shipping\\/pickup","extension\\/shipping\\/royal_mail","extension\\/shipping\\/ups","extension\\/shipping\\/usps","extension\\/shipping\\/weight","extension\\/theme\\/default","extension\\/total\\/coupon","extension\\/total\\/credit","extension\\/total\\/handling","extension\\/total\\/klarna_fee","extension\\/total\\/low_order_fee","extension\\/total\\/reward","extension\\/total\\/shipping","extension\\/total\\/sub_total","extension\\/total\\/tax","extension\\/total\\/total","extension\\/total\\/voucher","localisation\\/country","localisation\\/currency","localisation\\/geo_zone","localisation\\/language","localisation\\/length_class","localisation\\/location","localisation\\/order_status","localisation\\/return_action","localisation\\/return_reason","localisation\\/return_status","localisation\\/stock_status","localisation\\/tax_class","localisation\\/tax_rate","localisation\\/weight_class","localisation\\/zone","mail\\/affiliate","mail\\/customer","mail\\/forgotten","mail\\/return","mail\\/reward","mail\\/transaction","marketing\\/contact","marketing\\/coupon","marketing\\/marketing","marketplace\\/api","marketplace\\/event","marketplace\\/extension","marketplace\\/install","marketplace\\/installer","marketplace\\/marketplace","marketplace\\/modification","marketplace\\/openbay","report\\/online","report\\/report","report\\/statistics","sale\\/order","sale\\/recurring","sale\\/return","sale\\/voucher","sale\\/voucher_theme","setting\\/setting","setting\\/store","startup\\/error","startup\\/event","startup\\/login","startup\\/permission","startup\\/router","startup\\/sass","startup\\/startup","tool\\/backup","tool\\/log","tool\\/upload","user\\/api","user\\/user","user\\/user_permission"],"modify":["catalog\\/attribute","catalog\\/attribute_group","catalog\\/category","catalog\\/download","catalog\\/filter","catalog\\/information","catalog\\/manufacturer","catalog\\/option","catalog\\/product","catalog\\/recurring","catalog\\/review","common\\/column_left","common\\/developer","common\\/filemanager","common\\/profile","common\\/security","customer\\/custom_field","customer\\/customer","customer\\/customer_approval","customer\\/customer_group","design\\/banner","design\\/layout","design\\/theme","design\\/translation","design\\/seo_url","event\\/statistics","event\\/theme","extension\\/advertise\\/google","extension\\/analytics\\/google","extension\\/captcha\\/basic","extension\\/captcha\\/google","extension\\/dashboard\\/activity","extension\\/dashboard\\/chart","extension\\/dashboard\\/customer","extension\\/dashboard\\/map","extension\\/dashboard\\/online","extension\\/dashboard\\/order","extension\\/dashboard\\/recent","extension\\/dashboard\\/sale","extension\\/extension\\/advertise","extension\\/extension\\/analytics","extension\\/extension\\/captcha","extension\\/extension\\/dashboard","extension\\/extension\\/feed","extension\\/extension\\/fraud","extension\\/extension\\/menu","extension\\/extension\\/module","extension\\/extension\\/payment","extension\\/extension\\/report","extension\\/extension\\/shipping","extension\\/extension\\/theme","extension\\/extension\\/total","extension\\/feed\\/google_base","extension\\/feed\\/google_sitemap","extension\\/feed\\/openbaypro","extension\\/fraud\\/fraudlabspro","extension\\/fraud\\/ip","extension\\/fraud\\/maxmind","extension\\/marketing\\/remarketing","extension\\/module\\/account","extension\\/module\\/amazon_login","extension\\/module\\/amazon_pay","extension\\/module\\/banner","extension\\/module\\/bestseller","extension\\/module\\/carousel","extension\\/module\\/category","extension\\/module\\/divido_calculator","extension\\/module\\/ebay_listing","extension\\/module\\/featured","extension\\/module\\/filter","extension\\/module\\/google_hangouts","extension\\/module\\/html","extension\\/module\\/information","extension\\/module\\/klarna_checkout_module","extension\\/module\\/latest","extension\\/module\\/laybuy_layout","extension\\/module\\/pilibaba_button","extension\\/module\\/sagepay_direct_cards","extension\\/module\\/sagepay_server_cards","extension\\/module\\/slideshow","extension\\/module\\/special","extension\\/module\\/store","extension\\/openbay\\/amazon","extension\\/openbay\\/amazon_listing","extension\\/openbay\\/amazon_product","extension\\/openbay\\/amazonus","extension\\/openbay\\/amazonus_listing","extension\\/openbay\\/amazonus_product","extension\\/openbay\\/ebay","extension\\/openbay\\/ebay_profile","extension\\/openbay\\/ebay_template","extension\\/openbay\\/etsy","extension\\/openbay\\/etsy_product","extension\\/openbay\\/etsy_shipping","extension\\/openbay\\/etsy_shop","extension\\/openbay\\/fba","extension\\/payment\\/amazon_login_pay","extension\\/payment\\/authorizenet_aim","extension\\/payment\\/authorizenet_sim","extension\\/payment\\/bank_transfer","extension\\/payment\\/bluepay_hosted","extension\\/payment\\/bluepay_redirect","extension\\/payment\\/cardconnect","extension\\/payment\\/cardinity","extension\\/payment\\/cheque","extension\\/payment\\/cod","extension\\/payment\\/divido","extension\\/payment\\/eway","extension\\/payment\\/firstdata","extension\\/payment\\/firstdata_remote","extension\\/payment\\/free_checkout","extension\\/payment\\/g2apay","extension\\/payment\\/globalpay","extension\\/payment\\/globalpay_remote","extension\\/payment\\/klarna_account","extension\\/payment\\/klarna_checkout","extension\\/payment\\/klarna_invoice","extension\\/payment\\/laybuy","extension\\/payment\\/liqpay","extension\\/payment\\/nochex","extension\\/payment\\/paymate","extension\\/payment\\/paypoint","extension\\/payment\\/payza","extension\\/payment\\/perpetual_payments","extension\\/payment\\/pilibaba","extension\\/payment\\/realex","extension\\/payment\\/realex_remote","extension\\/payment\\/sagepay_direct","extension\\/payment\\/sagepay_server","extension\\/payment\\/sagepay_us","extension\\/payment\\/securetrading_pp","extension\\/payment\\/securetrading_ws","extension\\/payment\\/skrill","extension\\/payment\\/twocheckout","extension\\/payment\\/web_payment_software","extension\\/payment\\/worldpay","extension\\/module\\/pp_braintree_button","extension\\/payment\\/pp_braintree","extension\\/report\\/customer_activity","extension\\/report\\/customer_order","extension\\/report\\/customer_reward","extension\\/report\\/customer_search","extension\\/report\\/customer_transaction","extension\\/report\\/marketing","extension\\/report\\/product_purchased","extension\\/report\\/product_viewed","extension\\/report\\/sale_coupon","extension\\/report\\/sale_order","extension\\/report\\/sale_return","extension\\/report\\/sale_shipping","extension\\/report\\/sale_tax","extension\\/shipping\\/auspost","extension\\/shipping\\/ec_ship","extension\\/shipping\\/fedex","extension\\/shipping\\/flat","extension\\/shipping\\/free","extension\\/shipping\\/item","extension\\/shipping\\/parcelforce_48","extension\\/shipping\\/pickup","extension\\/shipping\\/royal_mail","extension\\/shipping\\/ups","extension\\/shipping\\/usps","extension\\/shipping\\/weight","extension\\/theme\\/default","extension\\/total\\/coupon","extension\\/total\\/credit","extension\\/total\\/handling","extension\\/total\\/klarna_fee","extension\\/total\\/low_order_fee","extension\\/total\\/reward","extension\\/total\\/shipping","extension\\/total\\/sub_total","extension\\/total\\/tax","extension\\/total\\/total","extension\\/total\\/voucher","localisation\\/country","localisation\\/currency","localisation\\/geo_zone","localisation\\/language","localisation\\/length_class","localisation\\/location","localisation\\/order_status","localisation\\/return_action","localisation\\/return_reason","localisation\\/return_status","localisation\\/stock_status","localisation\\/tax_class","localisation\\/tax_rate","localisation\\/weight_class","localisation\\/zone","mail\\/affiliate","mail\\/customer","mail\\/forgotten","mail\\/return","mail\\/reward","mail\\/transaction","marketing\\/contact","marketing\\/coupon","marketing\\/marketing","marketplace\\/event","marketplace\\/api","marketplace\\/extension","marketplace\\/install","marketplace\\/installer","marketplace\\/marketplace","marketplace\\/modification","marketplace\\/openbay","report\\/online","report\\/report","report\\/statistics","sale\\/order","sale\\/recurring","sale\\/return","sale\\/voucher","sale\\/voucher_theme","setting\\/setting","setting\\/store","startup\\/error","startup\\/event","startup\\/login","startup\\/permission","startup\\/router","startup\\/sass","startup\\/startup","tool\\/backup","tool\\/log","tool\\/upload","user\\/api","user\\/user","user\\/user_permission"]}'),
+(1, 'Administrator', '{"access":["catalog\\/attribute","catalog\\/attribute_group","catalog\\/category","catalog\\/download","catalog\\/filter","catalog\\/information","catalog\\/manufacturer","catalog\\/option","catalog\\/product","catalog\\/recurring","catalog\\/review","common\\/column_left","common\\/developer","common\\/filemanager","common\\/profile","common\\/security","customer\\/custom_field","customer\\/customer","customer\\/customer_approval","customer\\/customer_group","design\\/banner","design\\/layout","design\\/theme","design\\/translation","design\\/seo_url","event\\/statistics","event\\/theme","extension\\/advertise\\/google","extension\\/analytics\\/google","extension\\/captcha\\/basic","extension\\/captcha\\/google","extension\\/dashboard\\/activity","extension\\/dashboard\\/chart","extension\\/dashboard\\/customer","extension\\/dashboard\\/map","extension\\/dashboard\\/online","extension\\/dashboard\\/order","extension\\/dashboard\\/recent","extension\\/dashboard\\/sale","extension\\/extension\\/advertise","extension\\/extension\\/analytics","extension\\/extension\\/captcha","extension\\/extension\\/dashboard","extension\\/extension\\/feed","extension\\/extension\\/fraud","extension\\/extension\\/menu","extension\\/extension\\/module","extension\\/extension\\/payment","extension\\/extension\\/report","extension\\/extension\\/shipping","extension\\/extension\\/theme","extension\\/extension\\/total","extension\\/feed\\/google_base","extension\\/feed\\/google_sitemap","extension\\/feed\\/openbaypro","extension\\/fraud\\/fraudlabspro","extension\\/fraud\\/ip","extension\\/fraud\\/maxmind","extension\\/marketing\\/remarketing","extension\\/module\\/account","extension\\/module\\/amazon_login","extension\\/module\\/amazon_pay","extension\\/module\\/banner","extension\\/module\\/bestseller","extension\\/module\\/carousel","extension\\/module\\/category","extension\\/module\\/divido_calculator","extension\\/module\\/ebay_listing","extension\\/module\\/featured","extension\\/module\\/filter","extension\\/module\\/google_hangouts","extension\\/module\\/html","extension\\/module\\/information","extension\\/module\\/klarna_checkout_module","extension\\/module\\/latest","extension\\/module\\/laybuy_layout","extension\\/module\\/pilibaba_button","extension\\/module\\/sagepay_direct_cards","extension\\/module\\/sagepay_server_cards","extension\\/module\\/slideshow","extension\\/module\\/special","extension\\/module\\/store","extension\\/openbay\\/amazon","extension\\/openbay\\/amazon_listing","extension\\/openbay\\/amazon_product","extension\\/openbay\\/amazonus","extension\\/openbay\\/amazonus_listing","extension\\/openbay\\/amazonus_product","extension\\/openbay\\/ebay","extension\\/openbay\\/ebay_profile","extension\\/openbay\\/ebay_template","extension\\/openbay\\/etsy","extension\\/openbay\\/etsy_product","extension\\/openbay\\/etsy_shipping","extension\\/openbay\\/etsy_shop","extension\\/openbay\\/fba","extension\\/payment\\/amazon_login_pay","extension\\/payment\\/authorizenet_aim","extension\\/payment\\/authorizenet_sim","extension\\/payment\\/bank_transfer","extension\\/payment\\/bluepay_hosted","extension\\/payment\\/bluepay_redirect","extension\\/payment\\/cardconnect","extension\\/payment\\/cardinity","extension\\/payment\\/cheque","extension\\/payment\\/cod","extension\\/payment\\/divido","extension\\/payment\\/eway","extension\\/payment\\/firstdata","extension\\/payment\\/firstdata_remote","extension\\/payment\\/free_checkout","extension\\/payment\\/g2apay","extension\\/payment\\/globalpay","extension\\/payment\\/globalpay_remote","extension\\/payment\\/klarna_account","extension\\/payment\\/klarna_checkout","extension\\/payment\\/klarna_invoice","extension\\/payment\\/laybuy","extension\\/payment\\/liqpay","extension\\/payment\\/nochex","extension\\/payment\\/paymate","extension\\/payment\\/paypoint","extension\\/payment\\/payza","extension\\/payment\\/perpetual_payments","extension\\/payment\\/pilibaba","extension\\/payment\\/realex","extension\\/payment\\/realex_remote","extension\\/payment\\/sagepay_direct","extension\\/payment\\/sagepay_server","extension\\/payment\\/sagepay_us","extension\\/payment\\/securetrading_pp","extension\\/payment\\/securetrading_ws","extension\\/payment\\/skrill","extension\\/payment\\/twocheckout","extension\\/payment\\/web_payment_software","extension\\/payment\\/worldpay","extension\\/module\\/pp_braintree_button","extension\\/payment\\/pp_braintree","extension\\/report\\/customer_activity","extension\\/report\\/customer_order","extension\\/report\\/customer_reward","extension\\/report\\/customer_search","extension\\/report\\/customer_transaction","extension\\/report\\/marketing","extension\\/report\\/product_purchased","extension\\/report\\/product_viewed","extension\\/report\\/sale_coupon","extension\\/report\\/sale_order","extension\\/report\\/sale_return","extension\\/report\\/sale_shipping","extension\\/report\\/sale_tax","extension\\/shipping\\/auspost","extension\\/shipping\\/ec_ship","extension\\/shipping\\/fedex","extension\\/shipping\\/flat","extension\\/shipping\\/free","extension\\/shipping\\/item","extension\\/shipping\\/parcelforce_48","extension\\/shipping\\/pickup","extension\\/shipping\\/royal_mail","extension\\/shipping\\/ups","extension\\/shipping\\/usps","extension\\/shipping\\/weight","extension\\/theme\\/default","extension\\/total\\/coupon","extension\\/total\\/credit","extension\\/total\\/handling","extension\\/total\\/klarna_fee","extension\\/total\\/low_order_fee","extension\\/total\\/reward","extension\\/total\\/shipping","extension\\/total\\/sub_total","extension\\/total\\/tax","extension\\/total\\/total","extension\\/total\\/voucher","localisation\\/country","localisation\\/currency","localisation\\/geo_zone","localisation\\/language","localisation\\/length_class","localisation\\/location","localisation\\/order_status","localisation\\/return_action","localisation\\/return_reason","localisation\\/return_status","localisation\\/stock_status","localisation\\/tax_class","localisation\\/tax_rate","localisation\\/weight_class","localisation\\/zone","mail\\/affiliate","mail\\/customer","mail\\/forgotten","mail\\/return","mail\\/reward","mail\\/transaction","marketing\\/contact","marketing\\/coupon","marketing\\/marketing","marketplace\\/api","marketplace\\/event","marketplace\\/extension","marketplace\\/install","marketplace\\/installer","marketplace\\/marketplace","marketplace\\/modification","marketplace\\/openbay","report\\/online","report\\/report","report\\/statistics","sale\\/order","sale\\/recurring","sale\\/return","sale\\/voucher","sale\\/voucher_theme","setting\\/setting","setting\\/store","startup\\/error","startup\\/event","startup\\/login","startup\\/permission","startup\\/router","startup\\/sass","startup\\/startup","tool\\/backup","tool\\/log","tool\\/upload","user\\/api","user\\/user","user\\/user_permission"],"modify":["catalog\\/attribute","catalog\\/attribute_group","catalog\\/category","catalog\\/download","catalog\\/filter","catalog\\/information","catalog\\/manufacturer","catalog\\/option","catalog\\/product","catalog\\/recurring","catalog\\/review","common\\/column_left","common\\/developer","common\\/filemanager","common\\/profile","common\\/security","customer\\/custom_field","customer\\/customer","customer\\/customer_approval","customer\\/customer_group","design\\/banner","design\\/layout","design\\/theme","design\\/translation","design\\/seo_url","event\\/statistics","event\\/theme","extension\\/advertise\\/google","extension\\/analytics\\/google","extension\\/captcha\\/basic","extension\\/captcha\\/google","extension\\/dashboard\\/activity","extension\\/dashboard\\/chart","extension\\/dashboard\\/customer","extension\\/dashboard\\/map","extension\\/dashboard\\/online","extension\\/dashboard\\/order","extension\\/dashboard\\/recent","extension\\/dashboard\\/sale","extension\\/extension\\/advertise","extension\\/extension\\/analytics","extension\\/extension\\/captcha","extension\\/extension\\/dashboard","extension\\/extension\\/feed","extension\\/extension\\/fraud","extension\\/extension\\/menu","extension\\/extension\\/module","extension\\/extension\\/payment","extension\\/extension\\/report","extension\\/extension\\/shipping","extension\\/extension\\/theme","extension\\/extension\\/total","extension\\/feed\\/google_base","extension\\/feed\\/google_sitemap","extension\\/feed\\/openbaypro","extension\\/fraud\\/fraudlabspro","extension\\/fraud\\/ip","extension\\/fraud\\/maxmind","extension\\/marketing\\/remarketing","extension\\/module\\/account","extension\\/module\\/amazon_login","extension\\/module\\/amazon_pay","extension\\/module\\/banner","extension\\/module\\/bestseller","extension\\/module\\/carousel","extension\\/module\\/category","extension\\/module\\/divido_calculator","extension\\/module\\/ebay_listing","extension\\/module\\/featured","extension\\/module\\/filter","extension\\/module\\/google_hangouts","extension\\/module\\/html","extension\\/module\\/information","extension\\/module\\/klarna_checkout_module","extension\\/module\\/latest","extension\\/module\\/laybuy_layout","extension\\/module\\/pilibaba_button","extension\\/module\\/sagepay_direct_cards","extension\\/module\\/sagepay_server_cards","extension\\/module\\/slideshow","extension\\/module\\/special","extension\\/module\\/store","extension\\/openbay\\/amazon","extension\\/openbay\\/amazon_listing","extension\\/openbay\\/amazon_product","extension\\/openbay\\/amazonus","extension\\/openbay\\/amazonus_listing","extension\\/openbay\\/amazonus_product","extension\\/openbay\\/ebay","extension\\/openbay\\/ebay_profile","extension\\/openbay\\/ebay_template","extension\\/openbay\\/etsy","extension\\/openbay\\/etsy_product","extension\\/openbay\\/etsy_shipping","extension\\/openbay\\/etsy_shop","extension\\/openbay\\/fba","extension\\/payment\\/amazon_login_pay","extension\\/payment\\/authorizenet_aim","extension\\/payment\\/authorizenet_sim","extension\\/payment\\/bank_transfer","extension\\/payment\\/bluepay_hosted","extension\\/payment\\/bluepay_redirect","extension\\/payment\\/cardconnect","extension\\/payment\\/cardinity","extension\\/payment\\/cheque","extension\\/payment\\/cod","extension\\/payment\\/divido","extension\\/payment\\/eway","extension\\/payment\\/firstdata","extension\\/payment\\/firstdata_remote","extension\\/payment\\/free_checkout","extension\\/payment\\/g2apay","extension\\/payment\\/globalpay","extension\\/payment\\/globalpay_remote","extension\\/payment\\/klarna_account","extension\\/payment\\/klarna_checkout","extension\\/payment\\/klarna_invoice","extension\\/payment\\/laybuy","extension\\/payment\\/liqpay","extension\\/payment\\/nochex","extension\\/payment\\/paymate","extension\\/payment\\/paypoint","extension\\/payment\\/payza","extension\\/payment\\/perpetual_payments","extension\\/payment\\/pilibaba","extension\\/payment\\/realex","extension\\/payment\\/realex_remote","extension\\/payment\\/sagepay_direct","extension\\/payment\\/sagepay_server","extension\\/payment\\/sagepay_us","extension\\/payment\\/securetrading_pp","extension\\/payment\\/securetrading_ws","extension\\/payment\\/skrill","extension\\/payment\\/twocheckout","extension\\/payment\\/web_payment_software","extension\\/payment\\/worldpay","extension\\/module\\/pp_braintree_button","extension\\/payment\\/pp_braintree","extension\\/report\\/customer_activity","extension\\/report\\/customer_order","extension\\/report\\/customer_reward","extension\\/report\\/customer_search","extension\\/report\\/customer_transaction","extension\\/report\\/marketing","extension\\/report\\/product_purchased","extension\\/report\\/product_viewed","extension\\/report\\/sale_coupon","extension\\/report\\/sale_order","extension\\/report\\/sale_return","extension\\/report\\/sale_shipping","extension\\/report\\/sale_tax","extension\\/shipping\\/auspost","extension\\/shipping\\/ec_ship","extension\\/shipping\\/fedex","extension\\/shipping\\/flat","extension\\/shipping\\/free","extension\\/shipping\\/item","extension\\/shipping\\/parcelforce_48","extension\\/shipping\\/pickup","extension\\/shipping\\/royal_mail","extension\\/shipping\\/ups","extension\\/shipping\\/usps","extension\\/shipping\\/weight","extension\\/theme\\/default","extension\\/total\\/coupon","extension\\/total\\/credit","extension\\/total\\/handling","extension\\/total\\/klarna_fee","extension\\/total\\/low_order_fee","extension\\/total\\/reward","extension\\/total\\/shipping","extension\\/total\\/sub_total","extension\\/total\\/tax","extension\\/total\\/total","extension\\/total\\/voucher","localisation\\/country","localisation\\/currency","localisation\\/geo_zone","localisation\\/language","localisation\\/length_class","localisation\\/location","localisation\\/order_status","localisation\\/return_action","localisation\\/return_reason","localisation\\/return_status","localisation\\/stock_status","localisation\\/tax_class","localisation\\/tax_rate","localisation\\/weight_class","localisation\\/zone","mail\\/affiliate","mail\\/customer","mail\\/forgotten","mail\\/return","mail\\/reward","mail\\/transaction","marketing\\/contact","marketing\\/coupon","marketing\\/marketing","marketplace\\/event","marketplace\\/api","marketplace\\/extension","marketplace\\/install","marketplace\\/installer","marketplace\\/marketplace","marketplace\\/modification","marketplace\\/openbay","report\\/online","report\\/report","report\\/statistics","sale\\/order","sale\\/recurring","sale\\/return","sale\\/voucher","sale\\/voucher_theme","setting\\/setting","setting\\/store","startup\\/error","startup\\/event","startup\\/login","startup\\/permission","startup\\/router","startup\\/sass","startup\\/startup","tool\\/backup","tool\\/log","tool\\/upload","user\\/api","user\\/user","user\\/user_permission"]}'
+),
 (10, 'Demonstration', '');
 
 -----------------------------------------------------------
@@ -3948,10 +4268,17 @@ CREATE TABLE `oc_voucher_theme_description` (
 -- Dumping data for table `oc_voucher_theme_description`
 --
 
+-- en
 INSERT INTO `oc_voucher_theme_description` (`voucher_theme_id`, `language_id`, `name`) VALUES
 (6, 1, 'Christmas'),
 (7, 1, 'Birthday'),
 (8, 1, 'General');
+
+-- ru
+INSERT INTO `oc_voucher_theme_description` (`voucher_theme_id`, `language_id`, `name`) VALUES
+(6, 2, 'Рождество'),
+(7, 2, 'День Рождения'),
+(8, 2, 'Общий');
 
 -----------------------------------------------------------
 
@@ -3995,11 +4322,19 @@ CREATE TABLE `oc_weight_class_description` (
 -- Dumping data for table `oc_weight_class_description`
 --
 
+-- en
 INSERT INTO `oc_weight_class_description` (`weight_class_id`, `language_id`, `title`, `unit`) VALUES
 (1, 1, 'Kilogram', 'kg'),
 (2, 1, 'Gram', 'g'),
 (5, 1, 'Pound ', 'lb'),
 (6, 1, 'Ounce', 'oz');
+
+-- ru
+INSERT INTO `oc_weight_class_description` (`weight_class_id`, `language_id`, `title`, `unit`) VALUES
+(1, 2, 'Килограмм', 'кг'),
+(2, 2, 'Грамм', 'г'),
+(5, 2, 'Фунт ', 'фунт'),
+(6, 2, 'Унция', 'унц');
 
 -----------------------------------------------------------
 
@@ -4358,13 +4693,13 @@ INSERT INTO `oc_zone` (`zone_id`, `country_id`, `name`, `code`, `status`) VALUES
 (334, 19, 'Saint Peter', 'PET', 1),
 (335, 19, 'Saint Philip', 'PHI', 1),
 (336, 19, 'Saint Thomas', 'THO', 1),
-(337, 20, 'Brestskaya (Brest)', 'BR', 1),
-(338, 20, 'Homyel''skaya (Homyel'')', 'HO', 1),
-(339, 20, 'Horad Minsk', 'HM', 1),
-(340, 20, 'Hrodzyenskaya (Hrodna)', 'HR', 1),
-(341, 20, 'Mahilyowskaya (Mahilyow)', 'MA', 1),
-(342, 20, 'Minskaya', 'MI', 1),
-(343, 20, 'Vitsyebskaya (Vitsyebsk)', 'VI', 1),
+(337, 20, 'Брестская (Брест)', 'BR', 1),
+(338, 20, 'Гомельская (Гомель)', 'HO', 1),
+(339, 20, 'Минск', 'HM', 1),
+(340, 20, 'Гродненская (Гродно)', 'HR', 1),
+(341, 20, 'Могилевская (Могилев)', 'MA', 1),
+(342, 20, 'Минская область', 'MI', 1),
+(343, 20, 'Витебская (Витебск)', 'VI', 1),
 (344, 21, 'Antwerpen', 'VAN', 1),
 (345, 21, 'Brabant Wallon', 'WBR', 1),
 (346, 21, 'Hainaut', 'WHT', 1),
@@ -6648,93 +6983,93 @@ INSERT INTO `oc_zone` (`zone_id`, `country_id`, `name`, `code`, `status`) VALUES
 (2718, 175, 'Vaslui', 'VS', 1),
 (2719, 175, 'Valcea', 'VL', 1),
 (2720, 175, 'Vrancea', 'VN', 1),
-(2721, 176, 'Abakan', 'AB', 1),
-(2722, 176, 'Aginskoye', 'AG', 1),
-(2723, 176, 'Anadyr', 'AN', 1),
-(2724, 176, 'Arkahangelsk', 'AR', 1),
-(2725, 176, 'Astrakhan', 'AS', 1),
-(2726, 176, 'Barnaul', 'BA', 1),
-(2727, 176, 'Belgorod', 'BE', 1),
-(2728, 176, 'Birobidzhan', 'BI', 1),
-(2729, 176, 'Blagoveshchensk', 'BL', 1),
-(2730, 176, 'Bryansk', 'BR', 1),
-(2731, 176, 'Cheboksary', 'CH', 1),
-(2732, 176, 'Chelyabinsk', 'CL', 1),
-(2733, 176, 'Cherkessk', 'CR', 1),
-(2734, 176, 'Chita', 'CI', 1),
-(2735, 176, 'Dudinka', 'DU', 1),
-(2736, 176, 'Elista', 'EL', 1),
-(2738, 176, 'Gorno-Altaysk', 'GA', 1),
-(2739, 176, 'Groznyy', 'GR', 1),
-(2740, 176, 'Irkutsk', 'IR', 1),
-(2741, 176, 'Ivanovo', 'IV', 1),
-(2742, 176, 'Izhevsk', 'IZ', 1),
-(2743, 176, 'Kalinigrad', 'KA', 1),
-(2744, 176, 'Kaluga', 'KL', 1),
-(2745, 176, 'Kasnodar', 'KS', 1),
-(2746, 176, 'Kazan', 'KZ', 1),
-(2747, 176, 'Kemerovo', 'KE', 1),
-(2748, 176, 'Khabarovsk', 'KH', 1),
-(2749, 176, 'Khanty-Mansiysk', 'KM', 1),
-(2750, 176, 'Kostroma', 'KO', 1),
-(2751, 176, 'Krasnodar', 'KR', 1),
-(2752, 176, 'Krasnoyarsk', 'KN', 1),
-(2753, 176, 'Kudymkar', 'KU', 1),
-(2754, 176, 'Kurgan', 'KG', 1),
-(2755, 176, 'Kursk', 'KK', 1),
-(2756, 176, 'Kyzyl', 'KY', 1),
-(2757, 176, 'Lipetsk', 'LI', 1),
-(2758, 176, 'Magadan', 'MA', 1),
-(2759, 176, 'Makhachkala', 'MK', 1),
-(2760, 176, 'Maykop', 'MY', 1),
-(2761, 176, 'Moscow', 'MO', 1),
-(2762, 176, 'Murmansk', 'MU', 1),
-(2763, 176, 'Nalchik', 'NA', 1),
-(2764, 176, 'Naryan Mar', 'NR', 1),
-(2765, 176, 'Nazran', 'NZ', 1),
-(2766, 176, 'Nizhniy Novgorod', 'NI', 1),
-(2767, 176, 'Novgorod', 'NO', 1),
-(2768, 176, 'Novosibirsk', 'NV', 1),
-(2769, 176, 'Omsk', 'OM', 1),
-(2770, 176, 'Orel', 'OR', 1),
-(2771, 176, 'Orenburg', 'OE', 1),
-(2772, 176, 'Palana', 'PA', 1),
-(2773, 176, 'Penza', 'PE', 1),
-(2774, 176, 'Perm', 'PR', 1),
-(2775, 176, 'Petropavlovsk-Kamchatskiy', 'PK', 1),
-(2776, 176, 'Petrozavodsk', 'PT', 1),
-(2777, 176, 'Pskov', 'PS', 1),
-(2778, 176, 'Rostov-na-Donu', 'RO', 1),
-(2779, 176, 'Ryazan', 'RY', 1),
-(2780, 176, 'Salekhard', 'SL', 1),
-(2781, 176, 'Samara', 'SA', 1),
-(2782, 176, 'Saransk', 'SR', 1),
-(2783, 176, 'Saratov', 'SV', 1),
-(2784, 176, 'Smolensk', 'SM', 1),
-(2785, 176, 'St. Petersburg', 'SP', 1),
-(2786, 176, 'Stavropol', 'ST', 1),
-(2787, 176, 'Syktyvkar', 'SY', 1),
-(2788, 176, 'Tambov', 'TA', 1),
-(2789, 176, 'Tomsk', 'TO', 1),
-(2790, 176, 'Tula', 'TU', 1),
-(2791, 176, 'Tura', 'TR', 1),
-(2792, 176, 'Tver', 'TV', 1),
-(2793, 176, 'Tyumen', 'TY', 1),
-(2794, 176, 'Ufa', 'UF', 1),
-(2795, 176, 'Ul''yanovsk', 'UL', 1),
-(2796, 176, 'Ulan-Ude', 'UU', 1),
-(2797, 176, 'Ust''-Ordynskiy', 'US', 1),
-(2798, 176, 'Vladikavkaz', 'VL', 1),
-(2799, 176, 'Vladimir', 'VA', 1),
-(2800, 176, 'Vladivostok', 'VV', 1),
-(2801, 176, 'Volgograd', 'VG', 1),
-(2802, 176, 'Vologda', 'VD', 1),
-(2803, 176, 'Voronezh', 'VO', 1),
-(2804, 176, 'Vyatka', 'VY', 1),
-(2805, 176, 'Yakutsk', 'YA', 1),
-(2806, 176, 'Yaroslavl', 'YR', 1),
-(2807, 176, 'Yekaterinburg', 'YE', 1),
-(2808, 176, 'Yoshkar-Ola', 'YO', 1),
+(2721, 176, 'Абакан', 'AB', 1),
+(2722, 176, 'Агинское', 'AG', 1),
+(2723, 176, 'Анадырь', 'AN', 1),
+(2724, 176, 'Архангельск', 'AR', 1),
+(2725, 176, 'Астрахань', 'AS', 1),
+(2726, 176, 'Барнаул', 'BA', 1),
+(2727, 176, 'Белгород', 'BE', 1),
+(2728, 176, 'Биробиджан', 'BI', 1),
+(2729, 176, 'Благовещенск', 'BL', 1),
+(2730, 176, 'Брянск', 'BR', 1),
+(2731, 176, 'Чебоксары', 'CH', 1),
+(2732, 176, 'Челябинск', 'CL', 1),
+(2733, 176, 'Черкесск', 'CR', 1),
+(2734, 176, 'Чита', 'CI', 1),
+(2735, 176, 'Дудинка', 'DU', 1),
+(2736, 176, 'Элиста', 'EL', 1),
+(2738, 176, 'Горно-Алтайск', 'GA', 1),
+(2739, 176, 'Грозный', 'GR', 1),
+(2740, 176, 'Иркутск', 'IR', 1),
+(2741, 176, 'Иваново', 'IV', 1),
+(2742, 176, 'Ижевск', 'IZ', 1),
+(2743, 176, 'Калининград', 'KA', 1),
+(2744, 176, 'Калуга', 'KL', 1),
+(2745, 176, 'Краснодар', 'KS', 1),
+(2746, 176, 'Казань', 'KZ', 1),
+(2747, 176, 'Кемерово', 'KE', 1),
+(2748, 176, 'Хабаровск', 'KH', 1),
+(2749, 176, 'Ханты-Мансийск', 'KM', 1),
+(2750, 176, 'Кострома', 'KO', 1),
+(2751, 176, 'Краснодар', 'KR', 1),
+(2752, 176, 'Красноярск', 'KN', 1),
+(2753, 176, 'Кудымкар', 'KU', 1),
+(2754, 176, 'Курган', 'KG', 1),
+(2755, 176, 'Курск', 'KK', 1),
+(2756, 176, 'Кызыл', 'KY', 1),
+(2757, 176, 'Липетск', 'LI', 1),
+(2758, 176, 'Магадан', 'MA', 1),
+(2759, 176, 'Махачкала', 'MK', 1),
+(2760, 176, 'Майкоп', 'MY', 1),
+(2761, 176, 'Москва', 'MO', 1),
+(2762, 176, 'Мурманск', 'MU', 1),
+(2763, 176, 'Нальчик', 'NA', 1),
+(2764, 176, 'Нарьян-Мар', 'NR', 1),
+(2765, 176, 'Назрань', 'NZ', 1),
+(2766, 176, 'Нижний Новгород', 'NI', 1),
+(2767, 176, 'Новгород', 'NO', 1),
+(2768, 176, 'Новосибирск', 'NV', 1),
+(2769, 176, 'Омск', 'OM', 1),
+(2770, 176, 'Орел', 'OR', 1),
+(2771, 176, 'Оренбург', 'OE', 1),
+(2772, 176, 'Палана', 'PA', 1),
+(2773, 176, 'Пенза', 'PE', 1),
+(2774, 176, 'Пермь', 'PR', 1),
+(2775, 176, 'Петропавловск-Камчатский', 'PK', 1),
+(2776, 176, 'Петрозаводск', 'PT', 1),
+(2777, 176, 'Псков', 'PS', 1),
+(2778, 176, 'Ростов-на-Дону', 'RO', 1),
+(2779, 176, 'Рязань', 'RY', 1),
+(2780, 176, 'Салехард', 'SL', 1),
+(2781, 176, 'Самара', 'SA', 1),
+(2782, 176, 'Саранск', 'SR', 1),
+(2783, 176, 'Саратов', 'SV', 1),
+(2784, 176, 'Смоленск', 'SM', 1),
+(2785, 176, 'Ст. Петербург', 'SP', 1),
+(2786, 176, 'Ставрополь', 'ST', 1),
+(2787, 176, 'Сыктывкар', 'SY', 1),
+(2788, 176, 'Тамбов', 'TA', 1),
+(2789, 176, 'Томск', 'TO', 1),
+(2790, 176, 'Тула', 'TU', 1),
+(2791, 176, 'Тура', 'TR', 1),
+(2792, 176, 'Тверь', 'TV', 1),
+(2793, 176, 'Тюмень', 'TY', 1),
+(2794, 176, 'Уфа', 'UF', 1),
+(2795, 176, 'Ульяновск', 'UL', 1),
+(2796, 176, 'Улан-Уде', 'UU', 1),
+(2797, 176, 'Усть-Ордынский', 'US', 1),
+(2798, 176, 'Владикавказ', 'VL', 1),
+(2799, 176, 'Владимир', 'VA', 1),
+(2800, 176, 'Владивосток', 'VV', 1),
+(2801, 176, 'Волгоград', 'VG', 1),
+(2802, 176, 'Вологда', 'VD', 1),
+(2803, 176, 'Воронеж', 'VO', 1),
+(2804, 176, 'Вятка', 'VY', 1),
+(2805, 176, 'Якутск', 'YA', 1),
+(2806, 176, 'Ярославль', 'YR', 1),
+(2807, 176, 'Екатеринбург', 'YE', 1),
+(2808, 176, 'Йошкар-Ола', 'YO', 1),
 (2809, 177, 'Butare', 'BU', 1),
 (2810, 177, 'Byumba', 'BY', 1),
 (2811, 177, 'Cyangugu', 'CY', 1),
@@ -7405,32 +7740,32 @@ INSERT INTO `oc_zone` (`zone_id`, `country_id`, `name`, `code`, `status`) VALUES
 (3477, 219, 'Mbarara', 'MBR', 1),
 (3478, 219, 'Ntungamo', 'NTU', 1),
 (3479, 219, 'Rukungiri', 'RUK', 1),
-(3480, 220, 'Cherkas''ka Oblast''', '71', 1),
-(3481, 220, 'Chernihivs''ka Oblast''', '74', 1),
-(3482, 220, 'Chernivets''ka Oblast''', '77', 1),
-(3483, 220, 'Crimea', '43', 1),
-(3484, 220, 'Dnipropetrovs''ka Oblast''', '12', 1),
-(3485, 220, 'Donets''ka Oblast''', '14', 1),
-(3486, 220, 'Ivano-Frankivs''ka Oblast''', '26', 1),
-(3487, 220, 'Khersons''ka Oblast''', '65', 1),
-(3488, 220, 'Khmel''nyts''ka Oblast''', '68', 1),
-(3489, 220, 'Kirovohrads''ka Oblast''', '35', 1),
-(3490, 220, 'Kyiv', '30', 1),
-(3491, 220, 'Kyivs''ka Oblast''', '32', 1),
-(3492, 220, 'Luhans''ka Oblast''', '09', 1),
-(3493, 220, 'L''vivs''ka Oblast''', '46', 1),
-(3494, 220, 'Mykolayivs''ka Oblast''', '48', 1),
-(3495, 220, 'Odes''ka Oblast''', '51', 1),
-(3496, 220, 'Poltavs''ka Oblast''', '53', 1),
-(3497, 220, 'Rivnens''ka Oblast''', '56', 1),
-(3498, 220, 'Sevastopol''', '40', 1),
-(3499, 220, 'Sums''ka Oblast''', '59', 1),
-(3500, 220, 'Ternopil''s''ka Oblast''', '61', 1),
-(3501, 220, 'Vinnyts''ka Oblast''', '05', 1),
-(3502, 220, 'Volyns''ka Oblast''', '07', 1),
-(3503, 220, 'Zakarpats''ka Oblast''', '21', 1),
-(3504, 220, 'Zaporiz''ka Oblast''', '23', 1),
-(3505, 220, 'Zhytomyrs''ka oblast''', '18', 1),
+(3480, 220, 'Черкасская область', '71', 1),
+(3481, 220, 'Черниговская область', '74', 1),
+(3482, 220, 'Черновицкая область', '77', 1),
+(3483, 220, 'Крым', '43', 1),
+(3484, 220, 'Днепропетровская область', '12', 1),
+(3485, 220, 'Донецкая область', '14', 1),
+(3486, 220, 'Ивано-Франковская область', '26', 1),
+(3487, 220, 'Херсонская область', '65', 1),
+(3488, 220, 'Хмельницкая область', '68', 1),
+(3489, 220, 'Кировоградская область', '35', 1),
+(3490, 220, 'Киев', '30', 1),
+(3491, 220, 'Киевская область', '32', 1),
+(3492, 220, 'Луганская область', '09', 1),
+(3493, 220, 'Львовская область', '46', 1),
+(3494, 220, 'Николаевская область', '48', 1),
+(3495, 220, 'Одесская область', '51', 1),
+(3496, 220, 'Полтавская область', '53', 1),
+(3497, 220, 'Ровненская область', '56', 1),
+(3498, 220, 'Севастополь', '40', 1),
+(3499, 220, 'Сумская область', '59', 1),
+(3500, 220, 'Тернопольская область', '61', 1),
+(3501, 220, 'Винницкая область', '05', 1),
+(3502, 220, 'Волынская область', '07', 1),
+(3503, 220, 'Закарпатская область', '21', 1),
+(3504, 220, 'Запарожская область', '23', 1),
+(3505, 220, 'Житомирская область', '18', 1),
 (3506, 221, 'Abu Dhabi', 'ADH', 1),
 (3507, 221, '''Ajman', 'AJ', 1),
 (3508, 221, 'Al Fujayrah', 'FU', 1),
@@ -8117,7 +8452,7 @@ INSERT INTO `oc_zone` (`zone_id`, `country_id`, `name`, `code`, `status`) VALUES
 (4221, 117, 'Zilupes novads', '0681801', 1),
 (4222, 43, 'Arica y Parinacota', 'AP', 1),
 (4223, 43, 'Los Rios', 'LR', 1),
-(4224, 220, 'Kharkivs''ka Oblast''', '63', 1),
+(4224, 220, 'Харьковская область', '63', 1),
 (4225, 118, 'Beirut', 'LB-BR', 1),
 (4226, 118, 'Bekaa', 'LB-BE', 1),
 (4227, 118, 'Mount Lebanon', 'LB-ML', 1),
@@ -8154,6 +8489,7 @@ CREATE TABLE `oc_zone_to_geo_zone` (
 -- Dumping data for table `oc_zone_to_geo_zone`
 --
 
+-- en
 INSERT INTO `oc_zone_to_geo_zone` (`zone_to_geo_zone_id`, `country_id`, `zone_id`, `geo_zone_id`, `date_added`, `date_modified`) VALUES
 (1, 222, 0, 4, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (2, 222, 3513, 3, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -8264,3 +8600,7 @@ INSERT INTO `oc_zone_to_geo_zone` (`zone_to_geo_zone_id`, `country_id`, `zone_id
 (107, 222, 3954, 3, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (108, 222, 3955, 3, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (109, 222, 3972, 3, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+
+-- ru
+INSERT INTO `oc_zone_to_geo_zone` (`zone_to_geo_zone_id`, `country_id`, `zone_id`, `geo_zone_id`, `date_added`, `date_modified`) VALUES
+(110, 176, 0, 5, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
