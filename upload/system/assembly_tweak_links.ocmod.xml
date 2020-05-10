@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+<name>[OCRE] OpenCart 3 Tweak Links</name>
+<version>3.0.3.3.RE1</version>
+<author>Hkr</author>
+<link>https://forum.opencart.name</link>
+<code>ocre1_30_assembly_tweak_links</code>
+<date>01.05.2020</date>
+
+<!-- Замена ссылок в меню профиля в админке -->
+<file path="admin/view/template/common/header.twig">
+    <operation>
+        <search trim="true"><![CDATA[
+            <li><a href="http://www.opencart.com" target="_blank"><i class="fa fa-opencart fa-fw"></i> {{ text_homepage }}</a></li>
+        ]]></search>
+        <add position="replace" trim="true"><![CDATA[
+            <li><a href="http://www.opencart.com" target="_blank"><i class="fa fa-opencart fa-fw"></i> {{ text_homepage }} [EN]</a></li>
+            <li><a href="https://opencart.name" target="_blank"><i class="fa fa-opencart fa-fw"></i> {{ text_homepage }} [RU]</a></li>
+        ]]></add>
+    </operation>
+    <operation>
+        <search trim="true"><![CDATA[
+            <li><a href="http://docs.opencart.com" target="_blank"><i class="fa fa-file-text-o fa-fw"></i> {{ text_documentation }}</a></li>
+        ]]></search>
+        <add position="replace" trim="true"><![CDATA[
+            <li><a href="https://docs.opencart.name/ru-ru/introduction/" target="_blank"><i class="fa fa-file-text-o fa-fw"></i> {{ text_documentation }} [RU]</a></li>
+            
+        ]]></add>
+    </operation>
+    <operation>
+        <search trim="true"><![CDATA[
+            <li><a href="http://forum.opencart.com" target="_blank"><i class="fa fa-comments-o fa-fw"></i> {{ text_support }}</a></li>
+        ]]></search>
+        <add position="replace" trim="true"><![CDATA[
+        <li><a href="https://forum.opencart.name" target="_blank"><i class="fa fa-comments-o fa-fw"></i> {{ text_support }} [RU]</a></li>
+            
+        ]]></add>
+    </operation>
+</file>
+
+</modification>
