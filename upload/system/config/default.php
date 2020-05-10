@@ -7,8 +7,8 @@ $_['site_ssl']             = false;
 $_['url_autostart']        = true;
 
 // Language
-$_['language_directory']   = 'en-gb';
-$_['language_autoload']    = array('en-gb');
+$_['language_directory']   = 'ru-ru';
+$_['language_autoload']    = array('ru-ru');
 
 // Date
 $_['date_timezone']        = 'UTC';
