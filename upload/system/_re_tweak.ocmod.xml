@@ -1,12 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <modification>
-<name>[OCN] OpenCart 3 RE Tweak CopyRight</name>
+<name>[OCN] OpenCart 3 RE Tweak</name>
 <version>3.0.3.3.RE1.0</version>
 <author>Hkr</author>
 <link>https://forum.opencart.name</link>
-<code>ocn_30_re_tweak_copyright</code>
-<date>01.05.2020</date>
+<code>ocn_30_re_tweak</code>
+<date>23.05.2020</date>
 
+<!-- Замена ссылок в меню профиля в админке -->
+<file path="admin/view/template/common/header.twig">
+    <operation>
+        <search trim="true"><![CDATA[
+            <li><a href="http://www.opencart.com" target="_blank"><i class="fa fa-opencart fa-fw"></i> {{ text_homepage }}</a></li>
+        ]]></search>
+        <add position="replace" trim="true"><![CDATA[
+            <li><a href="http://www.opencart.com" target="_blank"><i class="fa fa-opencart fa-fw"></i> {{ text_homepage }} [EN]</a></li>
+            <li><a href="https://opencart.name" target="_blank"><i class="fa fa-opencart fa-fw"></i> {{ text_homepage }} [RU]</a></li>
+        ]]></add>
+    </operation>
+    <operation>
+        <search trim="true"><![CDATA[
+            <li><a href="http://docs.opencart.com" target="_blank"><i class="fa fa-file-text-o fa-fw"></i> {{ text_documentation }}</a></li>
+        ]]></search>
+        <add position="replace" trim="true"><![CDATA[
+            <li><a href="https://docs.opencart.name/ru-ru/introduction/" target="_blank"><i class="fa fa-file-text-o fa-fw"></i> {{ text_documentation }} [RU]</a></li>
+            
+        ]]></add>
+    </operation>
+    <operation>
+        <search trim="true"><![CDATA[
+            <li><a href="http://forum.opencart.com" target="_blank"><i class="fa fa-comments-o fa-fw"></i> {{ text_support }}</a></li>
+        ]]></search>
+        <add position="replace" trim="true"><![CDATA[
+        <li><a href="https://forum.opencart.name" target="_blank"><i class="fa fa-comments-o fa-fw"></i> {{ text_support }} [RU]</a></li>
+            
+        ]]></add>
+    </operation>
+</file>
+<!--  -->
+
+<!-- Добавление копирайтов в футер -->
 <!-- Разделение языковых фраз для удобства -->
 <file path="admin/language/en-gb/common/footer.php">
     <operation>
@@ -56,7 +89,6 @@
         ]]></add>
     </operation>
 </file>
-
 <!-- Добавление языковых фраз в контроллере -->
 <file path="admin/controller/common/footer.php">
     <operation>
@@ -93,7 +125,6 @@
         ]]></add>
     </operation>
 </file>
-
 <!-- Изменение верстки шаблона для вывода ссылок на сайт проекта сборки -->
 <file path="admin/view/template/common/footer.twig">
     <operation>
@@ -113,5 +144,42 @@
         ]]></add>
     </operation>
 </file>
+<!--  -->
+
+<!-- Комментируем рекламу из всех страниц расширений -->
+<file path="admin/controller/extension/extension/*.php">
+    <operation>
+        <search trim="true"><![CDATA[
+            $data['promotion'] = $this->load->controller('extension/extension/promotion');
+        ]]></search>
+        <add position="replace" trim="true"><![CDATA[
+            // $data['promotion'] = $this->load->controller('extension/extension/promotion');
+        ]]></add>
+    </operation>
+</file>
+<file path="admin/view/template/extension/extension/*.twig">
+    <operation>
+        <search trim="true"><![CDATA[
+            {{ promotion }}
+        ]]></search>
+        <add position="replace" trim="true"><![CDATA[
+            {# {{ promotion }} #}
+        ]]></add>
+    </operation>
+</file>
+<!--  -->
+
+<!-- По умолчанию тип Расширения Модули -->
+<file path="admin/controller/common/column_left.php">
+    <operation>
+        <search trim="true"><![CDATA[
+            'href'     => $this->url->link('marketplace/extension', 'user_token=' . $this->session->data['user_token'], true),
+        ]]></search>
+        <add position="replace" trim="true"><![CDATA[
+            'href'     => $this->url->link('marketplace/extension', 'user_token=' . $this->session->data['user_token'] . '&type=module', true),
+        ]]></add>
+    </operation>
+</file>
+<!--  -->
 
 </modification>
