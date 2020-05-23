@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <modification>
-<name>[OCRE] OpenCart 3 Tweak CopyRight</name>
-<version>3.0.3.3.RE1</version>
+<name>[OCN] OpenCart 3 RE Tweak CopyRight</name>
+<version>3.0.3.3.RE1.0</version>
 <author>Hkr</author>
 <link>https://forum.opencart.name</link>
-<code>ocre1_30_assembly_tweak_copyright</code>
+<code>ocn_30_re_tweak_copyright</code>
 <date>01.05.2020</date>
 
 <!-- Разделение языковых фраз для удобства -->
@@ -26,7 +26,7 @@
             $_['text_footer_ru']             = 'OpenCart Russian Edition';
             $_['text_footer_link_ru']        = 'https://forum.opencart.name';
             $_['text_footer_year_ru']        = '&copy; 2020-';
-            $_['text_version_ru']            = 'Version OpenCart RE 3.0.3.3.1';
+            $_['text_version_ru']            = 'Version RE 3.0.3.3.2';
             $_['text_version_hidden_ru']     = 'OpenCart RE';
             $_['text_version_link_ru']       = 'https://forum.opencart.name/resources/13/';
         ]]></add>
@@ -50,7 +50,7 @@
             $_['text_footer_ru']             = 'OpenCart Russian Edition';
             $_['text_footer_link_ru']        = 'https://forum.opencart.name';
             $_['text_footer_year_ru']        = '2020';
-            $_['text_version_ru']            = 'Версия OpenCart RE 3.0.3.3.1';
+            $_['text_version_ru']            = 'Версия RE 3.0.3.3.2';
             $_['text_version_hidden_ru']     = 'Версия OpenCart RE';
             $_['text_version_link_ru']       = 'https://forum.opencart.name/resources/13/';
         ]]></add>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+<name>[OCN] OpenCart 3 RE Tweak Promoution Delete</name>
+<version>3.0.3.3.RE1.0</version>
+<author>Hkr</author>
+<link>https://forum.opencart.name</link>
+<code>ocn_30_re_tweak_promotion</code>
+<date>01.05.2020</date>
+
+<!-- Комментируем рекламу из всех страниц расширений -->
+<file path="admin/controller/extension/extension/*.php">
+    <operation>
+        <search trim="true"><![CDATA[
+            $data['promotion'] = $this->load->controller('extension/extension/promotion');
+        ]]></search>
+        <add position="replace" trim="true"><![CDATA[
+            // $data['promotion'] = $this->load->controller('extension/extension/promotion');
+        ]]></add>
+    </operation>
+</file>
+<file path="admin/view/template/extension/extension/*.twig">
+    <operation>
+        <search trim="true"><![CDATA[
+            {{ promotion }}
+        ]]></search>
+        <add position="replace" trim="true"><![CDATA[
+            {# {{ promotion }} #}
+        ]]></add>
+    </operation>
+</file>
+
+</modification>
