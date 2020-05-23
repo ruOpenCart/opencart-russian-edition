@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <modification>
+    <name>[OCN] OpenCart 3 RE Tweak</name>
+    <version>RE:3.0.3.3.3</version>
+    <author>Hkr</author>
+    <link>https://forum.opencart.name</link>
+    <code>ocn_30_re_tweak</code>
+    <date>23.05.2020</date>
+
+<!-- Замена ссылок в меню профиля в админке -->
+    <file path="admin/view/template/common/header.twig">
+        <operation>
+            <search trim="true"><![CDATA[
+                <li><a href="http://www.opencart.com" target="_blank"><i class="fa fa-opencart fa-fw"></i> {{ text_homepage }}</a></li>
+            ]]></search>
+            <add position="replace" trim="true"><![CDATA[
+                <li><a href="http://www.opencart.com" target="_blank"><i class="fa fa-opencart fa-fw"></i> {{ text_homepage }} [EN]</a></li>
+                <li><a href="https://opencart.name" target="_blank"><i class="fa fa-opencart fa-fw"></i> {{ text_homepage }} [RU]</a></li>
+            ]]></add>
+        </operation>
+        <operation>
+            <search trim="true"><![CDATA[
+                <li><a href="http://docs.opencart.com" target="_blank"><i class="fa fa-file-text-o fa-fw"></i> {{ text_documentation }}</a></li>
+            ]]></search>
+            <add position="replace" trim="true"><![CDATA[
+                <li><a href="https://docs.opencart.name/ru-ru/introduction/" target="_blank"><i class="fa fa-file-text-o fa-fw"></i> {{ text_documentation }} [RU]</a></li>
+            ]]></add>
+        </operation>
+        <operation>
+            <search trim="true"><![CDATA[
+                <li><a href="http://forum.opencart.com" target="_blank"><i class="fa fa-comments-o fa-fw"></i> {{ text_support }}</a></li>
+            ]]></search>
+            <add position="replace" trim="true"><![CDATA[
+            <li><a href="https://forum.opencart.name" target="_blank"><i class="fa fa-comments-o fa-fw"></i> {{ text_support }} [RU]</a></li>
+            ]]></add>
+        </operation>
+    </file>
+<!--  -->
+
+<!-- Добавление копирайтов в футер -->
+    <!-- Разделение языковых фраз для удобства -->
+    <file path="admin/language/en-gb/common/footer.php">
+        <operation>
+            <search trim="true"><![CDATA[
+                $_['text_footer']  = '<a href="http://www.opencart.com">OpenCart</a> &copy; 2009-' . date('Y') . ' All Rights Reserved.';
+            ]]></search>
+            <add position="replace" trim="true" offset="2"><![CDATA[
+                $_['text_footer']                = 'OpenCart';
+                $_['text_footer_link']           = 'https://www.opencart.com';
+                $_['text_footer_year']           = '2009';
+                $_['text_footer_copyright_icon'] = '&copy;';
+                $_['text_footer_copyright']      = 'All Rights Reserved.';
+                $_['text_version']               = 'Version %s';
+                $_['text_version_hidden']        = 'Version opencart';
+
+                // RE
+                $_['text_footer_ru']             = 'OpenCart Russian Edition';
+                $_['text_footer_link_ru']        = 'https://forum.opencart.name';
+                $_['text_footer_year_ru']        = '&copy; 2020-';
+                $_['text_version_ru']            = 'Version RE 3.0.3.3.2';
+                $_['text_version_hidden_ru']     = 'OpenCart RE';
+                $_['text_version_link_ru']       = 'https://forum.opencart.name/resources/13/';
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/language/ru-ru/common/footer.php">
+        <operation>
+            <search trim="true"><![CDATA[
+                $_['text_footer']  = '<a href="http://www.opencart.com">OpenCart</a> &copy; 2009-' . date('Y') . ' Все права защищены. <br> <a href="https://forum.opencart.name" target="_blank">ruOpenCart - русская сборка</a>';
+            ]]></search>
+            <add position="replace" trim="true" offset="2"><![CDATA[
+                $_['text_footer']                = 'OpenCart';
+                $_['text_footer_link']           = 'https://www.opencart.com';
+                $_['text_footer_year']           = '2009';
+                $_['text_footer_copyright_icon'] = '&copy;';
+                $_['text_footer_copyright']      = 'Все права защищены.';
+                $_['text_version']               = 'Версия %s';
+                $_['text_version_hidden']        = 'Версия opencart';
+
+                // RE
+                $_['text_footer_ru']             = 'OpenCart Russian Edition';
+                $_['text_footer_link_ru']        = 'https://forum.opencart.name';
+                $_['text_footer_year_ru']        = '2020';
+                $_['text_version_ru']            = 'Версия RE 3.0.3.3.2';
+                $_['text_version_hidden_ru']     = 'Версия OpenCart RE';
+                $_['text_version_link_ru']       = 'https://forum.opencart.name/resources/13/';
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
+
+    <!-- Добавление языковых фраз в контроллере -->
+    <file path="admin/controller/common/footer.php">
+        <operation>
+            <search trim="true"><![CDATA[
+                $data['text_version'] = sprintf($this->language->get('text_version'), VERSION);
+            ]]></search>
+            <add position="after" trim="true"><![CDATA[
+                $data['text_version_ru'] = $this->language->get('text_version_ru');
+            ]]></add>
+        </operation>
+        <operation>
+            <search trim="true"><![CDATA[
+                $data['text_version'] = '';
+            ]]></search>
+            <add position="replace" trim="true"><![CDATA[
+                $data['text_version'] = $this->language->get('text_version_hidden');
+                $data['text_version_ru'] = $this->language->get('text_version_hidden_ru');
+            ]]></add>
+        </operation>
+        <operation>
+            <search trim="true"><![CDATA[
+                return $this->load->view('common/footer', $data);
+            ]]></search>
+            <add position="before" trim="true"><![CDATA[
+                $data['text_footer_link'] = $this->language->get('text_footer_link');
+                $data['text_footer_year'] = $this->language->get('text_footer_year');
+                $data['text_footer_copyright_icon'] = $this->language->get('text_footer_copyright_icon');
+                $data['text_footer_copyright'] = $this->language->get('text_footer_copyright');
+
+                // RE
+                $data['text_footer_ru'] = $this->language->get('text_footer_ru');
+                $data['text_footer_link_ru'] = $this->language->get('text_footer_link_ru');
+                $data['text_footer_year_ru'] = $this->language->get('text_footer_year_ru');
+                $data['text_version_link_ru'] = $this->language->get('text_version_link_ru');
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
+
+    <!-- Изменение верстки шаблона для вывода ссылок на сайт проекта сборки -->
+    <file path="admin/view/template/common/footer.twig">
+        <operation>
+            <search trim="true"><![CDATA[
+                <footer id="footer">{{ text_footer }}<br />{{ text_version }}</footer></div>
+            ]]></search>
+            <add position="replace" trim="true"><![CDATA[
+                <footer id="footer">
+                    <a href="{{ text_footer_link }}" target="_blank">{{ text_footer }}</a>
+                    {{ text_footer_copyright_icon }} {{ text_footer_year }}-{{ "now"|date("Y") }}
+                    {{ text_footer_copyright }}<br>
+                    <a href="{{ text_footer_link_ru }}" target="_blank">{{ text_footer_ru }}</a>
+                    {{ text_footer_copyright_icon }} {{ text_footer_year_ru }}-{{ "now"|date("Y") }}
+                    {{ text_footer_copyright }}<br>
+                    {{ text_version }} | <a href="{{ text_version_link_ru }}" target="_blank">{{ text_version_ru }}</a>
+                </footer></div>
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
+<!--  -->
+
+<!-- Комментируем рекламу из всех страниц расширений -->
+    <file path="admin/controller/extension/extension/*.php">
+        <operation>
+            <search trim="true"><![CDATA[
+                $data['promotion'] = $this->load->controller('extension/extension/promotion');
+            ]]></search>
+            <add position="replace" trim="true"><![CDATA[
+                // $data['promotion'] = $this->load->controller('extension/extension/promotion');
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/view/template/extension/extension/*.twig">
+        <operation>
+            <search trim="true"><![CDATA[
+                {{ promotion }}
+            ]]></search>
+            <add position="replace" trim="true"><![CDATA[
+                {# {{ promotion }} #}
+            ]]></add>
+        </operation>
+    </file>
+<!--  -->
+
+<!-- По умолчанию тип Расширения Модули -->
+    <file path="admin/controller/common/column_left.php">
+        <operation>
+            <search trim="true"><![CDATA[
+                'href'     => $this->url->link('marketplace/extension', 'user_token=' . $this->session->data['user_token'], true),
+            ]]></search>
+            <add position="replace" trim="true"><![CDATA[
+                'href'     => $this->url->link('marketplace/extension', 'user_token=' . $this->session->data['user_token'] . '&type=module', true),
+            ]]></add>
+        </operation>
+    </file>
+<!--  -->
+
+<!-- Вывод Настройки Разработчика в Модификациях -->
+    <!-- Добавляем в языковые файлы фразы -->
+    <file path="admin/language/en-gb/marketplace/modification.php">
+        <operation>
+            <search trim="true"><![CDATA[
+                $_['text_list']         = 'Modification List';
+            ]]></search>
+            <add position="after" trim="true"><![CDATA[
+                $_['text_developer']    = 'Developer Settings';
+                $_['text_loading']      = 'Loading...';
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/language/ru-ru/marketplace/modification.php">
+        <operation>
+            <search trim="true"><![CDATA[
+                $_['text_list']         = 'Список модификаций';
+            ]]></search>
+            <add position="after" trim="true"><![CDATA[
+                $_['text_developer']    = 'Настройки разработчика';
+                $_['text_loading']      = 'Загрузка...';
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
+    
+    <!-- Добавляет кнопку в шаблон -->
+    <file path="admin/view/template/marketplace/modification.twig">
+        <operation>
+            <search trim="true"><![CDATA[
+                <div class="pull-right"><a href="{{ refresh }}" data-toggle="tooltip" title="{{ button_refresh }}" class="btn btn-info"><i class="fa fa-refresh"></i></a> <a href="{{ clear }}" data-toggle="tooltip" title="{{ button_clear }}" class="btn btn-warning"><i class="fa fa-eraser"></i></a>
+            ]]></search>
+            <add position="replace" trim="true"><![CDATA[
+                <div class="pull-right"><button type="button" id="button-setting" data-toggle="tooltip" title="{{ text_developer }}" data-loading-text="{{ text_loading }}" class="btn btn-info"><i class="fa fa-cog"></i></button> <a href="{{ refresh }}" data-toggle="tooltip" title="{{ button_refresh }}" class="btn btn-info"><i class="fa fa-refresh"></i></a> <a href="{{ clear }}" data-toggle="tooltip" title="{{ button_clear }}" class="btn btn-warning"><i class="fa fa-eraser"></i></a>
+            ]]></add>
+        </operation>
+        <operation>
+            <search trim="true"><![CDATA[
+                {{ footer }}
+            ]]></search>
+            <add position="before" trim="true"><![CDATA[
+                <script>
+                    $('#button-setting').on('click', function() {
+                        $.ajax({
+                            url: 'index.php?route=common/developer&user_token={{ user_token }}',
+                            dataType: 'html',
+                            beforeSend: function() {
+                                $('#button-setting').button('loading');
+                            },
+                            complete: function() {
+                                $('#button-setting').button('reset');
+                            },
+                            success: function(html) {
+                                $('#modal-developer').remove();
+                                
+                                $('body').prepend('<div id="modal-developer" class="modal">' + html + '</div>');
+                                
+                                $('#modal-developer').modal('show');
+                            },
+                            error: function(xhr, ajaxOptions, thrownError) {
+                                alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                            }
+                        });
+                    });
+                    </script>
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
+<!--  -->
+</modification>
