@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
     <modification>
     <name>[OCN] OpenCart 3 RE Tweak</name>
-    <version>RE:3.0.3.3.3</version>
+    <version>RE:3.0.3.4.4</version>
     <author>Hkr</author>
     <link>https://forum.opencart.name</link>
     <code>ocn_30_re_tweak</code>
@@ -57,7 +57,7 @@
                 $_['text_footer_ru']             = 'OpenCart Russian Edition';
                 $_['text_footer_link_ru']        = 'https://forum.opencart.name';
                 $_['text_footer_year_ru']        = '&copy; 2020-';
-                $_['text_version_ru']            = 'Version RE 3.0.3.3.2';
+                $_['text_version_ru']            = 'Version RE 3.0.3.4.4';
                 $_['text_version_hidden_ru']     = 'OpenCart RE';
                 $_['text_version_link_ru']       = 'https://forum.opencart.name/resources/13/';
             ]]></add>
@@ -81,7 +81,7 @@
                 $_['text_footer_ru']             = 'OpenCart Russian Edition';
                 $_['text_footer_link_ru']        = 'https://forum.opencart.name';
                 $_['text_footer_year_ru']        = '2020';
-                $_['text_version_ru']            = 'Версия RE 3.0.3.3.2';
+                $_['text_version_ru']            = 'Версия RE 3.0.3.4.4';
                 $_['text_version_hidden_ru']     = 'Версия OpenCart RE';
                 $_['text_version_link_ru']       = 'https://forum.opencart.name/resources/13/';
             ]]></add>
