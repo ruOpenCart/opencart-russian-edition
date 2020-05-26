@@ -17,7 +17,6 @@ $_['text_month']                     = 'месяц';
 $_['text_year']                      = 'год';
 $_['text_trial']                     = '%s каждые %s %s для %s платежей тогда ';
 $_['text_recurring']                 = '%s каждые %s %s';
-$_['text_payment_cancel']            = 'до отмены';
 $_['text_recurring_item']            = 'Повторяющийся элемент';
 $_['text_payment_recurring']         = 'Профиль оплаты';
 $_['text_trial_description']         = '%s каждые %d %s для %d платежей тогда';
