@@ -61,3 +61,6 @@
 # IDE Project files
 /.idea
 /upload/.idea
+
+# zip
+*.zip
