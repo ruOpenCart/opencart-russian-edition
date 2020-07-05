@@ -151,7 +151,7 @@
 <!--  -->
 
 <!-- Комментируем рекламу из всех страниц расширений -->
-    <file path="admin/controller/extension/extension/*.php">
+    <file path="admin/controller/extension/extension/{analytics,captcha,dashboard,feed,fraud,menu,module,payment,report,shipping,theme,total}.php">
         <operation>
             <search trim="true"><![CDATA[
                 $data['promotion'] = $this->load->controller('extension/extension/promotion');
@@ -161,7 +161,7 @@
             ]]></add>
         </operation>
     </file>
-    <file path="admin/view/template/extension/extension/*.twig">
+    <file path="admin/view/template/extension/extension/{analytics,captcha,dashboard,feed,fraud,menu,module,payment,report,shipping,theme,total}.twig">
         <operation>
             <search trim="true"><![CDATA[
                 {{ promotion }}
