@@ -26,9 +26,7 @@ $_['template_directory'] = '';
 $_['template_cache']     = true;
 
 // Autoload Libraries
-$_['library_autoload']   = array(
-	'openbay'
-);
+$_['library_autoload']   = array();
 
 // Actions
 $_['action_pre_action']  = array(
@@ -49,9 +47,8 @@ $_['action_event'] = array(
 		'event/language/after'
 	),	
 	'view/*/before' => array(
-		500  => 'event/theme/override',
+		500  => 'event/theme',
 		998  => 'event/language',
-		1000 => 'event/theme'
 	),
 	'language/*/after' => array(
 		'event/translation'

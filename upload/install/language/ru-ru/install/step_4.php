@@ -10,8 +10,6 @@ $_['text_loading']                = 'Загрузка модулей...';
 $_['text_extension']              = 'перейти в магазин расширений';
 $_['text_mail']                   = 'Подписаться на рассылку';
 $_['text_mail_description']       = 'Будьте в курсе обновлений и событий OpenCart.';
-$_['text_openbay']                = 'OpenBay Pro дает продавцам возможность связать свой магазин со сторонними рынками, такими как eBay, Amazon и Etsy. Импортируйте заказы, элементы списка и обрабатывайте информацию о доставке непосредственно из OpenCart... <a href="http://www.openbaypro.com/?utm_source=opencart_install&utm_medium=referral&utm_campaign=opencart_install" target="_blank">Дополнительная информация</a>';
-$_['text_amazon_pay']             = 'Amazon Pay - это надежное платежное решение, которое позволяет клиентам проверять и использовать информации, уже хранящейся в их учетной записи Amazon. Это быстро, просто и безопасно.... <a href="https://pay.amazon.com/uk/signup" target="_blank">Дополнительная информация</a>';
 $_['text_facebook']               = 'Поставьте нам нравится на Facebook';
 $_['text_facebook_description']   = 'Расскажите нам, как Вам нравится OpenCart!';
 $_['text_facebook_visit']         = 'Посетите нашу страницу в Facebook';
