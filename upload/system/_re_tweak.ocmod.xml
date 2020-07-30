@@ -92,6 +92,7 @@
                 $_['text_version_translate_link_re']   = 'https://forum.opencart.name/resources/9/';
                 $_['text_version_translate_re']        = 'Версия перевода';
                 $_['text_version_translate_number_re'] = '3.0.3.6.8';
+                $_['text_version_translate_hidden_re'] = 'от opencart.name';
             ]]></add>
         </operation>
     </file>
@@ -105,7 +106,9 @@
             ]]></search>
             <add position="after" trim="true"><![CDATA[
                 $data['text_version_re'] = $this->language->get('text_version_re');
-                $data['text_version_number_re'] = $this->language->get('text_version_number_re');
+                $data['text_version_re'] .= ' ' . $this->language->get('text_version_number_re');
+                $data['text_version_translate_re'] = $this->language->get('text_version_translate_re');
+                $data['text_version_translate_re'] .= ' ' . $this->language->get('text_version_translate_number_re');
             ]]></add>
         </operation>
         <operation>
@@ -115,6 +118,8 @@
             <add position="replace" trim="true"><![CDATA[
                 $data['text_version'] = $this->language->get('text_version_hidden');
                 $data['text_version_re'] = $this->language->get('text_version_hidden_re');
+                $data['text_version_translate_re'] = $this->language->get('text_version_translate_re');
+                $data['text_version_translate_re'] .= ' ' . $this->language->get('text_version_translate_hidden_re');
             ]]></add>
         </operation>
         <operation>
@@ -133,8 +138,6 @@
                 $data['text_footer_year_re'] = $this->language->get('text_footer_year_re');
                 $data['text_version_link_re'] = $this->language->get('text_version_link_re');
                 $data['text_version_translate_link_re'] = $this->language->get('text_version_translate_link_re');
-                $data['text_version_translate_re'] = $this->language->get('text_version_translate_re');
-                $data['text_version_translate_number_re'] = $this->language->get('text_version_translate_number_re');
             ]]></add>
         </operation>
     </file>
@@ -155,8 +158,8 @@
                     {{ text_footer_copyright_icon }} {{ text_footer_year_re }}-{{ "now"|date("Y") }}
                     {{ text_footer_copyright }}<br>
                     {{ text_version }} |
-                    <a href="{{ text_version_link_re }}" target="_blank">{{ text_version_re }} {{ text_version_number_re }}</a> |
-                    <a href="{{ text_version_translate_link_re }}" target="_blank">{{ text_version_translate_re }} {{ text_version_translate_number_re }}</a>
+                    <a href="{{ text_version_link_re }}" target="_blank">{{ text_version_re }}</a> |
+                    <a href="{{ text_version_translate_link_re }}" target="_blank">{{ text_version_translate_re }}</a>
                 </footer></div>
             ]]></add>
         </operation>
