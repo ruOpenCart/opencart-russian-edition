@@ -626,5 +626,38 @@
         </operation>
     </file>
     <!--  -->
+
+    <!-- Для информации -->
+    <file path="admin/controller/catalog/information.php">
+        <operation>
+            <search trim="true"><![CDATA['edit'           => $this->url->link('catalog/information/edit', 'user_token=' . $this->session->data['user_token'] . '&information_id=' . $result['information_id'] . $url, true)]]></search>
+            <add position="before" trim="true"><![CDATA[
+                'front'            => ($this->config->get('config_secure') ? HTTPS_CATALOG : HTTP_CATALOG) . 'index.php?route=information/information&information_id=' . $result['information_id'],
+            ]]></add>
+        </operation>
+        <operation>
+            <search trim="true"><![CDATA[$data['cancel'] = $this->url->link('catalog/information', 'user_token=' . $this->session->data['user_token'] . $url, true);]]></search>
+            <add position="after" trim="true"><![CDATA[
+                $data['view'] = ($this->config->get('config_secure') ? HTTPS_CATALOG : HTTP_CATALOG) . 'index.php?route=information/information&information_id=' . $this->request->get['information_id'];
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/view/template/catalog/information_list.twig">
+        <operation>
+            <search trim="true"><![CDATA[<td class="text-right"><a href="{{ information.edit }}" data-toggle="tooltip" title="{{ button_edit }}" class="btn btn-primary"><i class="fa fa-pencil"></i></a></td>]]></search>
+            <add position="replace" trim="true"><![CDATA[
+                <td class="text-right"><a href="{{ information.front }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info" target="_blank"><i class="fa fa-eye"></i></a> <a href="{{ information.edit }}" data-toggle="tooltip" title="{{ button_edit }}" class="btn btn-primary"><i class="fa fa-pencil"></i></a></td>
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/view/template/catalog/information_form.twig">
+        <operation>
+            <search trim="true"><![CDATA[<button type="submit" form="form-information" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>]]></search>
+            <add position="before" trim="true"><![CDATA[
+                <a href="{{ view }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info" target="_blank"><i class="fa fa-eye"></i></a>
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
 <!--  -->
 </modification>
