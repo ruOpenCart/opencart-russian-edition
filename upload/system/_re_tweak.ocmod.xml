@@ -533,7 +533,7 @@
         <operation>
             <search trim="true"><![CDATA['edit'        => $this->url->link('catalog/category/edit', 'user_token=' . $this->session->data['user_token'] . '&category_id=' . $result['category_id'] . $url, true),]]></search>
             <add position="before" trim="true"><![CDATA[
-                'front'      => ($this->config->get('config_secure') ? HTTPS_CATALOG : HTTP_CATALOG) . 'index.php?route=product/category&path=' . $result['category_id'],
+                'front'        => ($this->config->get('config_secure') ? HTTPS_CATALOG : HTTP_CATALOG) . 'index.php?route=product/category&path=' . $result['category_id'],
             ]]></add>
         </operation>
         <operation>
@@ -587,6 +587,39 @@
     <file path="admin/view/template/catalog/product_form.twig">
         <operation>
             <search trim="true"><![CDATA[<button type="submit" form="form-product" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>]]></search>
+            <add position="before" trim="true"><![CDATA[
+                <a href="{{ view }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info" target="_blank"><i class="fa fa-eye"></i></a>
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
+
+    <!-- Для Производителей -->
+    <file path="admin/controller/catalog/manufacturer.php">
+        <operation>
+            <search trim="true"><![CDATA['edit'            => $this->url->link('catalog/manufacturer/edit', 'user_token=' . $this->session->data['user_token'] . '&manufacturer_id=' . $result['manufacturer_id'] . $url, true)]]></search>
+            <add position="before" trim="true"><![CDATA[
+                'front'            => ($this->config->get('config_secure') ? HTTPS_CATALOG : HTTP_CATALOG) . 'index.php?route=product/manufacturer/info&manufacturer_id=' . $result['manufacturer_id'],
+            ]]></add>
+        </operation>
+        <operation>
+            <search trim="true"><![CDATA[$data['cancel'] = $this->url->link('catalog/manufacturer', 'user_token=' . $this->session->data['user_token'] . $url, true);]]></search>
+            <add position="after" trim="true"><![CDATA[
+                $data['view'] = ($this->config->get('config_secure') ? HTTPS_CATALOG : HTTP_CATALOG) . 'index.php?route=product/manufacturer/info&manufacturer_id=' . $this->request->get['manufacturer_id'];
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/view/template/catalog/manufacturer_list.twig">
+        <operation>
+            <search trim="true"><![CDATA[<td class="text-right"><a href="{{ manufacturer.edit }}" data-toggle="tooltip" title="{{ button_edit }}" class="btn btn-primary"><i class="fa fa-pencil"></i></a></td>]]></search>
+            <add position="replace" trim="true"><![CDATA[
+                <td class="text-right"><a href="{{ manufacturer.front }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info" target="_blank"><i class="fa fa-eye"></i></a> <a href="{{ manufacturer.edit }}" data-toggle="tooltip" title="{{ button_edit }}" class="btn btn-primary"><i class="fa fa-pencil"></i></a></td>
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/view/template/catalog/manufacturer_form.twig">
+        <operation>
+            <search trim="true"><![CDATA[<button type="submit" form="form-manufacturer" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>]]></search>
             <add position="before" trim="true"><![CDATA[
                 <a href="{{ view }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info" target="_blank"><i class="fa fa-eye"></i></a>
             ]]></add>
