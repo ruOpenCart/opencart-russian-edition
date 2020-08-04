@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
     <modification>
     <name>[OCN] OpenCart 3 RE Tweak</name>
-    <version>3.0.3.6.RE6</version>
+    <version>3.0.3.6.RE7</version>
     <author>Hkr</author>
     <link>https://forum.opencart.name</link>
     <code>ocn_30_re_tweak</code>
-    <date>29.07.2020</date>
+    <date>04.08.2020</date>
 
 <!-- Замена ссылок в меню профиля в админке -->
     <file path="admin/view/template/common/header.twig">
@@ -63,7 +63,7 @@
                 $_['text_version_link_re']             = 'https://forum.opencart.name/resources/13/';
                 $_['text_version_translate_link_re']   = 'https://forum.opencart.name/resources/9/';
                 $_['text_version_translate_re']        = 'Translation version';
-                $_['text_version_translate_number_re'] = '3.0.3.6.8';
+                $_['text_version_translate_number_re'] = '3.0.3.6.9';
             ]]></add>
         </operation>
     </file>
@@ -91,7 +91,7 @@
                 $_['text_version_link_re']             = 'https://forum.opencart.name/resources/13/';
                 $_['text_version_translate_link_re']   = 'https://forum.opencart.name/resources/9/';
                 $_['text_version_translate_re']        = 'Версия перевода';
-                $_['text_version_translate_number_re'] = '3.0.3.6.8';
+                $_['text_version_translate_number_re'] = '3.0.3.6.9';
                 $_['text_version_translate_hidden_re'] = 'от opencart.name';
             ]]></add>
         </operation>
