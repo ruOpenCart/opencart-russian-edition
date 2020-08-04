@@ -243,7 +243,7 @@
             <search trim="true"><![CDATA[
                 {{ footer }}
             ]]></search>
-            <add position="before" trim="true"><![CDATA[
+            <add position="after" trim="true"><![CDATA[
                 <script>
                     $('#button-setting').on('click', function() {
                         $.ajax({
