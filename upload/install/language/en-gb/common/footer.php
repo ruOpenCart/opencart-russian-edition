@@ -4,6 +4,6 @@ $_['text_project']         = 'Project Homepage';
 $_['text_documentation']   = 'Documentation';
 $_['text_support']         = 'Support Forums';
 
-// Ru
-$_['text_project_russian'] = 'Assembly Project Homepage';
-$_['text_support_russian'] = 'Build Localization Forum';
+// RE
+$_['text_project']         = 'Assembly Project Homepage';
+$_['text_localization']    = 'Build Localization Forum';
