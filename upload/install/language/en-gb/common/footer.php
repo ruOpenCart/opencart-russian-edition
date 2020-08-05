@@ -5,5 +5,5 @@ $_['text_documentation']   = 'Documentation';
 $_['text_support']         = 'Support Forums';
 
 // RE
-$_['text_project']         = 'Assembly Project Homepage';
-$_['text_localization']    = 'Build Localization Forum';
+$_['text_project_re']      = 'Assembly Project Homepage';
+$_['text_support_re']      = 'Build Localization Forum';
