@@ -533,11 +533,11 @@
         <operation>
             <search trim="true"><![CDATA['edit'        => $this->url->link('catalog/category/edit', 'user_token=' . $this->session->data['user_token'] . '&category_id=' . $result['category_id'] . $url, true),]]></search>
             <add position="before" trim="true"><![CDATA[
-                'front'        => ($this->config->get('config_secure') ? HTTPS_CATALOG : HTTP_CATALOG) . 'index.php?route=product/category&path=' . $result['category_id'],
+                'front'       => ($this->config->get('config_secure') ? HTTPS_CATALOG : HTTP_CATALOG) . 'index.php?route=product/category&path=' . $result['category_id'],
             ]]></add>
         </operation>
         <operation>
-            <search trim="true"><![CDATA[$data['cancel'] = $this->url->link('catalog/category', 'user_token=' . $this->session->data['user_token'] . $url, true);]]></search>
+            <search trim="true"><![CDATA[$data['action'] = $this->url->link('catalog/category/edit', 'user_token=' . $this->session->data['user_token'] . '&category_id=' . $this->request->get['category_id'] . $url, true);]]></search>
             <add position="after" trim="true"><![CDATA[
                 $data['view'] = ($this->config->get('config_secure') ? HTTPS_CATALOG : HTTP_CATALOG) . 'index.php?route=product/category&path=' . $this->request->get['category_id'];
             ]]></add>
@@ -555,7 +555,7 @@
         <operation>
             <search trim="true"><![CDATA[<button type="submit" form="form-category" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>]]></search>
             <add position="before" trim="true"><![CDATA[
-                <a href="{{ view }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info" target="_blank"><i class="fa fa-eye"></i></a>
+                {% if view %}<a href="{{ view }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info" target="_blank"><i class="fa fa-eye"></i></a>{% endif %}
             ]]></add>
         </operation>
     </file>
@@ -570,7 +570,7 @@
             ]]></add>
         </operation>
         <operation>
-            <search trim="true"><![CDATA[$data['cancel'] = $this->url->link('catalog/product', 'user_token=' . $this->session->data['user_token'] . $url, true);]]></search>
+            <search trim="true"><![CDATA[$data['action'] = $this->url->link('catalog/product/edit', 'user_token=' . $this->session->data['user_token'] . '&product_id=' . $this->request->get['product_id'] . $url, true);]]></search>
             <add position="after" trim="true"><![CDATA[
                 $data['view'] = ($this->config->get('config_secure') ? HTTPS_CATALOG : HTTP_CATALOG) . 'index.php?route=product/product&product_id=' . $this->request->get['product_id'];
             ]]></add>
@@ -588,7 +588,7 @@
         <operation>
             <search trim="true"><![CDATA[<button type="submit" form="form-product" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>]]></search>
             <add position="before" trim="true"><![CDATA[
-                <a href="{{ view }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info" target="_blank"><i class="fa fa-eye"></i></a>
+                {% if view %}<a href="{{ view }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info" target="_blank"><i class="fa fa-eye"></i></a>{% endif %}
             ]]></add>
         </operation>
     </file>
@@ -603,7 +603,7 @@
             ]]></add>
         </operation>
         <operation>
-            <search trim="true"><![CDATA[$data['cancel'] = $this->url->link('catalog/manufacturer', 'user_token=' . $this->session->data['user_token'] . $url, true);]]></search>
+            <search trim="true"><![CDATA[$data['action'] = $this->url->link('catalog/manufacturer/edit', 'user_token=' . $this->session->data['user_token'] . '&manufacturer_id=' . $this->request->get['manufacturer_id'] . $url, true);]]></search>
             <add position="after" trim="true"><![CDATA[
                 $data['view'] = ($this->config->get('config_secure') ? HTTPS_CATALOG : HTTP_CATALOG) . 'index.php?route=product/manufacturer/info&manufacturer_id=' . $this->request->get['manufacturer_id'];
             ]]></add>
@@ -621,7 +621,7 @@
         <operation>
             <search trim="true"><![CDATA[<button type="submit" form="form-manufacturer" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>]]></search>
             <add position="before" trim="true"><![CDATA[
-                <a href="{{ view }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info" target="_blank"><i class="fa fa-eye"></i></a>
+                {% if view %}<a href="{{ view }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info" target="_blank"><i class="fa fa-eye"></i></a>{% endif %}
             ]]></add>
         </operation>
     </file>
@@ -636,7 +636,7 @@
             ]]></add>
         </operation>
         <operation>
-            <search trim="true"><![CDATA[$data['cancel'] = $this->url->link('catalog/information', 'user_token=' . $this->session->data['user_token'] . $url, true);]]></search>
+            <search trim="true"><![CDATA[$data['action'] = $this->url->link('catalog/information/edit', 'user_token=' . $this->session->data['user_token'] . '&information_id=' . $this->request->get['information_id'] . $url, true);]]></search>
             <add position="after" trim="true"><![CDATA[
                 $data['view'] = ($this->config->get('config_secure') ? HTTPS_CATALOG : HTTP_CATALOG) . 'index.php?route=information/information&information_id=' . $this->request->get['information_id'];
             ]]></add>
@@ -654,7 +654,7 @@
         <operation>
             <search trim="true"><![CDATA[<button type="submit" form="form-information" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>]]></search>
             <add position="before" trim="true"><![CDATA[
-                <a href="{{ view }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info" target="_blank"><i class="fa fa-eye"></i></a>
+                {% if view %}<a href="{{ view }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info" target="_blank"><i class="fa fa-eye"></i></a>{% endif %}
             ]]></add>
         </operation>
     </file>
