@@ -6,7 +6,7 @@ final class Twig {
 	public function set($key, $value) {
 		$this->data[$key] = $value;
 	}
-	
+
 	public function render($filename, $code = '') {
 		if (!$code) {
 			$file = DIR_TEMPLATE . $filename . '.twig';
@@ -28,7 +28,12 @@ final class Twig {
 		);
 
 		try {
-			$loader = new \Twig\Loader\ArrayLoader(array($filename . '.twig' => $code));
+			// $loader = new \Twig\Loader\ArrayLoader(array($filename . '.twig' => $code));
+
+			// temp fix for not work include
+			$loader1 = new \Twig_Loader_Array(array($filename . '.twig' => $code));
+			$loader2 = new \Twig_Loader_Filesystem(array(DIR_TEMPLATE));
+			$loader = new \Twig_Loader_Chain(array($loader1, $loader2));
 
 			$twig = new \Twig\Environment($loader, $config);
 
@@ -36,6 +41,6 @@ final class Twig {
 		} catch (Exception $e) {
 			trigger_error('Error: Could not load template ' . $filename . '!');
 			exit();
-		}	
-	}	
+		}
+	}
 }
