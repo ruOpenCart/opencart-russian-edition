@@ -32,7 +32,7 @@ $_['text_transaction_suspended']           = 'Ожидающий';
 $_['text_transaction_suspended_failed']    = 'Приостановлено из-за неудачного платежа';
 $_['text_transaction_outstanding_failed']  = 'Не удалось оплатить';
 $_['text_transaction_expired']             = 'Истекший';
-$_['text_no_results']                      = 'Регулярные платежи не найдены!';
+$_['text_empty']                           = 'Регулярные платежи не найдены!';
 $_['text_error']                           = 'Не удалось найти запрашиваемый Вами повторяющийся заказ!';
 $_['text_cancelled']                       = 'Регулярный платеж был отменен';
 

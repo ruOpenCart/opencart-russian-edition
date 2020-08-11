@@ -1,13 +1,13 @@
 <?php
 // Heading
-$_['heading_title']				   = 'Klarna Checkout';
-$_['heading_title_success']		   = 'Your Klarna Checkout order has been placed!';
+$_['heading_title']               = 'Klarna Checkout';
+$_['heading_title_success']       = 'Ваш заказ Klarna Checkout был размещен!';
 
 // Text
-$_['text_title']				   = 'Klarna Checkout';
-$_['text_basket']				   = 'Shopping Cart';
-$_['text_checkout']				   = 'Заказ';
-$_['text_success']				   = 'Success';
-$_['text_choose_shipping_method']  = 'Choose shipping method';
-$_['text_sales_tax']			   = 'Sales Tax';
-$_['text_newsletter']			   = 'Subscribe to our newsletter';
+$_['text_title']                  = 'Klarna Checkout';
+$_['text_basket']                 = 'Корзина покупателя';
+$_['text_checkout']               = 'Заказ';
+$_['text_success']                = 'Успешно';
+$_['text_choose_shipping_method'] = 'Выберите способ доставки';
+$_['text_sales_tax']              = 'Налог с продаж';
+$_['text_newsletter']             = 'Подписывайтесь на нашу новостную рассылку';

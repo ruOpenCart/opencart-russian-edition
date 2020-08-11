@@ -1,48 +1,48 @@
 <?php
 // Text
-$_['text_title']						= 'Cards or PayPal';
-$_['text_express_title']      			= 'Confirm order';
-$_['text_vaulted_payment_method_name']	= '%s ending in %s, expires %s';
-$_['text_remember']						= 'Save for next time?';
-$_['text_remove']						= 'Удалить';
-$_['text_remove_confirm']				= 'Are you sure you want to remove the saved payment method?';
-$_['text_month']						= 'Месяц';
-$_['text_year']							= 'Год';
-$_['text_loading']						= 'Загрузка...';
-$_['text_new_method']					= 'New payment method';
-$_['text_saved_method']					= 'Choose a saved payment method';
-$_['text_paypal']						= 'PayPal';
-$_['text_pay_by_paypal']				= 'Pay by PayPal';
-$_['text_method_removed']				= 'Payment method has been removed';
-$_['text_method_not_removed']			= 'Unable to remove payment method';
-$_['text_authentication']				= 'Authentication';
-$_['text_cart']               			= 'Shopping Cart';
-$_['text_shipping_updated']   			= 'Shipping service updated';
+$_['text_title']                       = 'Карты или PayPal';
+$_['text_express_title']               = 'Подтвердить заказ';
+$_['text_vaulted_payment_method_name'] = '%s кончающийся в %s, истекает %s';
+$_['text_remember']                    = 'Сохранить на следующий раз?';
+$_['text_remove']                      = 'Удалить';
+$_['text_remove_confirm']              = 'Вы действительно хотите удалить сохраненный способ оплаты?';
+$_['text_month']                       = 'Месяц';
+$_['text_year']                        = 'Год';
+$_['text_loading']                     = 'Загрузка...';
+$_['text_new_method']                  = 'Новый способ оплаты';
+$_['text_saved_method']                = 'Выберите сохраненный способ оплаты';
+$_['text_paypal']                      = 'PayPal';
+$_['text_pay_by_paypal']               = 'Оплатить с помощью PayPal';
+$_['text_method_removed']              = 'Способ оплаты удален';
+$_['text_method_not_removed']          = 'Невозможно удалить способ оплаты';
+$_['text_authentication']              = 'Аутентификация';
+$_['text_cart']                        = 'Корзина покупателя';
+$_['text_shipping_updated']            = 'Обновлена служба доставки';
 
 // Entry
-$_['entry_new']							= 'New payment method';
-$_['entry_saved_methods']				= 'Saved payment method';
-$_['entry_card']						= 'Card Number';
-$_['entry_expires']						= 'Expires on';
-$_['entry_cvv']							= 'CVV';
-$_['entry_remember_card_method']		= 'Remember card?';
-$_['entry_remember_paypal_method']		= 'Remember PayPal account?';
-$_['entry_card_placeholder']			= 'Card Number';
-$_['entry_month_placeholder']			= 'Month (MM)';
-$_['entry_year_placeholder']			= 'Year (YYYY)';
-$_['entry_cvv_placeholder']				= 'CVV2';
+$_['entry_new']                        = 'Новый способ оплаты';
+$_['entry_saved_methods']              = 'Сохраненный способ оплаты';
+$_['entry_card']                       = 'Номер карты';
+$_['entry_expires']                    = 'Истекает';
+$_['entry_cvv']                        = 'CVV';
+$_['entry_remember_card_method']       = 'Запомнить карту?';
+$_['entry_remember_paypal_method']     = 'Запомнить аккаунт PayPal?';
+$_['entry_card_placeholder']           = 'Номер карты';
+$_['entry_month_placeholder']          = 'Месяц (MM)';
+$_['entry_year_placeholder']           = 'Год (YYYY)';
+$_['entry_cvv_placeholder']            = 'CVV2';
 
 // Error
-$_['error_process_order']				= 'There was an error processing your order. Please contact the shop administrator for help.';
-$_['error_alert_fields_empty']			= 'All fields are empty! Please fill out the form';
-$_['error_alert_fields_invalid']		= 'Some fields are invalid, please check your information';
-$_['error_alert_failed_token']			= 'Our payment provider did not recognise the card. Is the card valid?';
-$_['error_alert_failed_network']		= 'A network error occurred, please try again';
-$_['error_alert_unknown']				= 'An unknown error occurred, if the issue continued please contact support';
-$_['error_unavailable'] 	  			= 'Please use the full checkout with this order';
-$_['error_no_shipping']    				= 'Warning: No Shipping options are available.';
+$_['error_process_order']              = 'При обработке вашего заказа произошла ошибка. Обратитесь за помощью к администратору магазина.';
+$_['error_alert_fields_empty']         = 'Все поля пусты! Пожалуйста, заполните форму';
+$_['error_alert_fields_invalid']       = 'Некоторые поля недействительны, пожалуйста, проверьте свою информацию';
+$_['error_alert_failed_token']         = 'Наша платежная система не распознала карту. Карта действительна?';
+$_['error_alert_failed_network']       = 'Произошла сетевая ошибка, попробуйте еще раз';
+$_['error_alert_unknown']              = 'Произошла неизвестная ошибка. Если проблема не исчезнет, обратитесь в службу поддержки.';
+$_['error_unavailable']                = 'Пожалуйста, используйте полную оплату с этим заказом';
+$_['error_no_shipping']                = 'Предупреждение: Варианты доставки недоступны.';
 
 // Button
-$_['button_confirm']					= 'Pay Now';
-$_['button_express_confirm']  			= 'Подтверждение';
-$_['button_express_shipping'] 			= 'Update shipping';
+$_['button_confirm']                   = 'Оплатить сейчас';
+$_['button_express_confirm']           = 'Подтверждение';
+$_['button_express_shipping']          = 'Обновить доставку';

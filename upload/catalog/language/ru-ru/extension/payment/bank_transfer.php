@@ -1,6 +1,6 @@
 <?php
 // Text
 $_['text_title']       = 'Банковский перевод';
-$_['text_instruction'] = 'Bank Transfer Instructions';
-$_['text_description'] = 'Please transfer the total amount to the following bank account.';
-$_['text_payment']     = 'Your order will not ship until we receive payment.';
+$_['text_instruction'] = 'Инструкции по банковскому переводу';
+$_['text_description'] = 'Переведите общую сумму на следующий банковский счет.';
+$_['text_payment']     = 'Ваш заказ не будет отправлен, пока мы не получим оплату.';

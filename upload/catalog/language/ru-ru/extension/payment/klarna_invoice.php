@@ -1,35 +1,35 @@
 <?php
 // Text
-$_['text_title']				= 'Klarna Invoice - Pay within 14 days';
-$_['text_terms_fee']			= '<span id="klarna_invoice_toc"></span> (+%s)<script type="text/javascript">var terms = new Klarna.Terms.Invoice({el: \'klarna_invoice_toc\', eid: \'%s\', country: \'%s\', charge: %s});</script>';
-$_['text_terms_no_fee']			= '<span id="klarna_invoice_toc"></span><script type="text/javascript">var terms = new Klarna.Terms.Invoice({el: \'klarna_invoice_toc\', eid: \'%s\', country: \'%s\'});</script>';
-$_['text_additional']			= 'Klarna Invoice requires some additional information before they can proccess your order.';
-$_['text_male']					= 'Male';
-$_['text_female']				= 'Female';
-$_['text_year']					= 'Год';
-$_['text_month']				= 'Месяц';
-$_['text_day']					= 'День';
-$_['text_comment']				= 'Klarna\'s Invoice ID: %s. ' . "\n" . '%s/%s: %.4f';
+$_['text_title']          = 'Klarna Invoice - Оплата в течение 14 дней';
+$_['text_terms_fee']      = '<span id="klarna_invoice_toc"></span> (+%s)<script type="text/javascript">var terms = new Klarna.Terms.Invoice({el: \'klarna_invoice_toc\', eid: \'%s\', country: \'%s\', charge: %s});</script>';
+$_['text_terms_no_fee']   = '<span id="klarna_invoice_toc"></span><script type="text/javascript">var terms = new Klarna.Terms.Invoice({el: \'klarna_invoice_toc\', eid: \'%s\', country: \'%s\'});</script>';
+$_['text_additional']     = 'Klarna Invoice требует дополнительной информации, прежде чем они смогут обработать Ваш заказ.';
+$_['text_male']           = 'Мужчина';
+$_['text_female']         = 'Женщина';
+$_['text_year']           = 'Год';
+$_['text_month']          = 'Месяц';
+$_['text_day']            = 'День';
+$_['text_comment']        = 'Klarna\'s идентификатор счета: %s. ' . "\n" . '%s/%s: %.4f';
 
 // Entry
-$_['entry_gender']				= 'Gender';
-$_['entry_pno']					= 'Personal Number';
-$_['entry_dob']					= 'Date of Birth';
-$_['entry_phone_no']			= 'Phone number';
-$_['entry_street']				= 'Street';
-$_['entry_house_no']			= 'House No.';
-$_['entry_house_ext']			= 'House Ext.';
-$_['entry_company']				= 'Company Registration Number';
+$_['entry_gender']        = 'Пол';
+$_['entry_pno']           = 'Персональный номер';
+$_['entry_dob']           = 'Дата рождения';
+$_['entry_phone_no']      = 'Телефонный номер';
+$_['entry_street']        = 'Улица';
+$_['entry_house_no']      = 'Дом №';
+$_['entry_house_ext']     = 'Дом доб.';
+$_['entry_company']       = 'Регистрационный номер компании';
 
 // Help
-$_['help_pno']					= 'Please enter your Social Security number here.';
-$_['help_phone_no']				= 'Please enter your phone number.';
-$_['help_street']				= 'Please note that delivery can only take place to the registered address when paying with Klarna.';
-$_['help_house_no']				= 'Please enter your house number.';
-$_['help_house_ext']			= 'Please submit your house extension here. E.g. A, B, C, Red, Blue ect.';
-$_['help_company']				= 'Please enter your Company\'s registration number';
+$_['help_pno']            = 'Пожалуйста, введите здесь свой номер социального страхования.';
+$_['help_phone_no']       = 'Пожалуйста введите Ваш номер телефона.';
+$_['help_street']         = 'Обратите внимание, что при оплате с помощью Klarna доставка может осуществляться только на зарегистрированный адрес.';
+$_['help_house_no']       = 'Пожалуйста, введите номер Вашего дома.';
+$_['help_house_ext']      = 'Пожалуйста, отправьте сюда пристройку дома. Например. A, B, C, красный, синий и т. д.';
+$_['help_company']        = 'Пожалуйста, введите регистрационный номер Вашей компании';
 
 // Error
-$_['error_deu_terms']			= 'You must agree to Klarna\'s privacy policy (Datenschutz)';
-$_['error_address_match']		= 'Billing and Shipping addresses must match if you want to use Klarna Invoice';
-$_['error_network']				= 'Error occurred while connecting to Klarna. Please try again later.';
+$_['error_deu_terms']     = 'Вы должны согласиться с политикой конфиденциальности Klarna (Datenschutz)';
+$_['error_address_match'] = 'Адреса выставления счетов и доставки должны совпадать, если Вы хотите использовать счет-фактуру Klarna.';
+$_['error_network']       = 'Ошибка при подключении к Klarna. Пожалуйста, попробуйте позже.';
