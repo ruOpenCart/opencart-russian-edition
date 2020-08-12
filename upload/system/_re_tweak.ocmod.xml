@@ -660,4 +660,25 @@
     </file>
     <!--  -->
 <!--  -->
+
+<!-- Добавляем кнопку для скрытия меню в админке -->
+    <file path="admin/view/template/common/header.twig">
+        <operation>
+          <search><![CDATA[<a href="#" id="button-menu" class="hidden-md hidden-lg"><span class="fa fa-bars"></span></a>{% if logged %}]]></search>
+          <add position="replace"><![CDATA[
+          <a href="#" id="button-menu"><span class="fa fa-bars"></span></a>{% if logged %}
+          ]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[<link type="text/css" href="view/stylesheet/stylesheet.css" rel="stylesheet" media="screen" />]]></search>
+            <add position="after"><![CDATA[<link rel="stylesheet" href="view/stylesheet/ocn/menu-switch.css">]]></add>
+        </operation>
+    </file>
+    <file path="admin/view/template/common/column_left.twig">
+        <operation>
+            <search><![CDATA[<nav id="column-left">]]></search>
+            <add position="replace"><![CDATA[<nav id="column-left" class="active">]]></add>
+        </operation>
+    </file>
+<!--  -->
 </modification>
