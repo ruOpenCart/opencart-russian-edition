@@ -664,6 +664,20 @@
 <!-- Добавляем кнопку для скрытия меню в админке -->
     <file path="admin/view/template/common/header.twig">
         <operation>
+          <search><![CDATA[</head>]]></search>
+          <add position="before"><![CDATA[<style>
+#column-left + #content,#column-left + #content + #footer{position:relative;left:0}
+#column-left.active{left:0}
+#column-left.active + #content,#column-left.active + #content + #footer{left:235px}
+@media (min-width: 768px){
+#button-menu{display:inline-block}
+#column-left{left:-235px}
+#column-left + #content,#column-left + #content + #footer{left:0;margin-left:auto}
+#column-left.active + #content,#column-left.active + #content + #footer{left:0;margin-left:235px}
+}
+</style>]]></add>
+        </operation>
+        <operation>
           <search><![CDATA[<a href="#" id="button-menu" class="hidden-md hidden-lg"><span class="fa fa-bars"></span></a>{% if logged %}]]></search>
           <add position="replace"><![CDATA[
           <a href="#" id="button-menu"><span class="fa fa-bars"></span></a>{% if logged %}
@@ -697,10 +711,6 @@ $(window).on('load', function () {
 });
 </script>
           ]]></add>
-        </operation>
-        <operation>
-            <search><![CDATA[<link type="text/css" href="view/stylesheet/stylesheet.css" rel="stylesheet" media="screen" />]]></search>
-            <add position="after"><![CDATA[<link rel="stylesheet" href="view/stylesheet/ocn/menu-switch.css">]]></add>
         </operation>
     </file>
     <file path="admin/view/template/common/column_left.twig">
