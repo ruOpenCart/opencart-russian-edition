@@ -670,6 +670,35 @@
           ]]></add>
         </operation>
         <operation>
+          <search><![CDATA[</header>]]></search>
+          <add position="after"><![CDATA[
+<script>
+$(window).on('load', function () {
+  checkMenu();
+  function checkMenu() {
+    let menuStatus = Number(localStorage.getItem('button-menu'));
+    if (menuStatus) {
+      if (!$('#column-left').hasClass('active')) {
+        $('#column-left').addClass('active');
+      }
+    } else {
+      $('#column-left').removeClass('active');
+    }
+  }
+
+  $('#button-menu').on('click', function(e) {
+    e.preventDefault();
+    if ($('#column-left').hasClass('active')) {
+      localStorage.setItem('button-menu', 1);
+    } else {
+      localStorage.setItem('button-menu', 0);
+    }
+  });
+});
+</script>
+          ]]></add>
+        </operation>
+        <operation>
             <search><![CDATA[<link type="text/css" href="view/stylesheet/stylesheet.css" rel="stylesheet" media="screen" />]]></search>
             <add position="after"><![CDATA[<link rel="stylesheet" href="view/stylesheet/ocn/menu-switch.css">]]></add>
         </operation>
