@@ -22,6 +22,8 @@ $_['entry_db_prefix']        = 'Prefix';
 $_['entry_username']         = 'Username';
 $_['entry_password']         = 'Password';
 $_['entry_email']            = 'E-Mail';
+$_['entry_firstname']        = 'First Name';
+$_['entry_lastname']         = 'Last Name';
 
 // Error
 $_['error_db_hostname']      = 'Hostname required!';
@@ -33,4 +35,6 @@ $_['error_db_connect']       = 'Error: Could not connect to the database please 
 $_['error_username']         = 'Username required!';
 $_['error_password']         = 'Password required!';
 $_['error_email']            = 'Invalid E-Mail!';
+$_['error_firstname']        = 'First Name required!';
+$_['error_lastname']         = 'Last Name required!';
 $_['error_config']           = 'Error: Could not write to config.php please check you have set the correct permissions on: ';
