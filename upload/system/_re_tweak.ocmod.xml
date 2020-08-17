@@ -690,6 +690,9 @@
 $(window).on('load', function () {
   checkMenu();
   function checkMenu() {
+    if (localStorage.getItem("button-menu") == null) {
+      localStorage.setItem('button-menu', 1);
+    }
     let menuStatus = Number(localStorage.getItem('button-menu'));
     if (menuStatus) {
       if (!$('#column-left').hasClass('active')) {
