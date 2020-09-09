@@ -499,7 +499,7 @@
                     .ocn-arrow-up {
                         position: fixed;
                         right: 10px;
-                        bottom: 10px;
+                        bottom: 50px;
                         display: none;
                         z-index: 999;
                     }
