@@ -169,7 +169,7 @@ $_['help_icon']                      = 'Значок должен быть в ф
 $_['help_mail_engine']               = 'Выбирайте «Mail» только если на Вашем хосте не отключена функция php mail.';
 $_['help_mail_parameter']            = 'При использовании «Mail» здесь можно добавить дополнительные параметры почты (например, -f email@opencart.name).';
 $_['help_mail_smtp_hostname']        = 'Добавьте префикс \'tls://\' или \'ssl://\' если требуется защищенное соединение. (например, tls://smtp.gmail.com, ssl://smtp.gmail.com).';
-$_['help_mail_smtp_password']        = 'Для Gmail Вам может потребоваться установить специальный пароль для приложения здесь: <a href="https://security.google.com/settings/security/apppasswords">https://security.google.com/settings/security/apppasswords</a>.';
+$_['help_mail_smtp_password']        = 'Для Gmail Вам может потребоваться установить специальный пароль для приложения здесь: https://security.google.com/settings/security/apppasswords.';
 $_['help_mail_alert']                = 'Выберите, какие события Вы хотите получать по электронной почте, когда клиент использует их.';
 $_['help_mail_alert_email']          = 'Любые дополнительные адреса электронной почты, на которые Вы хотите получать уведомления, в дополнение к основной электронной почте магазина (разделенные запятой).';
 $_['help_secure']                    = 'Чтобы использовать SSL, проверьте на своем хосте, установлен ли SSL-сертификат, и добавьте URL-адрес SSL в каталог и файлы конфигурации администратора.';
