@@ -1,9 +1,8 @@
 <?php
 // Text
-$_['text_project']         = 'Project Homepage';
-$_['text_documentation']   = 'Documentation';
-$_['text_support']         = 'Support Forums';
+$_['text_project']       = '[EN] Project Homepage';
+$_['text_documentation'] = '[RU] Documentation';
+$_['text_support']       = '[EN] Support Forums';
 
 // RE
-$_['text_project_re']      = 'Assembly Project Homepage';
-$_['text_support_re']      = 'Build Localization Forum';
+$_['text_project_re']    = '[RU] Assembly Project Homepage';

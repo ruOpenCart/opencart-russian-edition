@@ -1,5 +1,8 @@
 <?php
 // Text
-$_['text_project']       = 'Домашняя страница проекта';
-$_['text_documentation'] = 'Документация';
-$_['text_support']       = 'Форум поддержки</a> | <a href="https://forum.opencart.name/" target="_blank"><b>Форум локализации</b>';
+$_['text_project']       = '[EN] Домашняя страница проекта';
+$_['text_documentation'] = '[RU] Документация';
+$_['text_support']       = '[EN] Форум поддержки';
+
+// RE
+$_['text_project_re']    = '[RU] Форум сборки';
