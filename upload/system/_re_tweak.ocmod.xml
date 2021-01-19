@@ -70,7 +70,7 @@
     <file path="admin/language/ru-ru/common/footer.php">
         <operation>
             <search trim="true"><![CDATA[
-                $_['text_footer']  = '<a href="http://www.opencart.com">OpenCart</a> &copy; 2009-' . date('Y') . ' Все права защищены. <br> <a href="https://forum.opencart.name" target="_blank">ruOpenCart</a> &copy; 2020-' . date('Y') . ' Все права защищены.';
+                $_['text_footer']  = '<a href="http://www.opencart.com">OpenCart</a> &copy; 2009-' . date('Y') . ' Все права защищены. <br> <a href="https://forum.opencart.name" target="_blank">OpenCart.name</a> &copy; 2020-' . date('Y') . ' Все права защищены.';
             ]]></search>
             <add position="replace" trim="true" offset="2"><![CDATA[
                 $_['text_footer']                      = 'OpenCart';

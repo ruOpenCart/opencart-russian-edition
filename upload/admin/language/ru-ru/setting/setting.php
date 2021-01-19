@@ -167,7 +167,7 @@ $_['help_return_status']             = 'Установите статус воз
 $_['help_captcha']                   = 'Использовать защитный код (капча) для регистрации, авторизации, обратной связи и отзывов.';
 $_['help_icon']                      = 'Значок должен быть в формате PNG размером 16x16 пикселей.';
 $_['help_mail_engine']               = 'Выбирайте «Mail» только если на Вашем хосте не отключена функция php mail.';
-$_['help_mail_parameter']            = 'При использовании «Mail» здесь можно добавить дополнительные параметры почты (например, -f email@ruopencart.dev).';
+$_['help_mail_parameter']            = 'При использовании «Mail» здесь можно добавить дополнительные параметры почты (например, -f email@opencart.name).';
 $_['help_mail_smtp_hostname']        = 'Добавьте префикс \'tls://\' или \'ssl://\' если требуется защищенное соединение. (например, tls://smtp.gmail.com, ssl://smtp.gmail.com).';
 $_['help_mail_smtp_password']        = 'Для Gmail Вам может потребоваться установить специальный пароль для приложения здесь: <a href="https://security.google.com/settings/security/apppasswords">https://security.google.com/settings/security/apppasswords</a>.';
 $_['help_mail_alert']                = 'Выберите, какие события Вы хотите получать по электронной почте, когда клиент использует их.';
