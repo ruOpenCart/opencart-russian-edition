@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>[OCN] Обновление Кеша Модификаторов в Установщике</name>
+    <code>ocn__refresh_button_in_installer</code>
+    <version>3.0.1.0</version>
+    <author>Hkr</author>
+    <link>https://forum.opencart.name/resources/25/</link>
+
+<!-- Обновление Кеша Модификаторов в Установщике -->
+    <file path="admin/controller/marketplace/installer.php">
+        <operation>
+            <search><![CDATA[$data['user_token'] = $this->session->data['user_token'];]]></search>
+            <add position="before" trim="true"><![CDATA[
+                $url = '&installer=on';
+                $data['refresh'] = $this->url->link('marketplace/modification/refresh', 'user_token=' . $this->session->data['user_token'] . $url, true);
+                if (isset($this->session->data['success'])) {
+                $data['success'] = $this->session->data['success'];
+                unset($this->session->data['success']);
+                }
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="admin/controller/marketplace/modification.php">
+        <operation>
+            <search><![CDATA[$this->getList();]]></search>
+            <add position="replace" trim="true"><![CDATA[
+                if (!isset($this->request->get['installer'])) {
+                    $this->getList();
+                }
+            ]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[$this->response->redirect($this->url->link(!empty($data['redirect']) ? $data['redirect'] : 'marketplace/modification', 'user_token=' . $this->session->data['user_token'] . $url, true));]]></search>
+            <add position="replace" trim="true"><![CDATA[
+                if (isset($this->request->get['installer']) && $this->request->get['installer'] === 'on') {
+                    unset($this->session->data['success']);
+                    $this->response->addHeader('Content-Type: application/json; charset=utf-8');
+                    $this->response->setOutput(json_encode(['success' => $this->language->get('text_success')]));
+                } else {
+                    $this->response->redirect($this->url->link(!empty($data['redirect']) ? $data['redirect'] : 'marketplace/modification', 'user_token=' . $this->session->data['user_token'] . $url, true));
+                }
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="admin/view/template/marketplace/installer.twig">
+        <operation>
+            <search><![CDATA[<h1>{{ heading_title }}</h1>]]></search>
+            <add position="replace" trim="true"><![CDATA[
+                <div class="pull-right">
+                    <button data-toggle="tooltip" title="{{ button_refresh }}" class="btn btn-info" id="refreshAjax" data-url="{{ refresh }}"><i class="fa fa-refresh"></i></button>
+                </div>
+            ]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[<div class="panel panel-default">]]></search>
+            <add position="before" trim="true"><![CDATA[
+                {% if success %}
+                    <div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> {{ success }}
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    </div>
+                {% endif %}
+            ]]></add>
+        </operation>
+        <operation>
+            <search trim="true"><![CDATA[{{ footer }}]]></search>
+            <add position="before" trim="true"><![CDATA[
+                <script>
+                    $('#refreshAjax').on('click', function () {
+                        $('.alert').remove();
+
+                        let buttonRefreshAjax = $('#refreshAjax');
+                        const urlAjax = buttonRefreshAjax.attr('data-url');
+
+                        $.ajax({
+                            type: 'get',
+                            url: urlAjax,
+                            dataType: 'json',
+                            beforeSend: function() {
+                                buttonRefreshAjax.prop('disabled', true);
+                                buttonRefreshAjax.find('i.fa').removeClass('fa-refresh').addClass('fa-spinner fa-pulse');
+                            },
+                            complete: function() {
+                                buttonRefreshAjax.prop('disabled', false);
+                                buttonRefreshAjax.find('i.fa').removeClass('fa-spinner fa-pulse').addClass('fa-refresh');
+                            },
+                            success: function(response) {
+                                let alertMessage = response.success;
+
+                                let alertBlock = '<div class="alert alert-success alert-dismissible"><i class="fa fa-exclamation-circle"></i>' + alertMessage + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>';
+                                $('#content > .container-fluid').prepend(alertBlock);
+                            },
+                            error: function(xhr, ajaxOptions, thrownError) {
+                                alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                            }
+                        });
+                    })
+                </script>
+            ]]></add>
+        </operation>
+    </file>
+<!-- -->
+</modification>

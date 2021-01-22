@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>[OCN] Кнопка вверх</name>
+    <code>ocn__arrow_to_up</code>
+    <version>3.0.0.0</version>
+    <author>Hkr</author>
+    <link>https://forum.opencart.name/resources/49/</link>
+
+<!-- Добавление кнопки вверх -->
+    <file path="catalog/view/theme/default/template/common/footer.twig">
+        <operation>
+            <search><![CDATA[</footer>]]></search>
+            <add position="after" trim="true"><![CDATA[
+                <a class="ocn-arrow-up" id="ocn-arrow-up" href="#top"><i class="fa fa-angle-double-up fa-3x" aria-hidden="true"></i></a>
+                <style>
+                    .ocn-arrow-up {
+                        position: fixed;
+                        right: 10px;
+                        bottom: 10px;
+                        display: none;
+                        z-index: 999;
+                    }
+                    .ocn-arrow-up > i.fa {
+                        font-size: 50px;
+                    }
+                </style>
+                <script>
+                    $(document).ready(function() {
+                        $(window).scroll(function() {
+                            if ($(this).scrollTop() > 100) {
+                                if ($('#ocn-arrow-up').is(':hidden')) {
+                                    $('#ocn-arrow-up').css({opacity : 1}).fadeIn('slow');
+                                }
+                            } else { $('#ocn-arrow-up').stop(true, false).fadeOut('fast'); }
+                        });
+                        $('#ocn-arrow-up').click(function(e) {
+                            e.preventDefault();
+                            $('html, body').stop().animate({scrollTop : 0}, 300);
+                        });
+                    });
+                </script>
+            ]]></add>
+        </operation>
+    </file>
+<!-- -->
+</modification>

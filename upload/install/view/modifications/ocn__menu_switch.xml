@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>[OCN] Скрытие меню в админке</name>
+    <code>ocn__menu_switch</code>
+    <version>3.0.0.1</version>
+    <author>Hkr</author>
+    <link>https://forum.opencart.name/resources/58/</link>
+
+<!-- Добавляем кнопку для скрытия меню в админке -->
+    <file path="admin/view/template/common/header.twig">
+        <operation>
+            <search><![CDATA[</head>]]></search>
+            <add position="before"><![CDATA[
+                <style>
+                    #column-left + #content,#column-left + #content + #footer{position:relative;left:0}
+                    #column-left.active{left:0}
+                    #column-left.active + #content,#column-left.active + #content + #footer{left:235px}
+                    @media (min-width: 768px){
+                        #button-menu{display:inline-block}
+                        #column-left{left:-235px}
+                        #column-left + #content,#column-left + #content + #footer{left:0;margin-left:auto}
+                        #column-left.active + #content,#column-left.active + #content + #footer{left:0;margin-left:235px}
+                    }
+                </style>
+            ]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[<a href="#" id="button-menu" class="hidden-md hidden-lg"><span class="fa fa-bars"></span></a>{% if logged %}]]></search>
+            <add position="replace"><![CDATA[<a href="#" id="button-menu"><span class="fa fa-bars"></span></a>{% if logged %}]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[</header>]]></search>
+            <add position="after"><![CDATA[
+                <script>
+                    $(window).on('load', function () {
+                        checkMenu();
+                        function checkMenu() {
+                            let menuStatus = Number(localStorage.getItem('button-menu'));
+                            if (menuStatus) {
+                            if (!$('#column-left').hasClass('active')) {
+                                $('#column-left').addClass('active');
+                            }
+                            } else {
+                            $('#column-left').removeClass('active');
+                            }
+                        }
+
+                        $('#button-menu').on('click', function(e) {
+                            e.preventDefault();
+                            if ($('#column-left').hasClass('active')) {
+                            localStorage.setItem('button-menu', 1);
+                            } else {
+                            localStorage.setItem('button-menu', 0);
+                            }
+                        });
+                    });
+                </script>
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/view/template/common/column_left.twig">
+        <operation>
+            <search><![CDATA[<nav id="column-left">]]></search>
+            <add position="replace"><![CDATA[<nav id="column-left" class="active">]]></add>
+        </operation>
+    </file>
+<!--  -->
+</modification>

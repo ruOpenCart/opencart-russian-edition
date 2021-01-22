@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>[OCN] Быстрая ссылка в каталоге на витрину</name>
+    <code>ocn__quick_link_to_front_in_catalog</code>
+    <version>3.0.0.0</version>
+    <author>Hkr</author>
+    <link>https://forum.opencart.name/</link>
+
+<!-- Добавление ссылок для быстрого перехода на витрину магазина из админки -->
+    <!-- Для категорий -->
+    <file path="admin/controller/catalog/category.php">
+        <operation>
+            <search trim="true"><![CDATA['edit'        => $this->url->link('catalog/category/edit', 'user_token=' . $this->session->data['user_token'] . '&category_id=' . $result['category_id'] . $url, true),]]></search>
+            <add position="before" trim="true"><![CDATA[
+                'front'       => ($this->config->get('config_secure') ? HTTPS_CATALOG : HTTP_CATALOG) . 'index.php?route=product/category&path=' . $result['category_id'],
+            ]]></add>
+        </operation>
+        <operation>
+            <search trim="true"><![CDATA[$data['action'] = $this->url->link('catalog/category/edit', 'user_token=' . $this->session->data['user_token'] . '&category_id=' . $this->request->get['category_id'] . $url, true);]]></search>
+            <add position="after" trim="true"><![CDATA[
+                $data['view'] = ($this->config->get('config_secure') ? HTTPS_CATALOG : HTTP_CATALOG) . 'index.php?route=product/category&path=' . $this->request->get['category_id'];
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/view/template/catalog/category_list.twig">
+        <operation>
+            <search trim="true"><![CDATA[<td class="text-right"><a href="{{ category.edit }}" data-toggle="tooltip" title="{{ button_edit }}" class="btn btn-primary"><i class="fa fa-pencil"></i></a></td>]]></search>
+            <add position="replace" trim="true"><![CDATA[
+                <td class="text-right"><a href="{{ category.front }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info" target="_blank"><i class="fa fa-eye"></i></a> <a href="{{ category.edit }}" data-toggle="tooltip" title="{{ button_edit }}" class="btn btn-primary"><i class="fa fa-pencil"></i></a></td>
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/view/template/catalog/category_form.twig">
+        <operation>
+            <search trim="true"><![CDATA[<button type="submit" form="form-category" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>]]></search>
+            <add position="before" trim="true"><![CDATA[
+                {% if view %}<a href="{{ view }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info" target="_blank"><i class="fa fa-eye"></i></a>{% endif %}
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
+
+    <!-- Для продукции -->
+    <file path="admin/controller/catalog/product.php">
+        <operation>
+            <search trim="true"><![CDATA['edit'       => $this->url->link('catalog/product/edit', 'user_token=' . $this->session->data['user_token'] . '&product_id=' . $result['product_id'] . $url, true)]]></search>
+            <add position="before" trim="true"><![CDATA[
+                'front'      => ($this->config->get('config_secure') ? HTTPS_CATALOG : HTTP_CATALOG) . 'index.php?route=product/product&product_id=' . $result['product_id'],
+            ]]></add>
+        </operation>
+        <operation>
+            <search trim="true"><![CDATA[$data['action'] = $this->url->link('catalog/product/edit', 'user_token=' . $this->session->data['user_token'] . '&product_id=' . $this->request->get['product_id'] . $url, true);]]></search>
+            <add position="after" trim="true"><![CDATA[
+                $data['view'] = ($this->config->get('config_secure') ? HTTPS_CATALOG : HTTP_CATALOG) . 'index.php?route=product/product&product_id=' . $this->request->get['product_id'];
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/view/template/catalog/product_list.twig">
+        <operation>
+            <search trim="true"><![CDATA[<td class="text-right"><a href="{{ product.edit }}" data-toggle="tooltip" title="{{ button_edit }}" class="btn btn-primary"><i class="fa fa-pencil"></i></a></td>]]></search>
+            <add position="replace" trim="true"><![CDATA[
+                <td class="text-right"><a href="{{ product.front }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info" target="_blank"><i class="fa fa-eye"></i></a> <a href="{{ product.edit }}" data-toggle="tooltip" title="{{ button_edit }}" class="btn btn-primary"><i class="fa fa-pencil"></i></a></td>
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/view/template/catalog/product_form.twig">
+        <operation>
+            <search trim="true"><![CDATA[<button type="submit" form="form-product" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>]]></search>
+            <add position="before" trim="true"><![CDATA[
+                {% if view %}<a href="{{ view }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info" target="_blank"><i class="fa fa-eye"></i></a>{% endif %}
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
+
+    <!-- Для Производителей -->
+    <file path="admin/controller/catalog/manufacturer.php">
+        <operation>
+            <search trim="true"><![CDATA['edit'            => $this->url->link('catalog/manufacturer/edit', 'user_token=' . $this->session->data['user_token'] . '&manufacturer_id=' . $result['manufacturer_id'] . $url, true)]]></search>
+            <add position="before" trim="true"><![CDATA[
+                'front'            => ($this->config->get('config_secure') ? HTTPS_CATALOG : HTTP_CATALOG) . 'index.php?route=product/manufacturer/info&manufacturer_id=' . $result['manufacturer_id'],
+            ]]></add>
+        </operation>
+        <operation>
+            <search trim="true"><![CDATA[$data['action'] = $this->url->link('catalog/manufacturer/edit', 'user_token=' . $this->session->data['user_token'] . '&manufacturer_id=' . $this->request->get['manufacturer_id'] . $url, true);]]></search>
+            <add position="after" trim="true"><![CDATA[
+                $data['view'] = ($this->config->get('config_secure') ? HTTPS_CATALOG : HTTP_CATALOG) . 'index.php?route=product/manufacturer/info&manufacturer_id=' . $this->request->get['manufacturer_id'];
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/view/template/catalog/manufacturer_list.twig">
+        <operation>
+            <search trim="true"><![CDATA[<td class="text-right"><a href="{{ manufacturer.edit }}" data-toggle="tooltip" title="{{ button_edit }}" class="btn btn-primary"><i class="fa fa-pencil"></i></a></td>]]></search>
+            <add position="replace" trim="true"><![CDATA[
+                <td class="text-right"><a href="{{ manufacturer.front }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info" target="_blank"><i class="fa fa-eye"></i></a> <a href="{{ manufacturer.edit }}" data-toggle="tooltip" title="{{ button_edit }}" class="btn btn-primary"><i class="fa fa-pencil"></i></a></td>
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/view/template/catalog/manufacturer_form.twig">
+        <operation>
+            <search trim="true"><![CDATA[<button type="submit" form="form-manufacturer" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>]]></search>
+            <add position="before" trim="true"><![CDATA[
+                {% if view %}<a href="{{ view }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info" target="_blank"><i class="fa fa-eye"></i></a>{% endif %}
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
+
+    <!-- Для информации -->
+    <file path="admin/controller/catalog/information.php">
+        <operation>
+            <search trim="true"><![CDATA['edit'           => $this->url->link('catalog/information/edit', 'user_token=' . $this->session->data['user_token'] . '&information_id=' . $result['information_id'] . $url, true)]]></search>
+            <add position="before" trim="true"><![CDATA[
+                'front'            => ($this->config->get('config_secure') ? HTTPS_CATALOG : HTTP_CATALOG) . 'index.php?route=information/information&information_id=' . $result['information_id'],
+            ]]></add>
+        </operation>
+        <operation>
+            <search trim="true"><![CDATA[$data['action'] = $this->url->link('catalog/information/edit', 'user_token=' . $this->session->data['user_token'] . '&information_id=' . $this->request->get['information_id'] . $url, true);]]></search>
+            <add position="after" trim="true"><![CDATA[
+                $data['view'] = ($this->config->get('config_secure') ? HTTPS_CATALOG : HTTP_CATALOG) . 'index.php?route=information/information&information_id=' . $this->request->get['information_id'];
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/view/template/catalog/information_list.twig">
+        <operation>
+            <search trim="true"><![CDATA[<td class="text-right"><a href="{{ information.edit }}" data-toggle="tooltip" title="{{ button_edit }}" class="btn btn-primary"><i class="fa fa-pencil"></i></a></td>]]></search>
+            <add position="replace" trim="true"><![CDATA[
+                <td class="text-right"><a href="{{ information.front }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info" target="_blank"><i class="fa fa-eye"></i></a> <a href="{{ information.edit }}" data-toggle="tooltip" title="{{ button_edit }}" class="btn btn-primary"><i class="fa fa-pencil"></i></a></td>
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/view/template/catalog/information_form.twig">
+        <operation>
+            <search trim="true"><![CDATA[<button type="submit" form="form-information" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>]]></search>
+            <add position="before" trim="true"><![CDATA[
+                {% if view %}<a href="{{ view }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info" target="_blank"><i class="fa fa-eye"></i></a>{% endif %}
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
+<!--  -->
+</modification>
