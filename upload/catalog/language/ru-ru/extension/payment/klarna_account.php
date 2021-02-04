@@ -1,18 +1,20 @@
 <?php
 // Text
-$_['text_title']           = 'Klarna Account - Оплата от %s/месяц';
-$_['text_terms']           = '<span id="klarna_account_toc"></span><script type="text/javascript">var terms = new Klarna.Terms.Account({el: \'klarna_account_toc\', eid: \'%s\', country: \'%s\'});</script>';
-$_['text_information']     = 'Klarna Account Information';
-$_['text_additional']      = 'Klarna Account requires some additional information before they can proccess your order.';
-$_['text_male']            = 'Мужчина';
-$_['text_female']          = 'Женщина';
-$_['text_year']            = 'Год';
-$_['text_month']           = 'Месяц';
-$_['text_day']             = 'День';
-$_['text_payment_option']  = 'Варианты оплаты';
-$_['text_single_payment']  = 'Единый платеж';
-$_['text_monthly_payment'] = '%s - %s в месяц';
-$_['text_comment']         = 'Klarna\'s идентификатор счета: %s' . "\n" . '%s/%s: %.4f';
+$_['text_title']             = 'Klarna Account - Оплата от %s/месяц';
+$_['text_terms']             = '<span id="klarna_account_toc"></span><script type="text/javascript">var terms = new Klarna.Terms.Account({el: \'klarna_account_toc\', eid: \'%s\', country: \'%s\'});</script>';
+$_['text_information']       = 'Klarna Account Information';
+$_['text_additional']        = 'Klarna Account requires some additional information before they can proccess your order.';
+$_['text_male']              = 'Мужчина';
+$_['text_female']            = 'Женщина';
+$_['text_year']              = 'Год';
+$_['text_month']             = 'Месяц';
+$_['text_day']               = 'День';
+$_['text_payment_option']    = 'Варианты оплаты';
+$_['text_single_payment']    = 'Единый платеж';
+$_['text_monthly_payment']   = '%s - %s в месяц';
+$_['text_comment']           = 'Klarna\'s идентификатор счета: %s' . "\n" . '%s/%s: %.4f';
+$_['text_terms_description'] = 'С передачей информации, необходимой для обработки покупки на счете, а также проверки личности и кредитоспособности
+Я согласен с данными Кларне. Я могу отозвать свое <a href="https://online.klarna.com/consent_de.yaws" target="_blank">согласие</a> в любое время с вступлением в силу в будущем.';
 
 // Entry
 $_['entry_gender']         = 'Пол';

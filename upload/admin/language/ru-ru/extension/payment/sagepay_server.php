@@ -32,6 +32,9 @@ $_['text_column_date_added']  = 'Создан';
 $_['text_confirm_void']       = 'Вы уверены, что хотите аннулировать платеж?';
 $_['text_confirm_release']    = 'Вы уверены, что хотите разблокировать платеж?';
 $_['text_confirm_rebate']     = 'Вы уверены, что хотите вернуть платеж?';
+$_['text_void']               = 'Аннулировать';
+$_['text_payment']            = 'Оплата';
+$_['text_rebate']             = 'Скидка';
 
 // Entry
 $_['entry_vendor']            = 'Продавец';

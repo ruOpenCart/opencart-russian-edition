@@ -44,6 +44,9 @@ $_['text_confirm_void']              = 'Вы уверены, что хотите
 $_['text_confirm_capture']           = 'Вы уверены, что хотите получить платеж?';
 $_['text_confirm_rebate']            = 'Вы уверены, что хотите вернуть платеж?';
 $_['text_globalpay']                 = '<a target="_blank" href="https://www.globalpaymentsinc.com/en-ie/accept-payments/ecommerce/partners/opencart"><img src="view/image/payment/globalpay.png" alt="Globalpay" title="Globalpay" style="border: 1px solid #EEEEEE;" /></a>';
+$_['text_void']                      = 'Аннулировать';
+$_['text_payment']                   = 'Оплата';
+$_['text_rebate']                    = 'Скидка';
 
 // Entry
 $_['entry_merchant_id']              = 'Идентификатор продавца';

@@ -1,15 +1,17 @@
 <?php
 // Text
-$_['text_title']          = 'Klarna Invoice - Оплата в течение 14 дней';
-$_['text_terms_fee']      = '<span id="klarna_invoice_toc"></span> (+%s)<script type="text/javascript">var terms = new Klarna.Terms.Invoice({el: \'klarna_invoice_toc\', eid: \'%s\', country: \'%s\', charge: %s});</script>';
-$_['text_terms_no_fee']   = '<span id="klarna_invoice_toc"></span><script type="text/javascript">var terms = new Klarna.Terms.Invoice({el: \'klarna_invoice_toc\', eid: \'%s\', country: \'%s\'});</script>';
-$_['text_additional']     = 'Klarna Invoice требует дополнительной информации, прежде чем они смогут обработать Ваш заказ.';
-$_['text_male']           = 'Мужчина';
-$_['text_female']         = 'Женщина';
-$_['text_year']           = 'Год';
-$_['text_month']          = 'Месяц';
-$_['text_day']            = 'День';
-$_['text_comment']        = 'Klarna\'s идентификатор счета: %s. ' . "\n" . '%s/%s: %.4f';
+$_['text_title']             = 'Klarna Invoice - Оплата в течение 14 дней';
+$_['text_terms_fee']         = '<span id="klarna_invoice_toc"></span> (+%s)<script type="text/javascript">var terms = new Klarna.Terms.Invoice({el: \'klarna_invoice_toc\', eid: \'%s\', country: \'%s\', charge: %s});</script>';
+$_['text_terms_no_fee']      = '<span id="klarna_invoice_toc"></span><script type="text/javascript">var terms = new Klarna.Terms.Invoice({el: \'klarna_invoice_toc\', eid: \'%s\', country: \'%s\'});</script>';
+$_['text_additional']        = 'Klarna Invoice требует дополнительной информации, прежде чем они смогут обработать Ваш заказ.';
+$_['text_male']              = 'Мужчина';
+$_['text_female']            = 'Женщина';
+$_['text_year']              = 'Год';
+$_['text_month']             = 'Месяц';
+$_['text_day']               = 'День';
+$_['text_comment']           = 'Klarna\'s идентификатор счета: %s. ' . "\n" . '%s/%s: %.4f';
+$_['text_terms_description'] = 'С передачей информации, необходимой для обработки покупки на счете, а также проверки личности и кредитоспособности
+Я согласен с данными Кларне. Я могу отозвать свое <a href="https://online.klarna.com/consent_de.yaws" target="_blank">согласие</a> в любое время с вступлением в силу в будущем.';
 
 // Entry
 $_['entry_gender']        = 'Пол';

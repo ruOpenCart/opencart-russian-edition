@@ -31,6 +31,8 @@ $_['text_pay']                  = 'Оплатить';
 $_['text_buy_now']              = 'Купить сейчас';
 $_['text_pay_pal']              = 'PayPal';
 $_['text_installment']          = 'Взнос';
+$_['text_text']                 = 'Текстовое сообщение';
+$_['text_flex']                 = 'Гибкий баннер';
 $_['text_yes']                  = 'Да';
 $_['text_no']                   = 'Нет';
 
@@ -46,6 +48,16 @@ $_['entry_button_color']        = 'Цвет кнопки';
 $_['entry_button_shape']        = 'Форма кнопки';
 $_['entry_button_label']        = 'Метка кнопки';
 $_['entry_button_tagline']      = 'Слоган кнопки';
+$_['entry_message_status']      = 'Сообщение оплатить позже';
+$_['entry_message_align']       = 'Выровнять сообщение';
+$_['entry_message_size']        = 'Размер сообщения';
+$_['entry_message_layout']      = 'Макет сообщения';
+$_['entry_message_text_color']  = 'Цвет текста сообщения';
+$_['entry_message_text_size']   = 'Размер текста сообщения';
+$_['entry_message_flex_color']  = 'Цвет баннера сообщения';
+$_['entry_message_flex_ratio']  = 'Соотношение сообщения баннера';
+// Help
+$_['help_message_status']       = 'Добавьте на свой сайт рассылку Pay Later.';
 
 // Success
 $_['success_save']              = 'Успешно: Вы изменили модуль смарт-кнопок PayPal!';

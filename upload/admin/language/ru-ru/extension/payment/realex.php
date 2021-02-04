@@ -44,6 +44,9 @@ $_['text_confirm_void']              = 'Вы уверены, что хотите
 $_['text_confirm_capture']           = 'Вы уверены, что хотите получить платеж?';
 $_['text_confirm_rebate']            = 'Вы уверены, что хотите вернуть платеж?';
 $_['text_realex']                    = '<a target="_blank" href="http://www.realexpayments.co.uk/partner-refer?id=opencart"><img src="view/image/payment/realex.png" alt="Realex" title="Realex" style="border: 1px solid #EEEEEE;" /></a>';
+$_['text_void']                      = 'Аннулировать';
+$_['text_payment']                   = 'Оплата';
+$_['text_rebate']                    = 'Скидка';
 
 // Entry
 $_['entry_merchant_id']              = 'Идентификатор продавца';

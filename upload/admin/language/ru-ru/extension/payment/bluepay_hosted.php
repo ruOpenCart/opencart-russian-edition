@@ -27,9 +27,11 @@ $_['text_transactions']      = 'Транзакции';
 $_['text_column_amount']     = 'Количество';
 $_['text_column_type']       = 'Тип';
 $_['text_column_date_added'] = 'Дата добавления';
-$_['text_confirm_void']      = 'Вы уверены, что хотите аннулировать платеж??';
-$_['text_confirm_release']   = 'Вы уверены, что хотите разблокировать платеж??';
-$_['text_confirm_rebate']    = 'Вы уверены, что хотите вернуть платеж??';
+$_['text_confirm_void']      = 'Вы уверены, что хотите аннулировать платеж?';
+$_['text_confirm_release']   = 'Вы уверены, что хотите разблокировать платеж?';
+$_['text_confirm_rebate']    = 'Вы уверены, что хотите вернуть платеж?';
+$_['text_payment']           = "Оплата";
+$_['text_rebate']            = "Скидка";
 
 // Entry
 $_['entry_account_name']     = 'Наименование учетной записи';

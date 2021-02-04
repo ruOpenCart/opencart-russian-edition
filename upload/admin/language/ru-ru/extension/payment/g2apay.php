@@ -18,6 +18,7 @@ $_['text_column_type']                = 'Тип';
 $_['text_column_date_added']          = 'Добавлено';
 $_['text_refund_ok']                  = 'Возврат был успешно запрошен';
 $_['text_refund_ok_order']            = 'Возврат был успешно запрошен, сумма полностью возвращена';
+$_['text_refund']                     = "Возврат";
 
 // Entry
 $_['entry_username']                  = 'Имя пользователя';

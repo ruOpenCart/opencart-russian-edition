@@ -18,7 +18,6 @@ $_['text_month']                   = 'месяц';
 $_['text_year']                    = 'год';
 $_['text_trial']                   = 'Оплата %s с периодичностью %s %s в количестве %s платеж(а)(ей). Затем ';
 $_['text_recurring']               = 'Оплата %s с периодичностью %s %s';
-$_['text_payment_cancel']          = 'до отмены';
 $_['text_recurring_item']          = 'Регулярные платежи';
 $_['text_payment_recurring']       = 'Платежный профиль';
 $_['text_trial_description']       = 'Оплата %s с периодичностью %d %s(s) за %d платеж(а)(ей) Затем';

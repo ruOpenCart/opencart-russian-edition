@@ -38,6 +38,9 @@ $_['text_column_date_added']         = 'Создан';
 $_['text_confirm_void']              = 'Вы уверены, что хотите аннулировать платеж?';
 $_['text_confirm_capture']           = 'Вы уверены, что хотите получить платеж?';
 $_['text_confirm_refund']            = 'Вы уверены, что хотите вернуть платеж?';
+$_['text_void']                      = 'Аннулировать';
+$_['text_payment']                   = 'Оплата';
+$_['text_refund']                    = "Возврат";
 
 // Entry
 $_['entry_certificate_path']         = 'Путь сертификата';
