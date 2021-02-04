@@ -268,7 +268,7 @@ class ControllerSaleReturn extends Controller {
 		}
 
 		if (isset($this->request->get['page'])) {
-			$page = $this->request->get['page'];
+			$page = (int)$this->request->get['page'];
 		} else {
 			$page = 1;
 		}
@@ -529,7 +529,7 @@ class ControllerSaleReturn extends Controller {
 		$data['user_token'] = $this->session->data['user_token'];
 
 		if (isset($this->request->get['return_id'])) {
-			$data['return_id'] = $this->request->get['return_id'];
+			$data['return_id'] = (int)$this->request->get['return_id'];
 		} else {
 			$data['return_id'] = 0;
 		}
@@ -865,7 +865,7 @@ class ControllerSaleReturn extends Controller {
 		$this->load->model('sale/return');
 
 		if (isset($this->request->get['page'])) {
-			$page = $this->request->get['page'];
+			$page = (int)$this->request->get['page'];
 		} else {
 			$page = 1;
 		}

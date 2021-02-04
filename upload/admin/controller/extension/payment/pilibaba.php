@@ -136,7 +136,7 @@ class ControllerExtensionPaymentPilibaba extends Controller {
 			$data['error_pilibaba_shipping_fee'] = '';
 		}
 
-		if ($data['pilibaba_merchant_number'] && $data['payment_pilibaba_secret_key']) {
+		if (isset($data['pilibaba_merchant_number']) && $data['pilibaba_merchant_number'] && isset($data['payment_pilibaba_secret_key']) && $data['payment_pilibaba_secret_key']) {
 			$data['show_register'] = false;
 
 			$data['currencies'] = $data['warehouses'] = $data['countries'] = array();
@@ -267,7 +267,7 @@ class ControllerExtensionPaymentPilibaba extends Controller {
 
 				$data['barcode'] = $this->url->link('extension/payment/pilibaba/barcode', 'user_token=' . $this->session->data['user_token'] . '&order_id=' . $this->request->get['order_id'], true);
 
-				$data['order_id'] = $this->request->get['order_id'];
+				$data['order_id'] = (int)$this->request->get['order_id'];
 
 				$data['user_token'] = $this->session->data['user_token'];
 
