@@ -24,6 +24,12 @@ class ControllerExtensionPaymentSecureTradingPp extends Controller {
 			$data['payment_securetrading_pp_site_reference'] = $this->config->get('payment_securetrading_pp_site_reference');
 		}
 
+		if (isset($this->request->post['payment_securetrading_pp_version'])) {
+			$data['payment_securetrading_pp_version'] = $this->request->post['payment_securetrading_pp_version'];
+		} else {
+			$data['payment_securetrading_pp_version'] = $this->config->get('payment_securetrading_pp_version');
+		}
+
 		if (isset($this->request->post['payment_securetrading_pp_username'])) {
 			$data['payment_securetrading_pp_username'] = $this->request->post['payment_securetrading_pp_username'];
 		} else {
@@ -170,6 +176,12 @@ class ControllerExtensionPaymentSecureTradingPp extends Controller {
 			$data['error_site_reference'] = '';
 		}
 
+		if (isset($this->error['version'])) {
+			$data['error_version'] = $this->error['version'];
+		} else {
+			$data['error_version'] = '';
+		}
+
 		if (isset($this->error['cards_accepted'])) {
 			$data['error_cards_accepted'] = $this->error['cards_accepted'];
 		} else {
@@ -260,7 +272,7 @@ class ControllerExtensionPaymentSecureTradingPp extends Controller {
 
 				$data['auto_settle'] = $securetrading_pp_order['settle_type'];
 
-				$data['order_id'] = $this->request->get['order_id'];
+				$data['order_id'] = (int)$this->request->get['order_id'];
 				
 				$data['user_token'] = $this->session->data['user_token'];
 
@@ -460,6 +472,10 @@ class ControllerExtensionPaymentSecureTradingPp extends Controller {
 
 		if (!$this->request->post['payment_securetrading_pp_site_reference']) {
 			$this->error['site_reference'] = $this->language->get('error_site_reference');
+		}
+
+		if (!$this->request->post['payment_securetrading_pp_version']) {
+			$this->error['version'] = $this->language->get('error_version');
 		}
 
 		if (empty($this->request->post['payment_securetrading_pp_cards_accepted'])) {

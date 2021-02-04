@@ -59,6 +59,7 @@ $_['text_capture_success']      = 'Получение выполнено!';
 $_['text_refund_failed']        = 'Возврат не удался: ';
 $_['text_capture_failed']       = 'Получение не удалось: ';
 $_['text_unknown_failure']      = 'Неверный заказ или сумма';
+$_['text_refund']               = 'Возврат';
 
 $_['text_confirm_capture']      = 'Вы уверены, что хотите получить платеж?';
 $_['text_confirm_release']      = 'Вы уверены, что хотите разблокировать платеж?';

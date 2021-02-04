@@ -12,6 +12,7 @@ $_['text_success']                  = 'Успешно: Вы изменили м�
 $_['text_edit']                     = 'Редактировать CardConnect';
 $_['text_cardconnect']              = '<a href="http://www.cardconnect.com" target="_blank"><img src="view/image/payment/cardconnect.png" alt="CardConnect" title="CardConnect"></a>';
 $_['text_payment']                  = 'Платеж';
+$_['text_refund']                   = 'Возврат';
 $_['text_authorize']                = 'Авторизовать';
 $_['text_live']                     = 'Реальный';
 $_['text_test']                     = 'Тестовый';

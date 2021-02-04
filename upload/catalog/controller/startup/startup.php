@@ -32,6 +32,14 @@ class ControllerStartupStartup extends Controller {
 			}
 		}
 
+		// Set time zone
+		if ($this->config->get('config_timezone')) {
+			date_default_timezone_set($this->config->get('config_timezone'));
+
+			// Sync PHP and DB time zones.
+			$this->db->query("SET time_zone = '" . $this->db->escape(date('P')) . "'");
+		}
+
 		// Theme
 		$this->config->set('template_cache', $this->config->get('developer_theme'));
 		
@@ -121,6 +129,8 @@ class ControllerStartupStartup extends Controller {
 			$this->config->set('config_customer_group_id', $this->customer->getGroupId());
 		} elseif (isset($this->session->data['guest']) && isset($this->session->data['guest']['customer_group_id'])) {
 			$this->config->set('config_customer_group_id', $this->session->data['guest']['customer_group_id']);
+		} else {
+			$this->config->set('config_customer_group_id', $this->config->get('config_customer_group_id'));
 		}
 		
 		// Tracking Code
@@ -162,13 +172,14 @@ class ControllerStartupStartup extends Controller {
 		// Tax
 		$this->registry->set('tax', new Cart\Tax($this->registry));
 		
-		if (isset($this->session->data['shipping_address'])) {
+		// PHP v7.4+ validation compatibility.
+		if (isset($this->session->data['shipping_address']['country_id']) && isset($this->session->data['shipping_address']['zone_id'])) {
 			$this->tax->setShippingAddress($this->session->data['shipping_address']['country_id'], $this->session->data['shipping_address']['zone_id']);
 		} elseif ($this->config->get('config_tax_default') == 'shipping') {
 			$this->tax->setShippingAddress($this->config->get('config_country_id'), $this->config->get('config_zone_id'));
 		}
 
-		if (isset($this->session->data['payment_address'])) {
+		if (isset($this->session->data['payment_address']['country_id']) && isset($this->session->data['payment_address']['zone_id'])) {
 			$this->tax->setPaymentAddress($this->session->data['payment_address']['country_id'], $this->session->data['payment_address']['zone_id']);
 		} elseif ($this->config->get('config_tax_default') == 'payment') {
 			$this->tax->setPaymentAddress($this->config->get('config_country_id'), $this->config->get('config_zone_id'));
