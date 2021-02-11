@@ -723,4 +723,21 @@ $(window).on('load', function () {
         </operation>
     </file>
 <!--  -->
+
+<!-- Замена url-адреса в расширениях -->
+    <file path="admin/view/template/marketplace/extension.twig">
+        <operation>
+            <search><![CDATA[<option value="{{ category.href }}" selected="selected">{{ category.text }}</option>]]></search>
+            <add position="replace" trim="true"><![CDATA[<option value="{{ category.href }}" data-code="{{ category.code }}" selected="selected">{{ category.text }}</option>]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[<option value="{{ category.href }}">{{ category.text }}</option>]]></search>
+            <add position="replace" trim="true"><![CDATA[<option value="{{ category.href }}" data-code="{{ category.code }}">{{ category.text }}</option>]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[$('#extension').html(html);]]></search>
+            <add position="before" trim="true"><![CDATA[history.pushState(null, null, window.location.href.replace(/(?<=type=)([a-zA-Z]+)/g, $('select[name="type"] option:selected').data('code')));]]></add>
+        </operation>
+    </file>
+<!-- / -->
 </modification>
