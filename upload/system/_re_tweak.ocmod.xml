@@ -288,7 +288,6 @@
             ]]></add>
         </operation>
     </file>
-
     <file path="admin/controller/marketplace/modification.php">
         <operation>
             <search><![CDATA[$this->getList();]]></search>
@@ -737,6 +736,50 @@ $(window).on('load', function () {
         <operation>
             <search><![CDATA[$('#extension').html(html);]]></search>
             <add position="before" trim="true"><![CDATA[history.pushState(null, null, window.location.href.replace(/(?<=type=)([a-zA-Z]+)/g, $('select[name="type"] option:selected').data('code')));]]></add>
+        </operation>
+    </file>
+<!-- / -->
+
+<!-- Сортировка расширений -->
+    <file path="admin/controller/extension/extension/module.php">
+        <operation>
+            <search><![CDATA[$sort_order = array();]]></search>
+            <add position="replace" trim="true"><![CDATA[
+                $sort_by_installed  = array_column($data['extensions'], 'installed');
+                $sort_by_name = array_column($data['extensions'], 'name');
+            ]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[foreach ($data['extensions'] as $key => $value) {]]></search>
+            <add position="replace" trim="true" offset="2"><![CDATA[]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[array_multisort($sort_order, SORT_ASC, $data['extensions']);]]></search>
+            <add position="replace" trim="true"><![CDATA[array_multisort($sort_by_installed, SORT_DESC, $sort_by_name, SORT_ASC, $data['extensions']);]]></add>
+        </operation>
+    </file>
+    <file path="admin/controller/extension/extension/payment.php">
+        <operation>
+            <search><![CDATA[$this->response->setOutput($this->load->view('extension/extension/payment', $data));]]></search>
+            <add position="before"><![CDATA[
+                array_multisort(
+                    array_column($data['extensions'], 'installed'), SORT_DESC,
+                    array_column($data['extensions'], 'name'), SORT_ASC,
+                    $data['extensions']
+                );
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/controller/extension/extension/shipping.php">
+        <operation>
+            <search><![CDATA[$this->response->setOutput($this->load->view('extension/extension/shipping', $data));]]></search>
+            <add position="before"><![CDATA[
+                array_multisort(
+                    array_column($data['extensions'], 'installed'), SORT_DESC,
+                    array_column($data['extensions'], 'name'), SORT_ASC,
+                    $data['extensions']
+                );
+            ]]></add>
         </operation>
     </file>
 <!-- / -->
