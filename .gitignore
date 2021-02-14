@@ -64,3 +64,4 @@
 
 # zip
 *.zip
+!/upload/system/storage/ocn/extensions/*.zip
