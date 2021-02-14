@@ -2,7 +2,7 @@
 <modification>
     <name>[OCN] Скрытие меню в админке</name>
     <code>ocn__menu_switch</code>
-    <version>3.0.0.6</version>
+    <version>3.0.0.7</version>
     <author>Hkr</author>
     <link>https://forum.opencart.name/resources/58/</link>
 
@@ -25,8 +25,8 @@
             ]]></add>
         </operation>
         <operation>
-            <search><![CDATA[<a href="#" id="button-menu" class="hidden-md hidden-lg"><span class="fa fa-bars"></span></a>{% if logged %}]]></search>
-            <add position="replace"><![CDATA[<a href="#" id="button-menu"><span class="fa fa-bars"></span></a>{% if logged %}]]></add>
+            <search><![CDATA[{% if logged %}<a href="#" id="button-menu" class="hidden-md hidden-lg"><span class="fa fa-bars"></span></a>]]></search>
+            <add position="replace"><![CDATA[{% if logged %}<a href="#" id="button-menu"><span class="fa fa-bars"></span></a>]]></add>
         </operation>
         <operation>
             <search><![CDATA[</header>]]></search>
