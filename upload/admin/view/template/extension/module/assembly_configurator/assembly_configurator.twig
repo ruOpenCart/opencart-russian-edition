@@ -1,0 +1,63 @@
+{{ header }}
+{{ column_left }}
+<div id="content">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="{{ url_extension }}">{{ heading_title }}</a>
+      </div>
+      <div class="btn-group pull-right" role="group" aria-label="...">
+        <button data-toggle="tooltip" title="{{ button_modification }}" class="btn btn-success navbar-btn" id="button-modification" data-url="{{ url_modification }}"><i class="fa fa-refresh"></i></button>
+        <button type="button" id="button-setting" data-url="{{ url_developer }}" data-toggle="tooltip" title="{{ button_developer }}" data-loading-text="{{ text_loading }}" class="btn btn-info navbar-btn"><i class="fa fa-cog"></i></button>
+        <a href="{{ url_back }}" data-toggle="tooltip" title="{{ link_back }}" class="btn btn-default navbar-btn"><i class="fa fa-reply"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <ol class="breadcrumb">
+    {% for breadcrumb in breadcrumbs %}
+      <li {% if loop.last %}class="active"{% endif %}>
+        {% if loop.last %}
+          {{ breadcrumb.text }}
+        {% else %}
+          <a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+
+  <main class="container-fluid" id="main">
+    {% if error_warning %}
+    <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    {% endif %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-pencil"></i> {{ text_edit }}</h3>
+      </div>
+      <div class="panel-body">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#tab-info" data-toggle="tab"><i class="fa fa-info" aria-hidden="true"></i> {{ tab_info }}</a></li>
+          <li><a href="#tab-modifications" data-toggle="tab"><i class="fa fa-file-code-o" aria-hidden="true"></i> {{ tab_modifications }}</a></li>
+          <li><a href="#tab-extensions" data-toggle="tab"><i class="fa fa-files-o" aria-hidden="true"></i> {{ tab_extensions }}</a></li>
+        </ul>
+        <div class="tab-content" id="tab-content">
+          <div class="tab-pane fade in active" id="tab-info">
+            {{ view_tab_info }}
+          </div>
+          <div class="tab-pane fade" id="tab-modifications">
+            {{ view_tab_modifications }}
+          </div>
+          <div class="tab-pane fade" id="tab-extensions">
+            {{ view_tab_extensions }}
+          </div>
+        </div>
+      </div>
+      <div class="panel-footer">{{ heading_title }} v{{ data_version }}</div>
+    </div>
+  </main>
+</div>
+{{ footer }}
