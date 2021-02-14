@@ -7,6 +7,40 @@
     <code>ocn_30_re_tweak</code>
     <date>04.02.2021</date>
 
+
+<!-- Конфигуратор сборки -->
+    <!-- Добавляем проверку для аякс запрос обновления модификаторов -->
+    <file path="admin/controller/marketplace/modification.php">
+        <operation>
+            <search><![CDATA[$this->response->redirect($this->url->link(!empty($data['redirect']) ? $data['redirect'] : 'marketplace/modification', 'user_token=' . $this->session->data['user_token'] . $url, true));]]></search>
+            <add position="before" trim="true"><![CDATA[
+                if (isset($this->request->get['configurator']) && $this->request->get['configurator'] === 'on') {
+                    if (isset($this->session->data['success'])) {
+                        unset($this->session->data['success']);
+                    }
+                    $this->response->addHeader('Content-Type: application/json; charset=utf-8');
+                    $this->response->setOutput(json_encode(['success' => $this->language->get('text_success')]));
+                } else {
+            ]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[$this->response->redirect($this->url->link(!empty($data['redirect']) ? $data['redirect'] : 'marketplace/modification', 'user_token=' . $this->session->data['user_token'] . $url, true));]]></search>
+            <add position="after" trim="true"><![CDATA[
+                }
+            ]]></add>
+        </operation>
+        <operation>
+            <search index="2"><![CDATA[$this->getList();]]></search>
+            <add position="replace" trim="true"><![CDATA[
+                if (!isset($this->request->get['configurator'])) {
+                    $this->getList();
+                }
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
+<!-- / -->
+
 <!-- Замена ссылок в меню профиля в админке -->
     <file path="admin/view/template/common/header.twig">
         <operation>
