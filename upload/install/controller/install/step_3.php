@@ -116,8 +116,6 @@ class ControllerInstallStep3 extends Controller {
 		$data['entry_username'] = $this->language->get('entry_username');
 		$data['entry_password'] = $this->language->get('entry_password');
 		$data['entry_email'] = $this->language->get('entry_email');
-		$data['entry_firstname'] = $this->language->get('entry_firstname');
-		$data['entry_lastname'] = $this->language->get('entry_lastname');
 
 		$data['button_continue'] = $this->language->get('button_continue');
 		$data['button_back'] = $this->language->get('button_back');
@@ -180,17 +178,6 @@ class ControllerInstallStep3 extends Controller {
 			$data['error_email'] = $this->error['email'];
 		} else {
 			$data['error_email'] = '';
-		}
-
-		if (isset($this->error['firstname'])) {
-			$data['error_firstname'] = $this->error['firstname'];
-		} else {
-			$data['error_firstname'] = '';
-		}
-		if (isset($this->error['lastname'])) {
-			$data['error_lastname'] = $this->error['lastname'];
-		} else {
-			$data['error_lastname'] = '';
 		}
 
 		$data['action'] = $this->url->link('install/step_3');
@@ -272,17 +259,6 @@ class ControllerInstallStep3 extends Controller {
 			$data['email'] = '';
 		}
 
-		if (isset($this->request->post['firstname'])) {
-			$data['firstname'] = $this->request->post['firstname'];
-		} else {
-			$data['firstname'] = '';
-		}
-		if (isset($this->request->post['lastname'])) {
-			$data['lastname'] = $this->request->post['lastname'];
-		} else {
-			$data['lastname'] = '';
-		}
-
 		$data['back'] = $this->url->link('install/step_2');
 
 		$data['footer'] = $this->load->controller('common/footer');
@@ -339,13 +315,6 @@ class ControllerInstallStep3 extends Controller {
 
 		if (!$this->request->post['password']) {
 			$this->error['password'] = $this->language->get('error_password');
-		}
-
-		if (!$this->request->post['firstname']) {
-			$this->error['firstname'] = $this->language->get('error_firstname');
-		}
-		if (!$this->request->post['lastname']) {
-			$this->error['lastname'] = $this->language->get('error_lastname');
 		}
 
 		if (!is_writable(DIR_OPENCART . 'config.php')) {

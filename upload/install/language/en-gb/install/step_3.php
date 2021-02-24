@@ -21,8 +21,6 @@ $_['entry_db_prefix']        = 'Prefix';
 $_['entry_username']         = 'Username';
 $_['entry_password']         = 'Password';
 $_['entry_email']            = 'E-Mail';
-$_['entry_firstname']        = 'First Name';
-$_['entry_lastname']         = 'Last Name';
 
 // Error
 $_['error_db_driver']        = 'Database Driver required!';
@@ -36,5 +34,3 @@ $_['error_username']         = 'Username required!';
 $_['error_password']         = 'Password required!';
 $_['error_email']            = 'E-Mail Address does not appear to be valid!';
 $_['error_config']           = 'Error: Could not write to config.php please check you have set the correct permissions on: ';
-$_['error_firstname']        = 'First Name required!';
-$_['error_lastname']         = 'Last Name required!';
