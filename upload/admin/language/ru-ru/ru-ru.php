@@ -99,6 +99,7 @@ $_['button_category_add']           = 'Добавить категорию';
 $_['button_order']                  = 'Посмотреть заказ';
 $_['button_order_recurring']        = 'Посмотреть регулярный заказ';
 $_['button_buy']                    = 'Купить';
+$_['button_developer']              = 'Настройки разработчика';
 
 // Tab
 $_['tab_affiliate']                 = 'Партнер';

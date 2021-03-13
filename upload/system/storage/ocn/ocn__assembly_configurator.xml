@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+  <name>[OCN] Конфигуратор сборки</name>
+  <code>ocn__assembly_configurator</code>
+  <version>3.0.0.0</version>
+  <author>Hkr</author>
+  <link>https://forum.opencart.name/</link>
+
+  <!-- Выводим ссылку на конфигуратор в меню -->
+  <file path="admin/language/ru-ru/common/column_left.php">
+    <operation>
+      <search trim="true"><![CDATA[$_['text_dashboard']]]></search>
+      <add position="after" trim="true"><![CDATA[
+        $_['text_ocn']                    = 'OCN';
+        $_['text_assembly_configurator']  = 'Конфигуратор сборки';
+      ]]></add>
+    </operation>
+  </file>
+  <file path="admin/language/en-gb/common/column_left.php">
+    <operation>
+      <search trim="true"><![CDATA[$_['text_dashboard']]]></search>
+      <add position="after" trim="true"><![CDATA[
+        $_['text_ocn']                    = 'OCN';
+        $_['text_assembly_configurator']  = 'Build configurator';
+      ]]></add>
+    </operation>
+  </file>
+
+  <file path="admin/controller/common/column_left.php">
+    <operation>
+      <search trim="true"><![CDATA[// Catalog]]></search>
+      <add position="before"><![CDATA[
+        // OCN
+        $ocn = [];
+
+        if ($this->user->hasPermission('access', 'extension/module/assembly_configurator')) {
+          $ocn[] = [
+            'name'	   => $this->language->get('text_assembly_configurator'),
+            'href'     => $this->url->link('extension/module/assembly_configurator', 'user_token=' . $this->session->data['user_token'], true),
+            'children' => []
+          ];
+        }
+
+        if ($ocn) {
+          $data['menus'][] = [
+            'id'       => 'menu-ocn',
+            'icon'	   => 'fa-wrench',
+            'name'	   => $this->language->get('text_ocn'),
+            'href'     => '',
+            'children' => $ocn
+          ];
+        }
+      ]]></add>
+    </operation>
+  </file>
+<!-- / -->
+</modification>

@@ -33,6 +33,8 @@ $_['text_credits']               = 'Баланс';
 $_['text_error']                 = 'Ошибка:';
 $_['text_flp_upgrade']           = '<a href="http://www.fraudlabspro.com/pricing" target="_blank">[Обновить]</a>';
 $_['text_flp_merchant_area']     = 'Пожалуйста, войдите в <a href="http://www.fraudlabspro.com/merchant/login" target="_blank">торговую зону FraudLabs Pro</a> для получения дополнительной информации об этом заказе.';
+$_['text_rule_validation']       = 'Правила проверки';
+$_['text_testing']               = 'Цель тестирования';
 
 // Entry
 $_['entry_status']               = 'Статус';

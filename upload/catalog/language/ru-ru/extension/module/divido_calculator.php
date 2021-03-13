@@ -12,3 +12,4 @@ $_['text_amount_payable']      = 'Всего к оплате';
 $_['text_total_interest']      = 'Всего процентов годовых';
 $_['text_monthly_installment'] = 'Ежемесячный взнос';
 $_['text_redirection']         = 'Вы будете перенаправлены в Divido для заполнения этого финансового заявления после подтверждения заказа.';
+$_['text_divido']              = 'Divido';

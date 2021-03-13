@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>[OCN] Наименование редактируемой позиции в каталоге</name>
+    <code>ocn__name_edited_element_in_catalog</code>
+    <version>3.0.0.0</version>
+    <author>Hkr</author>
+    <link>https://forum.opencart.name/resources/55/</link>
+    <date>30.07.2020</date>
+
+<!-- Добавление наименования редактируемой позиции в каталоге -->
+    <!-- Добавляет в категории -->
+    <file path="admin/controller/catalog/category.php">
+        <operation>
+            <search trim="true"><![CDATA[$data['category_description'] = $this->model_catalog_category->getCategoryDescriptions($this->request->get['category_id']);]]></search>
+            <add position="after" trim="true"><![CDATA[
+                //ocn__name_edited_element_in_catalog
+                $data['text_form'] .= sprintf(': %s', $data['category_description'][$this->config->get('config_language_id')]['name']);
+                //ocn__name_edited_element_in_catalog
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
+    <!-- Добавляет в продукцию -->
+    <file path="admin/controller/catalog/product.php">
+        <operation>
+            <search trim="true"><![CDATA[$data['product_description'] = $this->model_catalog_product->getProductDescriptions($this->request->get['product_id']);]]></search>
+            <add position="after" trim="true"><![CDATA[
+                //ocn__name_edited_element_in_catalog
+                $data['text_form'] .= sprintf(': %s', $data['product_description'][$this->config->get('config_language_id')]['name']);
+                //ocn__name_edited_element_in_catalog
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
+    <!-- Добавляет в регулярные профили -->
+    <file path="admin/controller/catalog/recurring.php">
+        <operation>
+            <search trim="true"><![CDATA[$data['recurring_description'] = $this->model_catalog_recurring->getRecurringDescription($recurring_info['recurring_id']);]]></search>
+            <add position="after" trim="true"><![CDATA[
+                //ocn__name_edited_element_in_catalog
+                $data['text_form'] .= sprintf(': %s', $data['recurring_description'][$this->config->get('config_language_id')]['name']);
+                //ocn__name_edited_element_in_catalog
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
+    <!-- Добавляет в регулярные профили -->
+    <file path="admin/controller/catalog/recurring.php">
+        <operation>
+            <search trim="true"><![CDATA[$data['recurring_description'] = $this->model_catalog_recurring->getRecurringDescription($recurring_info['recurring_id']);]]></search>
+            <add position="after" trim="true"><![CDATA[
+                //ocn__name_edited_element_in_catalog
+                $data['text_form'] .= sprintf(': %s', $data['recurring_description'][$this->config->get('config_language_id')]['name']);
+                //ocn__name_edited_element_in_catalog
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
+    <!-- Добавляет в фильтры -->
+    <file path="admin/controller/catalog/filter.php">
+        <operation>
+            <search trim="true"><![CDATA[$data['filter_group_description'] = $this->model_catalog_filter->getFilterGroupDescriptions($this->request->get['filter_group_id']);]]></search>
+            <add position="after" trim="true"><![CDATA[
+                //ocn__name_edited_element_in_catalog
+                $data['text_form'] .= sprintf(': %s', $data['filter_group_description'][$this->config->get('config_language_id')]['name']);
+                //ocn__name_edited_element_in_catalog
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
+    <!-- Добавляет в группу атрибутов -->
+    <file path="admin/controller/catalog/attribute_group.php">
+        <operation>
+            <search trim="true"><![CDATA[$data['attribute_group_description'] = $this->model_catalog_attribute_group->getAttributeGroupDescriptions($this->request->get['attribute_group_id']);]]></search>
+            <add position="after" trim="true"><![CDATA[
+                //ocn__name_edited_element_in_catalog
+                $data['text_form'] .= sprintf(': %s', $data['attribute_group_description'][$this->config->get('config_language_id')]['name']);
+                //ocn__name_edited_element_in_catalog
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
+    <!-- Добавляет в атрибуты -->
+    <file path="admin/controller/catalog/attribute.php">
+        <operation>
+            <search trim="true"><![CDATA[$data['attribute_description'] = $this->model_catalog_attribute->getAttributeDescriptions($this->request->get['attribute_id']);]]></search>
+            <add position="after" trim="true"><![CDATA[
+                //ocn__name_edited_element_in_catalog
+                $data['text_form'] .= sprintf(': %s', $data['attribute_description'][$this->config->get('config_language_id')]['name']);
+                //ocn__name_edited_element_in_catalog
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
+    <!-- Добавляет в опции -->
+    <file path="admin/controller/catalog/option.php">
+        <operation>
+            <search trim="true"><![CDATA[$data['option_description'] = $this->model_catalog_option->getOptionDescriptions($this->request->get['option_id']);]]></search>
+            <add position="after" trim="true"><![CDATA[
+                //ocn__name_edited_element_in_catalog
+                $data['text_form'] .= sprintf(': %s', $data['option_description'][$this->config->get('config_language_id')]['name']);
+                //ocn__name_edited_element_in_catalog
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
+    <!-- Добавляет в производители -->
+    <file path="admin/controller/catalog/manufacturer.php">
+        <operation>
+            <search trim="true"><![CDATA[$data['name'] = $manufacturer_info['name'];]]></search>
+            <add position="after" trim="true"><![CDATA[
+                //ocn__name_edited_element_in_catalog
+                $data['text_form'] .= sprintf(': %s', $manufacturer_info['name']);
+                //ocn__name_edited_element_in_catalog
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
+    <!-- Добавляет в загрузки -->
+    <file path="admin/controller/catalog/download.php">
+        <operation>
+            <search trim="true"><![CDATA[$data['download_description'] = $this->model_catalog_download->getDownloadDescriptions($this->request->get['download_id']);]]></search>
+            <add position="after" trim="true"><![CDATA[
+                //ocn__name_edited_element_in_catalog
+                $data['text_form'] .= sprintf(': %s', $data['download_description'][$this->config->get('config_language_id')]['name']);
+                //ocn__name_edited_element_in_catalog
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
+    <!-- Добавляет в отзывы -->
+    <file path="admin/controller/catalog/review.php">
+        <operation>
+            <search trim="true"><![CDATA[$data['product'] = $review_info['product'];]]></search>
+            <add position="after" trim="true"><![CDATA[
+                //ocn__name_edited_element_in_catalog
+                $data['text_form'] .= sprintf(': %s', $review_info['product']);
+                //ocn__name_edited_element_in_catalog
+            ]]></add>
+        </operation>
+        <operation>
+            <search trim="true"><![CDATA[$data['author'] = $review_info['author'];]]></search>
+            <add position="after" trim="true"><![CDATA[
+                //ocn__name_edited_element_in_catalog
+                $data['text_form'] .= sprintf(' (%s)', $review_info['author']);
+                //ocn__name_edited_element_in_catalog
+            ]]></add>
+        </operation>
+    </file>
+    <!--  -->
+    <!-- Добавляет в информацию -->
+    <file path="admin/controller/catalog/information.php">
+        <operation>
+            <search trim="true"><![CDATA[$data['information_description'] = $this->model_catalog_information->getInformationDescriptions($this->request->get['information_id']);]]></search>
+            <add position="after" trim="true"><![CDATA[
+                //ocn__name_edited_element_in_catalog
+                $data['text_form'] .= sprintf(': %s', $data['information_description'][$this->config->get('config_language_id')]['title']);
+                //ocn__name_edited_element_in_catalog
+            ]]></add>
+        </operation>
+    </file>
+<!--  -->
+</modification>

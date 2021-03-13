@@ -55,7 +55,7 @@ class ControllerExtensionPaymentPPPayflowIframe extends Controller {
 		);
 
 		$data['breadcrumbs'][] = array(
-			'text' => $this->language->get('text_pp_express'),
+			'text' => $this->language->get('text_extension'),
 			'href' => $this->url->link('marketplace/extension', 'user_token=' . $this->session->data['user_token'] . '&type=payment', true),
 		);
 
@@ -400,7 +400,7 @@ class ControllerExtensionPaymentPPPayflowIframe extends Controller {
 		if ($paypal_order) {
 			$data['complete'] = $paypal_order['complete'];
 			
-			$data['order_id'] = $this->request->get['order_id'];
+			$data['order_id'] = (int)$this->request->get['order_id'];
 			
 			$data['user_token'] = $this->session->data['user_token'];
 

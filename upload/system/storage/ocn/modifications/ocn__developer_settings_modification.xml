@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>[OCN] Настройки Разработчика в Модификациях</name>
+    <code>ocn__developer_settings_modification</code>
+    <version>3.0.3.3.1</version>
+    <author>Hkr</author>
+    <link>https://forum.opencart.name/resources/18/</link>
+
+<!-- Вывод Настройки Разработчика в Модификациях -->
+    <!-- Добавляем в языковые файлы фразы -->
+    <file path="admin/language/en-gb/marketplace/modification.php">
+        <operation>
+            <search trim="true"><![CDATA[
+                $_['text_list']         = 'Modification List';
+            ]]></search>
+            <add position="after" trim="true"><![CDATA[
+                $_['text_developer']    = 'Developer Settings';
+                $_['text_loading']      = 'Loading...';
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/language/ru-ru/marketplace/modification.php">
+        <operation>
+            <search trim="true"><![CDATA[
+                $_['text_list']         = 'Список модификаций';
+            ]]></search>
+            <add position="after" trim="true"><![CDATA[
+                $_['text_developer']    = 'Настройки разработчика';
+                $_['text_loading']      = 'Загрузка...';
+            ]]></add>
+        </operation>
+    </file>
+    <!-- Добавляет кнопку в шаблон -->
+    <file path="admin/view/template/marketplace/modification.twig">
+        <operation>
+            <search trim="true"><![CDATA[
+                <div class="pull-right"><a href="{{ refresh }}" data-toggle="tooltip" title="{{ button_refresh }}" class="btn btn-info"><i class="fa fa-refresh"></i></a> <a href="{{ clear }}" data-toggle="tooltip" title="{{ button_clear }}" class="btn btn-warning"><i class="fa fa-eraser"></i></a>
+            ]]></search>
+            <add position="replace" trim="true"><![CDATA[
+                <div class="pull-right"><button type="button" id="button-setting" data-toggle="tooltip" title="{{ text_developer }}" data-loading-text="{{ text_loading }}" class="btn btn-info"><i class="fa fa-cog"></i></button> <a href="{{ refresh }}" data-toggle="tooltip" title="{{ button_refresh }}" class="btn btn-info"><i class="fa fa-refresh"></i></a> <a href="{{ clear }}" data-toggle="tooltip" title="{{ button_clear }}" class="btn btn-warning"><i class="fa fa-eraser"></i></a>
+            ]]></add>
+        </operation>
+        <operation>
+            <search trim="true"><![CDATA[
+                {{ footer }}
+            ]]></search>
+            <add position="before" trim="true"><![CDATA[
+                <script>
+                    $('#button-setting').on('click', function() {
+                        $.ajax({
+                            url: 'index.php?route=common/developer&user_token={{ user_token }}',
+                            dataType: 'html',
+                            beforeSend: function() {
+                                $('#button-setting').button('loading');
+                            },
+                            complete: function() {
+                                $('#button-setting').button('reset');
+                            },
+                            success: function(html) {
+                                $('#modal-developer').remove();
+
+                                $('body').prepend('<div id="modal-developer" class="modal">' + html + '</div>');
+
+                                $('#modal-developer').modal('show');
+                            },
+                            error: function(xhr, ajaxOptions, thrownError) {
+                                alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                            }
+                        });
+                    });
+                    </script>
+            ]]></add>
+        </operation>
+    </file>
+<!--  -->
+</modification>
