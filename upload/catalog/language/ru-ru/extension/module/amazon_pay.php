@@ -4,7 +4,7 @@ $_['heading_title']         = 'Pay with Amazon';
 
 // Text
 $_['text_module']           = 'Модули';
-$_['text_success']          = 'Успешно: Вы изменили модуль Pay with Amazon!';
+$_['text_success']          = 'Успешно: вы изменили модуль Pay with Amazon!';
 $_['text_content_top']      = 'Content Top';
 $_['text_content_bottom']   = 'Content Bottom';
 $_['text_column_left']      = 'Column Left';
@@ -30,4 +30,4 @@ $_['entry_status']          = 'Статус';
 $_['entry_sort_order']      = 'Сортировка';
 
 //Error
-$_['error_permission']      = 'Предупреждение: у Вас нет прав на изменение модуля Pay with Amazon!';
+$_['error_permission']      = 'Предупреждение: у вас нет прав на изменение модуля Pay with Amazon!';

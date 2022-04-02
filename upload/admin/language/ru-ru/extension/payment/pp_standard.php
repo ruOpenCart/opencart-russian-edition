@@ -4,7 +4,7 @@ $_['heading_title']                  = 'PayPal Payments Standard';
 
 // Text
 $_['text_extension']                 = 'Расширения';
-$_['text_success']                   = 'Успешно: Вы изменили данные учетной записи PayPal!';
+$_['text_success']                   = 'Успешно: вы изменили данные учетной записи PayPal!';
 $_['text_edit']                      = 'Редактировать PayPal Payments Standard';
 $_['text_pp_standard']               = '<a target="_BLANK" href="https://www.paypal.com/uk/mrb/pal=V4T754QB63XXL"><img src="view/image/payment/paypal.png" alt="PayPal Website Payment Pro" title="PayPal Website Payment Pro iFrame" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_authorization']             = 'Авторизация';
@@ -40,5 +40,5 @@ $_['help_debug']                     = 'Записывает дополните�
 $_['help_total']                     = 'Общая сумма заказа, которую должен достичь заказ, прежде чем этот метод оплаты станет активным';
 
 // Error
-$_['error_permission']               = 'Предупреждение: У Вас нет разрешения на изменение платежа PayPal!';
+$_['error_permission']               = 'Предупреждение: У вас нет разрешения на изменение платежа PayPal!';
 $_['error_email']                    = 'Эл. почта обязательна!';

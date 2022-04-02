@@ -4,7 +4,7 @@ $_['heading_title']             = 'Web Payment Software';
 
 // Text
 $_['text_extension']            = 'Расширения';
-$_['text_success']              = 'Успешно: Вы изменили детали учетной записи Web Payment Software!';
+$_['text_success']              = 'Успешно: вы изменили детали учетной записи Web Payment Software!';
 $_['text_edit']                 = 'Редактировать AWeb Payment Software';
 $_['text_web_payment_software'] = '<a href="http://www.web-payment-software.com/" target="_blank"><img src="view/image/payment/wps-logo.jpg" alt="Web Payment Software" title="Web Payment Software" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_test']                 = 'Тестовый';
@@ -27,6 +27,6 @@ $_['entry_sort_order']          = 'Порядок сортировки';
 $_['help_total']                = 'Общая сумма, которую должен достичь заказ, прежде чем этот метод оплаты станет активным.';
 
 // Error
-$_['error_permission']          = 'Предупреждение: У Вас нет разрешения на изменение оплаты Web Payment Software!';
+$_['error_permission']          = 'Предупреждение: У вас нет разрешения на изменение оплаты Web Payment Software!';
 $_['error_login']               = 'Идентификатор логина обязателен!';
 $_['error_key']                 = 'Ключ транзакции обязателен!';

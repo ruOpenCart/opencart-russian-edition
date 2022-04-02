@@ -4,7 +4,7 @@ $_['heading_title']          = 'BluePay Redirect (Requires SSL)';
 
 // Text
 $_['text_extension']         = 'Расширения';
-$_['text_success']           = 'Успешно: Вы изменили данные учетной записи BluePay Redirect!';
+$_['text_success']           = 'Успешно: вы изменили данные учетной записи BluePay Redirect!';
 $_['text_edit']              = 'Редактировать BluePay Redirect (Требуется SSL)';
 $_['text_bluepay_redirect']  = '<a href="http://www.bluepay.com/preferred-partner/opencart" target="_blank"><img src="view/image/payment/bluepay.jpg" alt="BluePay Redirect" title="BluePay Redirect" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_sim']               = 'Симулятор';
@@ -50,7 +50,7 @@ $_['entry_card']             = 'Карты магазина';
 
 // Help
 $_['help_total']             = 'Общая сумма, которую должен достичь заказ, прежде чем этот метод оплаты станет активным.';
-$_['help_debug']             = 'Включение отладки приведет к записи конфиденциальных данных в файл журнала. Вы должны всегда отключать, если не указано иное';
+$_['help_debug']             = 'Включение отладки приведет к записи конфиденциальных данных в файл журнала. вы должны всегда отключать, если не указано иное';
 $_['help_transaction']       = 'Продажа будет снята с клиента немедленно. Авторизация отложит средства для последующего получения.';
 $_['help_cron_job_token']    = 'Сделать это долго и трудно угадать';
 $_['help_cron_job_url']      = 'Установите задание cron для вызова этого URL';
@@ -61,6 +61,6 @@ $_['button_rebate']          = 'Скидка / вернуть';
 $_['button_void']            = 'Аннулировать';
 
 // Error
-$_['error_permission']       = 'Предупреждение: У Вас нет разрешения на изменение оплаты BluePay!';
+$_['error_permission']       = 'Предупреждение: У вас нет разрешения на изменение оплаты BluePay!';
 $_['error_account_id']       = 'Идентификатор учетной записи обязателен!';
 $_['error_secret_key']       = 'Секретный ключ обязателен!';

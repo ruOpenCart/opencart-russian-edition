@@ -12,7 +12,7 @@ $_['heading_title']                  = 'Wechat Pay';
 
 // Text
 $_['text_extension']                 = 'Расширения';
-$_['text_success']                   = 'Успешно: Вы изменили детали учетной записи Wechat!';
+$_['text_success']                   = 'Успешно: вы изменили детали учетной записи Wechat!';
 $_['text_edit']                      = 'Редактировать Wechat Pay';
 $_['text_wechat_pay']                = '<a target="_BLANK" href="https://pay.weixin.qq.com"><img src="view/image/payment/wechat.png" alt="Wechat Pay Website" title="Wechat Pay Website" style="border: 1px solid #EEEEEE;" /></a>';
 
@@ -35,7 +35,7 @@ $_['help_currency']                  = 'Валюта покупателя опл
 $_['help_wechat_pay_setup']          = '<a target="_blank" href="https://www.opencart.cn/docs/wechat-pay">Нажмите здесь</a>, чтобы узнать, как настроить учетную запись Wechat Pay.';
 
 // Error
-$_['error_permission']               = 'Предупреждение: У Вас нет разрешения на изменение оплаты Wechat!';
+$_['error_permission']               = 'Предупреждение: У вас нет разрешения на изменение оплаты Wechat!';
 $_['error_app_id']                   = 'Идентификатор приложения обязателен!';
 $_['error_app_secret']               = 'Секрет приложения обязателен!';
 $_['error_mch_id']                   = 'Идентификатор продавца обязателен!';

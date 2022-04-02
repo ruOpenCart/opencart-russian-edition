@@ -4,7 +4,7 @@ $_['heading_title']      = 'Australia Post';
 
 // Text
 $_['text_extension']     = 'Расширения';
-$_['text_success']       = 'Успешно: Вы изменили доставку Australia Post!';
+$_['text_success']       = 'Успешно: вы изменили доставку Australia Post!';
 $_['text_edit']          = 'Редактировать доставку Australia Post';
 
 // Entry
@@ -20,5 +20,5 @@ $_['entry_sort_order']   = 'Порядок сортировки';
 $_['help_weight_class']  = 'Установить в килограммах.';
 
 // Error
-$_['error_permission']   = 'Предупреждение: У Вас нет разрешения на изменение доставки Australia Post!';
+$_['error_permission']   = 'Предупреждение: У вас нет разрешения на изменение доставки Australia Post!';
 $_['error_postcode']     = 'Почтовый индекс должен быть из 4-х цифр!';

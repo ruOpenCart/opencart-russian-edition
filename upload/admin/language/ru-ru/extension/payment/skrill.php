@@ -4,7 +4,7 @@ $_['heading_title']           = 'Skrill';
 
 // Text
 $_['text_extension']          = 'Расширения';
-$_['text_success']            = 'Успешно: Вы изменили детали Skrill.';
+$_['text_success']            = 'Успешно: вы изменили детали Skrill.';
 $_['text_edit']               = 'Редактировать Skrill';
 $_['text_skrill']             = '<a href="https://content.skrill.com/en/ecommerce-solutions/opencart/" target="_blank"><img src="view/image/payment/skrill.png" alt="Skrill" title="Skrill" style="border: 1px solid #EEEEEE;" /></a>';
 
@@ -25,5 +25,5 @@ $_['entry_sort_order']        = 'Порядок сортировки';
 $_['help_total']              = 'Общая сумма, которую должен достичь заказ, прежде чем этот метод оплаты станет активным.';
 
 // Error
-$_['error_permission']        = 'Предупреждение: У Вас нет разрешения на изменение Skrill!';
+$_['error_permission']        = 'Предупреждение: У вас нет разрешения на изменение Skrill!';
 $_['error_email']             = 'Эл. почта обязательна!';

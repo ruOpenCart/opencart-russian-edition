@@ -4,7 +4,7 @@ $_['heading_title']                            = 'Fedex';
 
 // Text
 $_['text_extension']                           = 'Расширения';
-$_['text_success']                             = 'Успешно: Вы изменили доставку Fedex!';
+$_['text_success']                             = 'Успешно: вы изменили доставку Fedex!';
 $_['text_edit']                                = 'Редактировать доставку Fedex';
 $_['text_europe_first_international_priority'] = 'Европа первая международная приоритет';
 $_['text_fedex_1_day_freight']                 = 'Fedex 1 день грузовая';
@@ -74,7 +74,7 @@ $_['help_display_weight']                      = 'Вы хотите отобра
 $_['help_weight_class']                        = 'Установите в килограммах или фунтах.';
 
 // Error
-$_['error_permission']                         = 'Предупреждение: У Вас нет разрешения на изменение доставки Fedex!';
+$_['error_permission']                         = 'Предупреждение: У вас нет разрешения на изменение доставки Fedex!';
 $_['error_key']                                = 'Ключ обязателен!';
 $_['error_password']                           = 'Пароль обязателен!';
 $_['error_account']                            = 'Счет обязателен!';

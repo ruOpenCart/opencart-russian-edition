@@ -4,7 +4,7 @@ $_['heading_title']         = 'Authorize.Net (AIM)';
 
 // Text
 $_['text_extension']        = 'Расширения';
-$_['text_success']          = 'Успешно: Вы изменили данные учетной записи Authorize.Net (AIM)!';
+$_['text_success']          = 'Успешно: вы изменили данные учетной записи Authorize.Net (AIM)!';
 $_['text_edit']             = 'Редактировать Authorize.Net (AIM)';
 $_['text_test']             = 'Тестовый';
 $_['text_live']             = 'Реальный';
@@ -29,6 +29,6 @@ $_['entry_sort_order']      = 'Порядок сортировки';
 $_['help_total']            = 'Общая сумма, которую должен достичь заказ, прежде чем этот метод оплаты станет активным.';
 
 // Error
-$_['error_permission']      = 'Предупреждение: У Вас нет разрешения на изменение оплаты Authorize.Net (AIM)!';
+$_['error_permission']      = 'Предупреждение: У вас нет разрешения на изменение оплаты Authorize.Net (AIM)!';
 $_['error_login']           = 'Логин обязателен!';
 $_['error_key']             = 'Ключ транзакции обязателен!';

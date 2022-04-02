@@ -4,7 +4,7 @@ $_['heading_title']      = 'PayPoint';
 
 // Text
 $_['text_extension']     = 'Расширения';
-$_['text_success']       = 'Успешно: Вы изменили PayPoint account details!';
+$_['text_success']       = 'Успешно: вы изменили PayPoint account details!';
 $_['text_edit']          = 'Редактировать PayPoint';
 $_['text_paypoint']      = '<a href="https://www.paypoint.net/partners/opencart" target="_blank"><img src="view/image/payment/paypoint.png" alt="PayPoint" title="PayPoint" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_live']          = 'Производство';
@@ -22,9 +22,9 @@ $_['entry_status']       = 'Статус';
 $_['entry_sort_order']   = 'Порядок сортировки';
 
 // Help
-$_['help_password']      = 'Оставьте пустым, если в Вашей учетной записи не включена функция «Проверка подлинности дайджеста».';
+$_['help_password']      = 'Оставьте пустым, если в вашей учетной записи не включена функция «Проверка подлинности дайджеста».';
 $_['help_total']         = 'Общая сумма, которую должен достичь заказ, прежде чем этот метод оплаты станет активным.';
 
 // Error
-$_['error_permission']   = 'Предупреждение: У Вас нет разрешения на изменение payment PayPoint!';
+$_['error_permission']   = 'Предупреждение: У вас нет разрешения на изменение payment PayPoint!';
 $_['error_merchant']     = 'Идентификатор продавца обязателен!';

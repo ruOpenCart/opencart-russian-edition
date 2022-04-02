@@ -3,12 +3,12 @@
 $_['heading_title']                        = 'Регулярные заказы';
 
 // Text
-$_['text_success']                         = 'Успешно: Вы изменили регулярные профили!';
+$_['text_success']                         = 'Успешно: вы изменили регулярные профили!';
 $_['text_list']                            = 'Список переодических заказов';
 $_['text_filter']                          = 'Фильтр';
 $_['text_recurring_detail']                = 'Регулярные детали';
 $_['text_order_detail']                    = 'Детали заказа';
-$_['text_product_detail']                  = 'Детали продукции';
+$_['text_product_detail']                  = 'Детали товара';
 $_['text_transaction']                     = 'Транзакции';
 $_['text_order_recurring_id']              = 'Номер регулярного заказа';
 $_['text_reference']                       = 'Ссылка на платеж';
@@ -23,7 +23,7 @@ $_['text_date_added']                      = 'Дата добавления';
 $_['text_order_status']                    = 'Статус заказа';
 $_['text_type']                            = 'Тип';
 $_['text_action']                          = 'Действие';
-$_['text_product']                         = 'Продукт';
+$_['text_product']                         = 'Товар';
 $_['text_quantity']                        = 'Количество';
 $_['text_amount']                          = 'Сумма';
 $_['text_cancel_payment']                  = 'Отмена оплаты';
@@ -35,7 +35,7 @@ $_['text_status_5']                        = 'Истекший';
 $_['text_status_6']                        = 'Ожидающий';
 
 $_['text_transactions']                    = 'Транзакции';
-$_['text_cancel_confirm']                  = 'Аннулирование профиля не может быть отменено! Вы уверены, что хотите сделать это?';
+$_['text_cancel_confirm']                  = 'Аннулирование профиля не может быть отменено! вы уверены, что хотите сделать это?';
 $_['text_transaction_date_added']          = 'Дата добавления';
 $_['text_transaction_payment']             = 'Оплата';
 $_['text_transaction_outstanding_payment'] = 'Неуплаченный платеж';
@@ -70,7 +70,7 @@ $_['entry_type']                           = 'Тип';
 $_['entry_action']                         = 'Действие';
 $_['entry_email']                          = 'Эл. почта';
 $_['entry_description']                    = 'Описание регулярного профиля';
-$_['entry_product']                        = 'Продукт';
+$_['entry_product']                        = 'Товар';
 $_['entry_quantity']                       = 'Количество';
 $_['entry_amount']                         = 'Сумма';
 $_['entry_recurring']                      = 'Регулярный профиль';

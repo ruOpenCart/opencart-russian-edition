@@ -4,7 +4,7 @@ $_['heading_title']      = 'Paymate';
 
 // Text
 $_['text_extension']     = 'Расширения';
-$_['text_success']       = 'Успешно: Вы изменили детали учетной записи Paymate!';
+$_['text_success']       = 'Успешно: вы изменили детали учетной записи Paymate!';
 $_['text_edit']          = 'Редактировать Paymate';
 $_['text_paymate']       = '<img src="view/image/payment/paymate.png" alt="Paymate" title="Paymate" style="border: 1px solid #EEEEEE;" />';
 
@@ -23,6 +23,6 @@ $_['help_password']      = 'Просто используйте случайны
 $_['help_total']         = 'Общая сумма, которую должен достичь заказ, прежде чем этот метод оплаты станет активным.';
 
 // Error
-$_['error_permission']   = 'Предупреждение: У Вас нет разрешения на изменение payment Paymate!';
+$_['error_permission']   = 'Предупреждение: У вас нет разрешения на изменение payment Paymate!';
 $_['error_username']     = 'Имя пользователя Paymate обязательно!';
 $_['error_password']     = 'Пароль обязателен!';

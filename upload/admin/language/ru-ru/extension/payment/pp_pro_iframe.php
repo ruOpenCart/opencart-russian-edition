@@ -4,7 +4,7 @@ $_['heading_title']                  = 'PayPal Pro iFrame';
 
 // Text
 $_['text_extension']                 = 'Расширения';
-$_['text_success']                   = 'Успешно: Вы изменили данные учетной записи PayPal Pro iFrame!';
+$_['text_success']                   = 'Успешно: вы изменили данные учетной записи PayPal Pro iFrame!';
 $_['text_edit']                      = 'Редактировать PayPal Pro iFrame';
 $_['text_pp_pro_iframe']             = '<a target="_BLANK" href="https://www.paypal.com/uk/mrb/pal=V4T754QB63XXL"><img src="view/image/payment/paypal.png" alt="PayPal Website Payment Pro" title="PayPal Website Payment Pro iFrame" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_authorization']             = 'Авторизация';
@@ -18,14 +18,14 @@ $_['text_capture_amount']            = 'Сумма захвата';
 $_['text_complete_capture']          = 'Полный захват';
 $_['text_transactions']              = 'Транзакции';
 $_['text_complete']                  = 'Завершить';
-$_['text_confirm_void']              = 'Если Вы откажетесь от участия, Вы не сможете получить дополнительные средства';
+$_['text_confirm_void']              = 'Если вы откажетесь от участия, вы не сможете получить дополнительные средства';
 $_['text_view']                      = 'Посмотреть';
 $_['text_refund']                    = 'Вернуть';
 $_['text_resend']                    = 'Отправить повторно';
 $_['text_reauthorise']               = 'Авторизоваться повторно';
 $_['text_reauthorised']              = 'Транзакция была повторно авторизована';
 $_['text_transaction']               = 'Транзакция';
-$_['text_product_lines']             = 'Линии продукта';
+$_['text_product_lines']             = 'Линии товара';
 $_['text_ebay_txn_id']               = 'Идентификатор транзакции eBay';
 $_['text_name']                      = 'Имя';
 $_['text_qty']                       = 'Количество';
@@ -106,7 +106,7 @@ $_['text_sub_amt']                   = 'Сумма подписки';
 $_['text_sub_period']                = 'Период подписки';
 $_['text_redirect']                  = 'Перенаправление';
 $_['text_iframe']                    = 'Iframe';
-$_['help_checkout_method']           = 'Пожалуйста, используйте метод Перенаправления, если у Вас не установлен SSL или если у Вас отключена опция Pay with PayPal на странице размещенного платежа.';
+$_['help_checkout_method']           = 'Пожалуйста, используйте метод Перенаправления, если у вас не установлен SSL или если у вас отключена опция Pay with PayPal на странице размещенного платежа.';
 $_['help_debug']                     = 'Журналы дополнительной информации.';
 
 // Column
@@ -163,7 +163,7 @@ $_['button_capture']                 = 'Захватить';
 $_['button_reauthorise']             = 'Авторизовать повторно';
 
 // Error
-$_['error_permission']               = 'Предупреждение: У Вас нет разрешения на изменение платежа PayPal Website Payment Pro iFrame (UK)!';
+$_['error_permission']               = 'Предупреждение: У вас нет разрешения на изменение платежа PayPal Website Payment Pro iFrame (UK)!';
 $_['error_sig']                      = 'Подпись обязательно!';
 $_['error_user']                     = 'Пользователь обязателен!';
 $_['error_password']                 = 'Пароль обязателен!';

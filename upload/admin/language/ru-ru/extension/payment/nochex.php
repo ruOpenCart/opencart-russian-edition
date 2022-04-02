@@ -4,7 +4,7 @@ $_['heading_title']      = 'NOCHEX';
 
 // Text
 $_['text_extension']     = 'Расширения';
-$_['text_success']       = 'Успешно: Вы изменили NOCHEX account details!';
+$_['text_success']       = 'Успешно: вы изменили NOCHEX account details!';
 $_['text_edit']          = 'Редактировать NOCHEX';
 $_['text_nochex']        = '<a href="https://secure.nochex.com/apply/merchant_info.aspx?partner_id=172198798" target="_blank"><img src="view/image/payment/nochex.png" alt="NOCHEX" title="NOCHEX" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_seller']        = 'Продавец / Личный кабинет';
@@ -26,6 +26,6 @@ $_['entry_sort_order']   = 'Порядок сортировки';
 $_['help_total']         = 'Общая сумма, которую должен достичь заказ, прежде чем этот метод оплаты станет активным.';
 
 // Error
-$_['error_permission']   = 'Предупреждение: У Вас нет разрешения на изменение оплаты NOCHEX!';
+$_['error_permission']   = 'Предупреждение: У вас нет разрешения на изменение оплаты NOCHEX!';
 $_['error_email']        = 'Эл. почта обязательна!';
 $_['error_merchant']     = 'Идентификатор продавца обязателен!';

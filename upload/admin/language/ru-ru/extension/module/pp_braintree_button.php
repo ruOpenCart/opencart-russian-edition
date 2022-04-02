@@ -4,7 +4,7 @@ $_['heading_title']    = 'PayPal (Powered by Braintree) Button';
 
 // Text
 $_['text_extension']   = 'Расширения';
-$_['text_success']     = 'Успешно: Вы изменили модуль PayPal (Powered by Braintree) Button!';
+$_['text_success']     = 'Успешно: вы изменили модуль PayPal (Powered by Braintree) Button!';
 $_['text_edit']        = 'Редактировать модуль PayPal (Powered by Braintree) Button';
 $_['text_info']        = 'Кнопка <u>не</u> появится при определенных условиях:';
 $_['text_info_li1']    = 'Корзина пуста и сертификаты не были применены';
@@ -17,4 +17,4 @@ $_['text_layout_link'] = 'Нажмите здесь, чтобы перейти �
 $_['entry_status']     = 'Статус';
 
 // Error
-$_['error_permission'] = 'Предупреждение: У Вас нет прав на изменение модуля PayPal (Powered by Braintree) Button!';
+$_['error_permission'] = 'Предупреждение: У вас нет прав на изменение модуля PayPal (Powered by Braintree) Button!';

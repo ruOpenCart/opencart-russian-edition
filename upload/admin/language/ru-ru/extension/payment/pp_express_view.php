@@ -4,7 +4,7 @@ $_['heading_title']           = 'Просмотр транзакции';
 
 // Text
 $_['text_pp_express']         = 'PayPal Express Checkout';
-$_['text_product_lines']      = 'Линии продукта';
+$_['text_product_lines']      = 'Линии товаров';
 $_['text_ebay_txn_id']        = 'Идентификатор транзакции eBay';
 $_['text_name']               = 'Имя';
 $_['text_qty']                = 'Количество';

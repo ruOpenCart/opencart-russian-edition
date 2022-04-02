@@ -15,8 +15,8 @@ $_['text_payment_address']  = 'Адрес оплаты';
 $_['text_payment_method']   = 'Метод оплаты:';
 $_['text_comment']          = 'Комментарий к заказу';
 $_['text_history']          = 'История заказов';
-$_['text_success']          = 'Успешно: Вы добавили <a href="%s">%s</a> в <a href="%s">корзину</a>!';
-$_['text_empty']            = 'У Вас еще не было заказов!';
+$_['text_success']          = 'Успешно: вы добавили <a href="%s">%s</a> в <a href="%s">корзину</a>!';
+$_['text_empty']            = 'У вас еще не было заказов!';
 $_['text_error']            = 'Заказ не найден!';
 
 // Column

@@ -4,7 +4,7 @@ $_['heading_title']      = 'Perpetual Payments';
 
 // Text
 $_['text_extension']     = 'Расширения';
-$_['text_success']       = 'Успешно: Вы изменили детали учетной записи Perpetual Payments!';
+$_['text_success']       = 'Успешно: вы изменили детали учетной записи Perpetual Payments!';
 $_['text_edit']          = 'Редактировать Perpetual Payments';
 
 // Entry
@@ -22,6 +22,6 @@ $_['help_test']          = 'Использовать этот модуль в т
 $_['help_total']         = 'Общая сумма, которую должен достичь заказ, прежде чем этот метод оплаты станет активным.';
 
 // Error
-$_['error_permission']   = 'Предупреждение: У Вас нет разрешения на изменение payment Perpetual Payments!';
+$_['error_permission']   = 'Предупреждение: У вас нет разрешения на изменение payment Perpetual Payments!';
 $_['error_auth_id']      = 'Идентификатор авторизации обязателен!';
 $_['error_auth_pass']    = 'Пароль авторизации обязателен!';

@@ -12,7 +12,7 @@ $_['text_wait_x_days']                           = 'Ожидайте %d дней
 $_['text_wait']                                  = 'Пожалуйста, подождите.';
 $_['text_authorisation_reversed']                = 'Авторизация была успешно отменена';
 $_['text_refund_issued']                         = 'Возврат был успешно выдан';
-$_['text_success']                               = 'Успешно: Вы изменили модуль Secure Trading Web Service!';
+$_['text_success']                               = 'Успешно: вы изменили модуль Secure Trading Web Service!';
 $_['text_pending_settlement']                    = 'В ожидании урегулирования';
 $_['text_manual_settlement']                     = 'Ручной расчет';
 $_['text_suspended']                             = 'Зависший';
@@ -89,7 +89,7 @@ $_['column_status']                              = 'Статус';
 $_['column_type']                                = 'Тип';
 $_['column_payment_type']                        = 'Тип оплаты';
 
-$_['error_permission']                           = 'У Вас нет прав для изменения этого модуля';
+$_['error_permission']                           = 'У вас нет прав для изменения этого модуля';
 $_['error_site_reference']                       = 'Ссылка на сайт обязательна';
 $_['error_cards_accepted']                       = 'Принимаемые карты обязательны';
 $_['error_username']                             = 'Имя пользователя обязательно';

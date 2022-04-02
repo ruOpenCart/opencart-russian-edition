@@ -11,7 +11,7 @@ $_['text_date_added']                      = 'Дата добавления:';
 $_['text_status']                          = 'Статус:';
 $_['text_payment_method']                  = 'Метод оплаты:';
 $_['text_order_id']                        = 'Номер заказа:';
-$_['text_product']                         = 'Продукт:';
+$_['text_product']                         = 'Товар:';
 $_['text_quantity']                        = 'Количество:';
 $_['text_description']                     = 'Описание';
 $_['text_reference']                       = 'Ссылка';
@@ -33,7 +33,7 @@ $_['text_transaction_suspended_failed']    = 'Приостановлено из-
 $_['text_transaction_outstanding_failed']  = 'Не удалось оплатить';
 $_['text_transaction_expired']             = 'Истекший';
 $_['text_empty']                           = 'Регулярные платежи не найдены!';
-$_['text_error']                           = 'Не удалось найти запрашиваемый Вами повторяющийся заказ!';
+$_['text_error']                           = 'Не удалось найти запрашиваемый вами повторяющийся заказ!';
 $_['text_cancelled']                       = 'Регулярный платеж был отменен';
 
 // Column
@@ -41,7 +41,7 @@ $_['column_date_added']                    = 'Добавлен';
 $_['column_type']                          = 'Тип';
 $_['column_amount']                        = 'Сумма';
 $_['column_status']                        = 'Статус';
-$_['column_product']                       = 'Продукт';
+$_['column_product']                       = 'Товар';
 $_['column_order_recurring_id']            = 'Повторяющийся идентификатор';
 
 // Error

@@ -9,7 +9,7 @@ $_['text_card_digits']       = 'Последние цифры: ';
 $_['text_card_expiry']       = 'Истекает: ';
 
 // Returned text
-$_['text_transaction_error'] = 'При обработке Вашей транзакции произошла ошибка - ';
+$_['text_transaction_error'] = 'При обработке вашей транзакции произошла ошибка - ';
 
 // Entry
 $_['entry_card']             = 'Новая или существующая карта: ';

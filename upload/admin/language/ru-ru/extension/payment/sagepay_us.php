@@ -4,7 +4,7 @@ $_['heading_title']      = 'Sage Payment Solutions (US)';
 
 // Text
 $_['text_extension']     = 'Расширения';
-$_['text_success']       = 'Успешно: Вы изменили детали учетной записи SagePay!';
+$_['text_success']       = 'Успешно: вы изменили детали учетной записи SagePay!';
 $_['text_edit']          = 'Редактировать Sage Payment Solutions (US)';
 
 // Entry
@@ -20,6 +20,6 @@ $_['entry_sort_order']   = 'Порядок сортировки';
 $_['help_total']         = 'Общая сумма, которую должен достичь заказ, прежде чем этот метод оплаты станет активным.';
 
 // Error
-$_['error_permission']   = 'Предупреждение: У Вас нет разрешения на изменение оплаты SagePay!';
+$_['error_permission']   = 'Предупреждение: У вас нет разрешения на изменение оплаты SagePay!';
 $_['error_merchant_id']  = 'Идентификатор продавца обязателен!';
 $_['error_merchant_key'] = 'Ключ продавца обязателен!';

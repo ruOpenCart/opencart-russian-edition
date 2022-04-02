@@ -4,7 +4,7 @@ $_['heading_title']      = 'PayPal Pro';
 
 // Text
 $_['text_extension']     = 'Расширения';
-$_['text_success']       = 'Успешно: Вы изменили данные учетной записи PayPal на веб-сайте Payment Pro Checkout!';
+$_['text_success']       = 'Успешно: вы изменили данные учетной записи PayPal на веб-сайте Payment Pro Checkout!';
 $_['text_edit']          = 'Редактировать PayPal Pro';
 $_['text_pp_pro']        = '<a target="_BLANK" href="https://www.paypal.com/uk/mrb/pal=V4T754QB63XXL"><img src="view/image/payment/paypal.png" alt="PayPal Website Payment Pro" title="PayPal Website Payment Pro iFrame" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_authorization'] = 'Авторизация';
@@ -27,7 +27,7 @@ $_['help_test']          = 'Используете сервер шлюза ре�
 $_['help_total']         = 'Общая сумма заказа, которую должен достичь заказ, прежде чем этот метод оплаты станет активным';
 
 // Error
-$_['error_permission']   = 'Предупреждение: У Вас нет разрешения на изменение платежа PayPal Website Payment Pro Checkout!';
+$_['error_permission']   = 'Предупреждение: У вас нет разрешения на изменение платежа PayPal Website Payment Pro Checkout!';
 $_['error_username']     = 'API имя пользователя обязательно!';
 $_['error_password']     = 'API пароль обязателен!';
 $_['error_signature']    = 'API подпись обязательна!';
