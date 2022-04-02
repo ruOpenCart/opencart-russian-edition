@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
     <modification>
     <name>[OCN] OpenCart 3 RE Tweak</name>
-    <version>3.0.3.7.9</version>
+    <version>3.0.3.8.10</version>
     <author>Hkr</author>
     <link>https://forum.opencart.name</link>
     <code>ocn_30_re_tweak</code>
-    <date>04.02.2021</date>
+    <date>04.04.2022</date>
 
 <!-- Конфигуратор сборки -->
     <!-- Добавляем проверку для аякс запрос обновления модификаторов из конфигуратора -->
@@ -41,9 +41,9 @@
 <!-- Замена ссылок в меню профиля в админке -->
     <file path="admin/view/template/common/header.twig">
         <operation>
-            <search trim="true"><![CDATA[<li><a href="http://www.opencart.com" target="_blank"><i class="fa fa-opencart fa-fw"></i> {{ text_homepage }}</a></li>]]></search>
+            <search trim="true"><![CDATA[<li><a href="https://www.opencart.com" target="_blank"><i class="fa fa-opencart fa-fw"></i> {{ text_homepage }}</a></li>]]></search>
             <add position="replace" trim="true"><![CDATA[
-                <li><a href="http://www.opencart.com" target="_blank"><i class="fa fa-opencart fa-fw"></i> {{ text_homepage }} [EN]</a></li>
+                <li><a href="https://www.opencart.com" target="_blank"><i class="fa fa-opencart fa-fw"></i> {{ text_homepage }} [EN]</a></li>
                 <li><a href="https://opencart.name" target="_blank"><i class="fa fa-opencart fa-fw"></i> {{ text_homepage }} [RU]</a></li>
             ]]></add>
         </operation>
@@ -52,7 +52,7 @@
             <add position="replace" trim="true"><![CDATA[<li><a href="https://docs.opencart.name/ru-ru/introduction/" target="_blank"><i class="fa fa-file-text-o fa-fw"></i> {{ text_documentation }} [RU]</a></li>]]></add>
         </operation>
         <operation>
-            <search trim="true"><![CDATA[<li><a href="http://forum.opencart.com" target="_blank"><i class="fa fa-comments-o fa-fw"></i> {{ text_support }}</a></li>]]></search>
+            <search trim="true"><![CDATA[<li><a href="https://forum.opencart.com" target="_blank"><i class="fa fa-comments-o fa-fw"></i> {{ text_support }}</a></li>]]></search>
             <add position="replace" trim="true"><![CDATA[<li><a href="https://forum.opencart.name" target="_blank"><i class="fa fa-comments-o fa-fw"></i> {{ text_support }} [RU]</a></li>]]></add>
         </operation>
     </file>
@@ -77,7 +77,7 @@
                 $_['text_footer_link_re']              = 'https://forum.opencart.name';
                 $_['text_footer_year_re']              = '&copy; 2020-';
                 $_['text_version_re']                  = 'Assembly version';
-                $_['text_version_number_re']           = 'RE9';
+                $_['text_version_number_re']           = 'RE10';
                 $_['text_version_hidden_re']           = 'OpenCart RE';
                 $_['text_version_link_re']             = 'https://forum.opencart.name/resources/13/';
                 $_['text_version_translate_link_re']   = 'https://forum.opencart.name/resources/9/';
@@ -103,7 +103,7 @@
                 $_['text_footer_link_re']              = 'https://forum.opencart.name';
                 $_['text_footer_year_re']              = '2020';
                 $_['text_version_re']                  = 'Версия сборки';
-                $_['text_version_number_re']           = 'RE9';
+                $_['text_version_number_re']           = 'RE10';
                 $_['text_version_hidden_re']           = 'Версия OpenCart RE';
                 $_['text_version_link_re']             = 'https://forum.opencart.name/resources/13/';
                 $_['text_version_translate_link_re']   = 'https://forum.opencart.name/resources/9/';
@@ -157,7 +157,7 @@
     <!-- Изменение верстки шаблона для вывода ссылок на сайт проекта сборки -->
     <file path="admin/view/template/common/footer.twig">
         <operation>
-            <search trim="true"><![CDATA[<footer id="footer">{{ text_footer }}<br />{{ text_version }}</footer></div>]]></search>
+            <search trim="true"><![CDATA[<footer id="footer">{{ text_footer }}<br/>{{ text_version }}</footer></div>]]></search>
             <add position="replace" trim="true"><![CDATA[
                 <footer id="footer">
                     <a href="{{ text_footer_link }}" target="_blank">{{ text_footer }}</a>
