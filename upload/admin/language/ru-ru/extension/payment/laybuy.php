@@ -13,7 +13,7 @@ $_['tab_modify']                    = 'Изменить план';
 
 // Text
 $_['text_extension']                = 'Расширения';
-$_['text_success']                  = 'Успешно: вы изменили модуль оплаты Lay-Buy!';
+$_['text_success']                  = 'Успешно: Вы изменили модуль оплаты Lay-Buy!';
 $_['text_edit']                     = 'Редактировать Lay-Buy';
 $_['text_laybuy']                   = '<a href="https://www.lay-buys.com" target="_blank"><img src="view/image/payment/laybuys.png" style="width:94px;height:25px" alt="Lay-Buys" title="Lay-Buys"></a>';
 $_['text_cancel_success']           = 'Транзакция была успешно отменена.';

@@ -5,7 +5,7 @@ $_['heading_refund']                 = 'Вернуть';
 
 // Text
 $_['text_extension']                 = 'Расширения';
-$_['text_success']                   = 'Успешно: вы изменили данные учетной записи PayPal Payflow Pro iFrame!';
+$_['text_success']                   = 'Успешно: Вы изменили данные учетной записи PayPal Payflow Pro iFrame!';
 $_['text_edit']                      = 'Редактировать PayPal Payflow Pro iFrame';
 $_['text_pp_payflow_iframe']         = '<a target="_BLANK" href="https://www.paypal.com/uk/mrb/pal=V4T754QB63XXL"><img src="view/image/payment/paypal.png" alt="PayPal Website Payment Pro" title="PayPal Website Payment Pro iFrame" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_authorization']             = 'Авторизация';

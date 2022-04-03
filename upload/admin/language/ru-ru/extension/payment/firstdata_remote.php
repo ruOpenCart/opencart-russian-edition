@@ -5,7 +5,7 @@ $_['heading_title']                  = 'First Data EMEA Web Service API';
 // Text
 $_['text_firstdata_remote']          = '<img src="view/image/payment/firstdata.png" alt="First Data" title="First Data" style="border: 1px solid #EEEEEE;" />';
 $_['text_extension']                 = 'Расширения';
-$_['text_success']                   = 'Успешно: вы изменили данные учетной записи First Data!';
+$_['text_success']                   = 'Успешно: Вы изменили данные учетной записи First Data!';
 $_['text_edit']                      = 'Редактировать First Data EMEA Web Service API';
 $_['text_card_type']                 = 'Тип карты';
 $_['text_enabled']                   = 'Включено';

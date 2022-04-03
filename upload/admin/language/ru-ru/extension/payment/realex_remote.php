@@ -4,7 +4,7 @@ $_['heading_title']                  = 'Realex Remote';
 
 // Text
 $_['text_extension']                 = 'Расширения';
-$_['text_success']                   = 'Успешно: вы изменили детали учетной записи Realex!';
+$_['text_success']                   = 'Успешно: Вы изменили детали учетной записи Realex!';
 $_['text_edit']                      = 'Редактировать Realex Remote';
 $_['text_card_type']                 = 'Тип карты';
 $_['text_enabled']                   = 'Включено';

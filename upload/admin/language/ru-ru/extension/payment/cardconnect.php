@@ -8,7 +8,7 @@ $_['tab_order_status']              = 'Статус заказа';
 
 // Text
 $_['text_extension']                = 'Расширения';
-$_['text_success']                  = 'Успешно: вы изменили модуль оплаты CardConnect!';
+$_['text_success']                  = 'Успешно: Вы изменили модуль оплаты CardConnect!';
 $_['text_edit']                     = 'Редактировать CardConnect';
 $_['text_cardconnect']              = '<a href="http://www.cardconnect.com" target="_blank"><img src="view/image/payment/cardconnect.png" alt="CardConnect" title="CardConnect"></a>';
 $_['text_payment']                  = 'Платеж';

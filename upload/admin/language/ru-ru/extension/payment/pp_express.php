@@ -4,7 +4,7 @@ $_['heading_title']                  = 'PayPal Express Checkout';
 
 // Text
 $_['text_extension']                 = 'Расширения';
-$_['text_success']                   = 'Успешно: вы изменили данные учетной записи PayPal Express Checkout!';
+$_['text_success']                   = 'Успешно: Вы изменили данные учетной записи PayPal Express Checkout!';
 $_['text_edit']                      = 'Редактировать PayPal Express Checkout';
 $_['text_pp_express']                = '<a target="_BLANK" href="https://www.paypal.com/uk/mrb/pal=V4T754QB63XXL"><img src="view/image/payment/paypal.png" alt="PayPal Website Payment Pro" title="PayPal Website Payment Pro iFrame" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_authorization']             = 'Авторизация';
@@ -17,7 +17,7 @@ $_['text_show_advanced']             = 'Показать расширенный'
 $_['text_show_quick_setup']          = 'Показать быструю настройку';
 $_['text_quick_setup']               = 'Быстрая настройка - связать существующую или создать новую учетную запись PayPal, чтобы начать принимать платежи в считанные минуты';
 $_['text_paypal_consent']            = 'Используя инструмент быстрой настройки, вы позволяете PayPal получать информацию о вашем магазине.';
-$_['text_success_connect']           = 'Успешно: вы подключили свою учетную запись PayPal!';
+$_['text_success_connect']           = 'Успешно: Вы подключили свою учетную запись PayPal!';
 $_['text_preferred_main']            = 'Предоставляет вашим покупателям упрощенное оформление заказа на нескольких устройствах, благодаря чему они остаются локальными для вашего веб-сайта в течение всего процесса авторизации платежа.';
 $_['text_learn_more']                = '(Узнать больше)';
 $_['text_preferred_li_1']            = 'Начните принимать PayPal в три клика';

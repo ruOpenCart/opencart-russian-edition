@@ -4,7 +4,7 @@ $_['heading_title']             = 'eWAY Payment';
 
 // Text
 $_['text_extension']            = 'Расширения';
-$_['text_success']              = 'Успешно: вы изменили ваш eWAY details!';
+$_['text_success']              = 'Успешно: Вы изменили ваш eWAY details!';
 $_['text_edit']                 = 'Редактировать eWAY';
 $_['text_eway']                 = '<a target="_BLANK" href="http://www.eway.com.au/"><img src="view/image/payment/eway.png" alt="eWAY" title="eWAY" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_authorisation']        = 'Авторизация';

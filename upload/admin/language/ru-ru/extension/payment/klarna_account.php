@@ -4,7 +4,7 @@ $_['heading_title']         = 'Klarna учетная запись';
 
 // Text
 $_['text_extension']        = 'Расширения';
-$_['text_success']          = 'Успешно: вы изменили модуль Klarna Payment!';
+$_['text_success']          = 'Успешно: Вы изменили модуль Klarna Payment!';
 $_['text_edit']             = 'Редактировать Klarna Account';
 $_['text_klarna_account']   = '<a href="https://merchants.klarna.com/signup?locale=en&partner_id=d5c87110cebc383a826364769047042e777da5e8&utm_campaign=Platform&utm_medium=Partners&utm_source=Opencart" target="_blank"><img src="https://cdn.klarna.com/public/images/global/logos/v1/basic/global_basic_logo_std_blue-black.png?width=60&eid=opencart" alt="Klarna Account" title="Klarna Account" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_live']             = 'Реальный';

@@ -130,7 +130,7 @@ $_['button_disconnect']             = 'Отключиться';
 $_['button_smart_button']           = 'Настройка умной кнопки';
 
 // Success
-$_['success_save']                  = 'Успешно: вы изменили PayPal!';
+$_['success_save']                  = 'Успешно: Вы изменили PayPal!';
 
 // Error
 $_['error_permission']              = 'Внимание: У вас нет разрешения на изменение платежа PayPal!';

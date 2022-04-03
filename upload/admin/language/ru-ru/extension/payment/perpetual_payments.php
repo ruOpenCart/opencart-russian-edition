@@ -4,7 +4,7 @@ $_['heading_title']      = 'Perpetual Payments';
 
 // Text
 $_['text_extension']     = 'Расширения';
-$_['text_success']       = 'Успешно: вы изменили детали учетной записи Perpetual Payments!';
+$_['text_success']       = 'Успешно: Вы изменили детали учетной записи Perpetual Payments!';
 $_['text_edit']          = 'Редактировать Perpetual Payments';
 
 // Entry

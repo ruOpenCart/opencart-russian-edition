@@ -4,7 +4,7 @@ $_['heading_title']          = 'BluePay Hosted Form';
 
 // Text
 $_['text_extension']         = 'Расширения';
-$_['text_success']           = 'Успешно: вы изменили данные учетной записи BluePay Hosted Form!';
+$_['text_success']           = 'Успешно: Вы изменили данные учетной записи BluePay Hosted Form!';
 $_['text_edit']              = 'Редактировать BluePay Hosted Form';
 $_['text_bluepay_hosted']    = '<a href="http://www.bluepay.com/preferred-partner/opencart" target="_blank"><img src="view/image/payment/bluepay.jpg" alt="BluePay Hosted Form" title="BluePay Hosted Form" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_test']              = 'Тестовый';

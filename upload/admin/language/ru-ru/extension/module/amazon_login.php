@@ -5,7 +5,7 @@ $_['heading_title']         = 'Login with Amazon';
 //Text
 $_['text_module']           = 'Модули';
 $_['text_extension']        = 'Расширения';
-$_['text_success']          = 'Успешно: вы изменили модуль вход через Amazon!';
+$_['text_success']          = 'Успешно: Вы изменили модуль вход через Amazon!';
 $_['text_content_top']      = 'Content Top';
 $_['text_content_bottom']   = 'Content Bottom';
 $_['text_column_left']      = 'Column Left';

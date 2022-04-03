@@ -4,7 +4,7 @@ $_['heading_title']                  = 'Globalpay Redirect';
 
 // Text
 $_['text_extension']                 = 'Расширения';
-$_['text_success']                   = 'Успешно: вы изменили детали учетной записи Globalpay!';
+$_['text_success']                   = 'Успешно: Вы изменили детали учетной записи Globalpay!';
 $_['text_edit']                      = 'Редактировать Globalpay Redirect';
 $_['text_live']                      = 'Реальный';
 $_['text_demo']                      = 'Demo';

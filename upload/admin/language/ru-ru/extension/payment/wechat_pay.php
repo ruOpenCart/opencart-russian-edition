@@ -12,7 +12,7 @@ $_['heading_title']                  = 'Wechat Pay';
 
 // Text
 $_['text_extension']                 = 'Расширения';
-$_['text_success']                   = 'Успешно: вы изменили детали учетной записи Wechat!';
+$_['text_success']                   = 'Успешно: Вы изменили детали учетной записи Wechat!';
 $_['text_edit']                      = 'Редактировать Wechat Pay';
 $_['text_wechat_pay']                = '<a target="_BLANK" href="https://pay.weixin.qq.com"><img src="view/image/payment/wechat.png" alt="Wechat Pay Website" title="Wechat Pay Website" style="border: 1px solid #EEEEEE;" /></a>';
 

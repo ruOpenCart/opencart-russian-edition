@@ -4,7 +4,7 @@ $_['heading_title']                   = 'G2APay';
 
 // Text
 $_['text_extension']                  = 'Расширения';
-$_['text_success']                    = 'Успешно: вы изменили данные G2APay.';
+$_['text_success']                    = 'Успешно: Вы изменили данные G2APay.';
 $_['text_edit']                       = 'Редактировать G2APay';
 $_['text_g2apay']                     = '<a href="https://pay.g2a.com/" target="_blank"><img src="view/image/payment/g2apay.png" alt="G2APay" title="G2APay" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_payment_info']               = 'Платежная информация';

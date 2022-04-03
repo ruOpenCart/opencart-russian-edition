@@ -3,7 +3,7 @@
 $_['heading_title']        = 'APIs';
 
 // Text
-$_['text_success']         = 'Успешно: вы изменили APIs!';
+$_['text_success']         = 'Успешно: Вы изменили APIs!';
 $_['text_list']            = 'Список API';
 $_['text_add']             = 'Добавить API';
 $_['text_edit']            = 'Редактировать API';

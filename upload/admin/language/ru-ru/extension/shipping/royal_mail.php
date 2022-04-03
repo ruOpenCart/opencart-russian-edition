@@ -4,7 +4,7 @@ $_['heading_title']                    = 'Royal Mail';
 
 // Text
 $_['text_extension']                   = 'Расширения';
-$_['text_success']                     = 'Успешно: вы изменили доставку Royal Mail!';
+$_['text_success']                     = 'Успешно: Вы изменили доставку Royal Mail!';
 $_['text_edit']                        = 'Редактировать доставку Royal Mail';
 
 // Entry

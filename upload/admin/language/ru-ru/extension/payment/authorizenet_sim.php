@@ -4,7 +4,7 @@ $_['heading_title']         = 'Authorize.Net (SIM)';
 
 // Text
 $_['text_extension']        = 'Расширения';
-$_['text_success']          = 'Успешно: вы изменили данные учетной записи Authorize.Net (SIM)!';
+$_['text_success']          = 'Успешно: Вы изменили данные учетной записи Authorize.Net (SIM)!';
 $_['text_edit']             = 'Редактировать Authorize.Net (SIM)';
 $_['text_authorizenet_sim'] = '<a href="https://account.authorize.net/signUpNow?resellerID=26357" target="_BLANK"><img src="view/image/payment/authorizenet.png" alt="Authorize.Net" title="Authorize.Net" style="border: 1px solid #EEEEEE;" /></a>';
 

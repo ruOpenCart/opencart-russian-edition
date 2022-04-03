@@ -4,7 +4,7 @@ $_['heading_title']      = 'Paymate';
 
 // Text
 $_['text_extension']     = 'Расширения';
-$_['text_success']       = 'Успешно: вы изменили детали учетной записи Paymate!';
+$_['text_success']       = 'Успешно: Вы изменили детали учетной записи Paymate!';
 $_['text_edit']          = 'Редактировать Paymate';
 $_['text_paymate']       = '<img src="view/image/payment/paymate.png" alt="Paymate" title="Paymate" style="border: 1px solid #EEEEEE;" />';
 

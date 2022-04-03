@@ -4,7 +4,7 @@ $_['heading_title']      = 'Australia Post';
 
 // Text
 $_['text_extension']     = 'Расширения';
-$_['text_success']       = 'Успешно: вы изменили доставку Australia Post!';
+$_['text_success']       = 'Успешно: Вы изменили доставку Australia Post!';
 $_['text_edit']          = 'Редактировать доставку Australia Post';
 
 // Entry

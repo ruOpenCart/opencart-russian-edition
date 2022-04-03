@@ -4,7 +4,7 @@ $_['heading_title']                      = 'Klarna оформление';
 
 // Text
 $_['text_extension']                     = 'Расширения';
-$_['text_success']                       = 'Успешно: вы изменили детали учетной записи Klarna!';
+$_['text_success']                       = 'Успешно: Вы изменили детали учетной записи Klarna!';
 $_['text_edit']                          = 'Редактировать Klarna';
 $_['text_live']                          = 'Реальный';
 $_['text_test']                          = 'Тестовый';

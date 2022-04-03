@@ -4,7 +4,7 @@ $_['heading_title']                  = 'Realex Redirect';
 
 // Text
 $_['text_extension']                 = 'Расширения';
-$_['text_success']                   = 'Успешно: вы изменили детали учетной записи Realex!';
+$_['text_success']                   = 'Успешно: Вы изменили детали учетной записи Realex!';
 $_['text_edit']                      = 'Редактировать Realex Redirect';
 $_['text_live']                      = 'Реальный';
 $_['text_demo']                      = 'Демонстрационный';

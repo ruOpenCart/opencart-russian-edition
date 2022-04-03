@@ -4,7 +4,7 @@ $_['heading_title']                  = 'Alipay Cross-border';
 
 // Text
 $_['text_extension']                 = 'Расширения';
-$_['text_success']                   = 'Успешно: вы изменили данные учетной записи Alipay!';
+$_['text_success']                   = 'Успешно: Вы изменили данные учетной записи Alipay!';
 $_['text_edit']                      = 'Редактировать Alipay Pay';
 $_['text_alipay_cross']              = '<a target="_BLANK" href="https://global.alipay.com"><img src="view/image/payment/alipay-cross-border.png" alt="Alipay Pay Website" title="Alipay Pay Website" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_live']                      = 'Реальный';

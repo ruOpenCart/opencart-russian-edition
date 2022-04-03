@@ -4,7 +4,7 @@ $_['heading_title']         = 'United States Postal Service';
 
 // Text
 $_['text_extension']        = 'Расширения';
-$_['text_success']          = 'Успешно: вы изменили доставку United States Postal Service!';
+$_['text_success']          = 'Успешно: Вы изменили доставку United States Postal Service!';
 $_['text_edit']             = 'Редактировать доставку United States Postal Service';
 $_['text_domestic_00']      = 'Первый класс почтовая посылка';
 $_['text_domestic_01']      = 'Первый класс почтовый большой конверт';

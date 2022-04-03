@@ -4,7 +4,7 @@ $_['heading_title']                  = 'Alipay Pay';
 
 // Text
 $_['text_extension']                 = 'Расширения';
-$_['text_success']                   = 'Успешно: вы изменили данные учетной записи Alipay!';
+$_['text_success']                   = 'Успешно: Вы изменили данные учетной записи Alipay!';
 $_['text_edit']                      = 'Редактировать Alipay Pay';
 $_['text_alipay']                    = '<a target="_blank" href="https://open.alipay.com"><img src="view/image/payment/alipay.png" alt="Сайт Alipay Pay" title="Сайт Alipay Pay" style="border: 1px solid #EEEEEE;"></a>';
 $_['text_live']                      = 'Реальный';

@@ -4,7 +4,7 @@ $_['heading_title']              = 'FraudLabs Pro';
 
 // Text
 $_['text_extension']             = 'Расширения';
-$_['text_success']               = 'Успешно: вы изменили настройки FraudLabs Pro!';
+$_['text_success']               = 'Успешно: Вы изменили настройки FraudLabs Pro!';
 $_['text_edit']                  = 'Настройки';
 $_['text_signup']                = 'FraudLabs Pro - это решение для обнаружения мошенничества. Это поможет вам уменьшить потери от мошенничества или возвратные платежи, проверяя все ваши входящие заказы на наличие моделей мошенничества. вы можете <a href="http://www.fraudlabspro.com/pricing?ref=17295" target="_blank" class="alert-link">зарегистрироваться</a> для бесплатного Micro плана и ключа API если у вас его нет.';
 $_['text_id']                    = 'Идентификатор FraudLabs Pro';

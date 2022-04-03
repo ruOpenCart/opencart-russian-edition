@@ -4,7 +4,7 @@ $_['heading_title']    = 'Google Hangouts';
 
 // Text
 $_['text_extension']   = 'Расширения';
-$_['text_success']     = 'Success: вы изменили модуль Google Hangouts!';
+$_['text_success']     = 'Success: Вы изменили модуль Google Hangouts!';
 $_['text_edit']        = 'Редактировать модуль Google Hangouts';
 
 // Entry

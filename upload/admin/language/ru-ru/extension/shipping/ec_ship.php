@@ -4,7 +4,7 @@ $_['heading_title']                            = 'EC-Ship';
 
 // Text
 $_['text_extension']                           = 'Расширения';
-$_['text_success']                             = 'Успешно: вы изменили доставку EC-Ship!';
+$_['text_success']                             = 'Успешно: Вы изменили доставку EC-Ship!';
 $_['text_edit']                                = 'Редактировать доставку EC-Ship';
 $_['text_air_registered_mail']                 = 'Авиа заказная почта';
 $_['text_air_parcel']                          = 'Воздушная посылка (максимальная упаковка 20кг)';

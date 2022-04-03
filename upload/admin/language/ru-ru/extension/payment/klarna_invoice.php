@@ -4,7 +4,7 @@ $_['heading_title']         = 'Klarna счет';
 
 // Text
 $_['text_extension']        = 'Расширения';
-$_['text_success']          = 'Успешно: вы изменили модуль оплаты Klarna!';
+$_['text_success']          = 'Успешно: Вы изменили модуль оплаты Klarna!';
 $_['text_edit']             = 'Редактировать Klarna';
 $_['text_klarna_invoice']   = '<a href="https://merchants.klarna.com/signup?locale=en&partner_id=d5c87110cebc383a826364769047042e777da5e8&utm_campaign=Platform&utm_medium=Partners&utm_source=Opencart" target="_blank"><img src="https://cdn.klarna.com/public/images/global/logos/v1/basic/global_basic_logo_std_blue-black.png?width=60&eid=opencart" alt="Klarna Invoice" title="Klarna Invoice" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_live']             = 'Реальный';

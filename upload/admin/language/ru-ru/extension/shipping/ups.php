@@ -4,7 +4,7 @@ $_['heading_title']                = 'UPS';
 
 // Text
 $_['text_extension']               = 'Расширения';
-$_['text_success']                 = 'Успешно: вы изменили доставку UPS!';
+$_['text_success']                 = 'Успешно: Вы изменили доставку UPS!';
 $_['text_edit']                    = 'Редактировать доставку UPS';
 $_['text_regular_daily_pickup']    = 'Обычная ежедневная доставка';
 $_['text_daily_pickup']            = 'Ежедневная доставка или умная доставка';

@@ -3,7 +3,7 @@
 $_['heading_title']    = 'Sagepay Direct Card Management';
 
 $_['text_extension']   = 'Расширения';
-$_['text_success']     = 'Успешно: вы изменили модуль Sagepay Direct Card Management!';
+$_['text_success']     = 'Успешно: Вы изменили модуль Sagepay Direct Card Management!';
 $_['text_edit']        = 'Редактировать модуль Sagepay Direct Card Management';
 
 // Entry

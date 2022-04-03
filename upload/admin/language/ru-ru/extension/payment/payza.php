@@ -4,7 +4,7 @@ $_['heading_title']      = 'Payza';
 
 // Text
 $_['text_extension']     = 'Расширения';
-$_['text_success']       = 'Успешно: вы изменили детали учетной записи Payza!';
+$_['text_success']       = 'Успешно: Вы изменили детали учетной записи Payza!';
 $_['text_edit']          = 'Редактировать Payza';
 
 // Entry

@@ -4,7 +4,7 @@ $_['heading_title']      = 'LIQPAY';
 
 // Text
 $_['text_extension']     = 'Расширения';
-$_['text_success']       = 'Успешно: вы изменили детали учетной записи LIQPAY!';
+$_['text_success']       = 'Успешно: Вы изменили детали учетной записи LIQPAY!';
 $_['text_edit']          = 'Редактировать LIQPAY';
 $_['text_pay']           = 'LIQPAY';
 $_['text_card']          = 'Кредитная карта';

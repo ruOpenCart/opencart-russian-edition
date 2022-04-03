@@ -8,7 +8,7 @@ $_['tab_settings']          = 'Настройки';
 
 // Text
 $_['text_extension']        = 'Расширения';
-$_['text_success']          = 'Успешно: вы изменили модуль оплаты Pilibaba!';
+$_['text_success']          = 'Успешно: Вы изменили модуль оплаты Pilibaba!';
 $_['text_edit']             = 'Редактировать Pilibaba';
 $_['text_pilibaba']         = '<a href="http://www.pilibaba.com" target="_blank"><img src="view/image/payment/pilibaba.png" alt="Pilibaba" title="Pilibaba"></a>';
 $_['text_live']             = 'Реальный';

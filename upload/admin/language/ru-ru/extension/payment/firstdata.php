@@ -4,7 +4,7 @@ $_['heading_title']                  = 'First Data EMEA Connect (3DSecure вкл
 
 // Text
 $_['text_extension']                 = 'Расширения';
-$_['text_success']                   = 'Успешно: вы изменили данные учетной записи First Data!';
+$_['text_success']                   = 'Успешно: Вы изменили данные учетной записи First Data!';
 $_['text_edit']                      = 'Редактировать First Data EMEA Connect (3DSecure включен)';
 $_['text_notification_url']          = 'URL уведомлений';
 $_['text_live']                      = 'Реальный';

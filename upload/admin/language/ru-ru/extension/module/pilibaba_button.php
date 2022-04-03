@@ -4,7 +4,7 @@ $_['heading_title']    = 'Pilibaba Checkout Button';
 
 // Text
 $_['text_extension']   = 'Расширения';
-$_['text_success']     = 'Успешно: вы изменили модуль Pilibaba Checkout Button!';
+$_['text_success']     = 'Успешно: Вы изменили модуль Pilibaba Checkout Button!';
 $_['text_edit']        = 'Редактировать модуль Pilibaba Checkout Button';
 
 // Entry

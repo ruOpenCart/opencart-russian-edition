@@ -4,7 +4,7 @@ $_['heading_title']                           = 'Анти-Мошенничест
 
 // Text
 $_['text_extension']                          = 'Расширения';
-$_['text_success']                            = 'Успешно: вы изменили анти-мошенничество MaxMind!';
+$_['text_success']                            = 'Успешно: Вы изменили анти-мошенничество MaxMind!';
 $_['text_edit']                               = 'Редактировать анти-мошенничество MaxMind';
 $_['text_signup']                             = 'MaxMind - это служба обнаружения мошенничества. Если у вас нет лицензионного ключа, вы можете <a href="http://www.maxmind.com/?rId=opencart" target="_blank"><u>зарегистрироваться здесь</u></a>.';
 $_['text_country_match']                      = 'Страна совпадения:';

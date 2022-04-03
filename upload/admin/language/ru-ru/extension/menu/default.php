@@ -4,7 +4,7 @@ $_['heading_title']          = 'Меню по умолчанию';
 
 // Text
 $_['text_extension']         = 'Расширения';
-$_['text_success']           = 'Успешно: вы изменили фид Google Base!';
+$_['text_success']           = 'Успешно: Вы изменили фид Google Base!';
 $_['text_edit']              = 'Редактировать Google Base';
 $_['text_import']            = 'Чтобы загрузить последний список категорий Google, <a href="https://support.google.com/merchants/answer/160081?hl=en" target="_blank" class="alert-link">кликнув здесь</a> и выберите таксономию с числовыми идентификаторами в файле с обычным текстом (.txt). Загрузите через зеленую кнопку импорта.';
 

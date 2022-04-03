@@ -4,7 +4,7 @@ $_['heading_title']      = 'PayPoint';
 
 // Text
 $_['text_extension']     = 'Расширения';
-$_['text_success']       = 'Успешно: вы изменили PayPoint account details!';
+$_['text_success']       = 'Успешно: Вы изменили PayPoint account details!';
 $_['text_edit']          = 'Редактировать PayPoint';
 $_['text_paypoint']      = '<a href="https://www.paypoint.net/partners/opencart" target="_blank"><img src="view/image/payment/paypoint.png" alt="PayPoint" title="PayPoint" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_live']          = 'Производство';

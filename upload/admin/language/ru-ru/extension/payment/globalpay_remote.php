@@ -4,7 +4,7 @@ $_['heading_title']                  = 'Globalpay Remote';
 
 // Text
 $_['text_extension']                 = 'Расширения';
-$_['text_success']                   = 'Успешно: вы изменили Globalpay account details!';
+$_['text_success']                   = 'Успешно: Вы изменили Globalpay account details!';
 $_['text_edit']                      = 'Редактировать Globalpay Remote';
 $_['text_card_type']                 = 'Тип карты';
 $_['text_enabled']                   = 'Включено';

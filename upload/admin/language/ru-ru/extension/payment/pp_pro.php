@@ -4,7 +4,7 @@ $_['heading_title']      = 'PayPal Pro';
 
 // Text
 $_['text_extension']     = 'Расширения';
-$_['text_success']       = 'Успешно: вы изменили данные учетной записи PayPal на веб-сайте Payment Pro Checkout!';
+$_['text_success']       = 'Успешно: Вы изменили данные учетной записи PayPal на веб-сайте Payment Pro Checkout!';
 $_['text_edit']          = 'Редактировать PayPal Pro';
 $_['text_pp_pro']        = '<a target="_BLANK" href="https://www.paypal.com/uk/mrb/pal=V4T754QB63XXL"><img src="view/image/payment/paypal.png" alt="PayPal Website Payment Pro" title="PayPal Website Payment Pro iFrame" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_authorization'] = 'Авторизация';

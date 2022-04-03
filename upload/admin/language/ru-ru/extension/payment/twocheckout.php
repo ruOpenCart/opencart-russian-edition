@@ -4,7 +4,7 @@ $_['heading_title']      = '2Checkout';
 
 // Text
 $_['text_extension']     = 'Расширения';
-$_['text_success']       = 'Успешно: вы изменили детали учетной записи 2Checkout!';
+$_['text_success']       = 'Успешно: Вы изменили детали учетной записи 2Checkout!';
 $_['text_edit']          = 'Редактировать 2Checkout';
 $_['text_twocheckout']   = '<a href="https://www.2checkout.com/2co/affiliate?affiliate=1596408" target="_blank"><img src="view/image/payment/2checkout.png" alt="2Checkout" title="2Checkout" style="border: 1px solid #EEEEEE;" /></a>';
 

@@ -26,7 +26,7 @@ $_['text_access_token_expires_placeholder']             = 'Не настроен
 $_['text_acknowledge_cron']                             = 'Я подтверждаю, что настроил автоматизированную задачу CRON, используя один из способов выше.';
 $_['text_admin_notifications']                          = 'Уведомления администратора';
 $_['text_authorize_label']                              = 'Разрешать';
-$_['text_canceled_success']                             = 'Успешно: вы успешно отменили этот платеж!';
+$_['text_canceled_success']                             = 'Успешно: Вы успешно отменили этот платеж!';
 $_['text_capture']                                      = 'Получить';
 $_['text_client_id_help']                               = 'Получите это на странице управления приложениями на Square';
 $_['text_client_id_label']                              = 'Идентификатор приложения Square';
@@ -113,7 +113,7 @@ $_['text_sandbox_section_heading']                      = 'Настройки п
 $_['text_select_location']                              = 'Выберите место';
 $_['text_settings_section_heading']                     = 'Настройки Square';
 $_['text_squareup']                                     = '<a target="_BLANK" href="https://squareup.com"><img src="view/image/payment/squareup.png" alt="Square" title="Square" style="border: 1px solid #EEEEEE;" /></a>';
-$_['text_success']                                      = 'Успешно: вы изменили модуль оплаты Square!';
+$_['text_success']                                      = 'Успешно: Вы изменили модуль оплаты Square!';
 $_['text_success_capture']                              = 'Транзакция успешно получена!';
 $_['text_success_refund']                               = 'Транзакция успешно возвращена!';
 $_['text_success_void']                                 = 'Транзакция успешно аннулирована!';

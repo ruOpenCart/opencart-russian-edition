@@ -4,7 +4,7 @@ $_['heading_title']      = 'Sage Payment Solutions (US)';
 
 // Text
 $_['text_extension']     = 'Расширения';
-$_['text_success']       = 'Успешно: вы изменили детали учетной записи SagePay!';
+$_['text_success']       = 'Успешно: Вы изменили детали учетной записи SagePay!';
 $_['text_edit']          = 'Редактировать Sage Payment Solutions (US)';
 
 // Entry

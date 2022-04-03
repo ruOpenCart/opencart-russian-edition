@@ -4,7 +4,7 @@ $_['heading_title']         = 'Authorize.Net (AIM)';
 
 // Text
 $_['text_extension']        = 'Расширения';
-$_['text_success']          = 'Успешно: вы изменили данные учетной записи Authorize.Net (AIM)!';
+$_['text_success']          = 'Успешно: Вы изменили данные учетной записи Authorize.Net (AIM)!';
 $_['text_edit']             = 'Редактировать Authorize.Net (AIM)';
 $_['text_test']             = 'Тестовый';
 $_['text_live']             = 'Реальный';

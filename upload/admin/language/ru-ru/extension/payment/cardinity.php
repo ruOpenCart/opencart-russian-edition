@@ -4,7 +4,7 @@ $_['heading_title']         = 'Cardinity';
 
 // Text
 $_['text_extension']        = 'Расширения';
-$_['text_success']          = 'Успешно: вы изменили модуль оплаты Cardinity!';
+$_['text_success']          = 'Успешно: Вы изменили модуль оплаты Cardinity!';
 $_['text_edit']             = 'Редактировать Cardinity';
 $_['text_cardinity']        = '<a href="http://cardinity.com/?crdp=opencart" target="_blank"><img src="view/image/payment/cardinity.png" alt="Cardinity" title="Cardinity" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_production']       = 'Производство';

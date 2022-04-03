@@ -1,7 +1,7 @@
 <?php
 // Text
 $_['text_title']          = 'PayPal Express Checkout';
-$_['text_canceled']       = 'Успешно: вы успешно отменили этот платеж!';
+$_['text_canceled']       = 'Успешно: Вы успешно отменили этот платеж!';
 
 // Button
 $_['button_cancel']       = 'Отмена повторяющегося платежа';

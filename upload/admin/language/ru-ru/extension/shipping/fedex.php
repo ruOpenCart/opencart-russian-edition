@@ -4,7 +4,7 @@ $_['heading_title']                            = 'Fedex';
 
 // Text
 $_['text_extension']                           = 'Расширения';
-$_['text_success']                             = 'Успешно: вы изменили доставку Fedex!';
+$_['text_success']                             = 'Успешно: Вы изменили доставку Fedex!';
 $_['text_edit']                                = 'Редактировать доставку Fedex';
 $_['text_europe_first_international_priority'] = 'Европа первая международная приоритет';
 $_['text_fedex_1_day_freight']                 = 'Fedex 1 день грузовая';
