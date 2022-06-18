@@ -276,7 +276,7 @@
     </file>
 <!-- / -->
 
-<!-- Увеличино время жизни гостевой корзины до 1 суток вместо 1 часа. -->
+<!-- Увеличено время жизни гостевой корзины до 1 суток вместо 1 часа. -->
     <file path="system/library/cart/cart.php">
         <operation>
             <search><![CDATA[$this->db->query("DELETE FROM " . DB_PREFIX . "cart WHERE (api_id > '0' OR customer_id = '0') AND date_added < DATE_SUB(NOW(), INTERVAL 1 HOUR)");]]></search>
