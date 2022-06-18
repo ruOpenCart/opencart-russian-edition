@@ -209,7 +209,7 @@ class ModelExtensionPaymentKlarnaCheckout extends Model {
 			  `order_ref` VARCHAR(255) NOT NULL,
 			  `data` text NOT NULL,
 			  PRIMARY KEY (`klarna_checkout_order_id`)
-			) ENGINE=MyISAM DEFAULT COLLATE=utf8_general_ci;");
+			) ENGINE=InnoDBDEFAULT COLLATE=utf8_general_ci;");
 	}
 
 	public function uninstall() {

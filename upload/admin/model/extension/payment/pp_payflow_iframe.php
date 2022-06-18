@@ -10,7 +10,7 @@ class ModelExtensionPaymentPPPayflowIFrame extends Model {
 				`complete` tinyint(4) NOT NULL DEFAULT '0',
 				PRIMARY KEY(`order_id`),
 				KEY `secure_token_id` (`secure_token_id`)
-			) ENGINE=MyISAM DEFAULT COLLATE=utf8_general_ci");
+			) ENGINE=InnoDBDEFAULT COLLATE=utf8_general_ci");
 
 		$this->db->query("
 			CREATE TABLE `" . DB_PREFIX . "paypal_payflow_iframe_order_transaction` (
@@ -21,7 +21,7 @@ class ModelExtensionPaymentPPPayflowIFrame extends Model {
 				`amount` decimal(10,4) DEFAULT NULL,
 				PRIMARY KEY (`transaction_reference`),
 				KEY `order_id` (`order_id`)
-			) ENGINE=MyISAM DEFAULT CHARSET=utf8;");
+			) ENGINE=InnoDB DEFAULT CHARSET=utf8;");
 	}
 
 	public function uninstall() {

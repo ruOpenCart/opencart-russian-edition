@@ -12,7 +12,7 @@ class ModelExtensionPaymentPPExpress extends Model {
 			  `authorization_id` VARCHAR(30) NOT NULL,
 			  `total` DECIMAL( 10, 2 ) NOT NULL,
 			  PRIMARY KEY (`paypal_order_id`)
-			) ENGINE=MyISAM DEFAULT COLLATE=utf8_general_ci
+			) ENGINE=InnoDBDEFAULT COLLATE=utf8_general_ci
 		");
 
 		$this->db->query("
@@ -33,7 +33,7 @@ class ModelExtensionPaymentPPExpress extends Model {
 			  `debug_data` TEXT NOT NULL,
 			  `call_data` TEXT NOT NULL,
 			  PRIMARY KEY (`paypal_order_transaction_id`)
-			) ENGINE=MyISAM DEFAULT COLLATE=utf8_general_ci
+			) ENGINE=InnoDBDEFAULT COLLATE=utf8_general_ci
 		");
 
 		$this->load->model('setting/setting');

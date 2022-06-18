@@ -51,14 +51,14 @@ class ModelExtensionFraudFraudLabsPro extends Model {
 				`fraudlabspro_credits` VARCHAR(10) NOT NULL,
 				`api_key` CHAR(32) NOT NULL,
 				PRIMARY KEY (`order_id`)
-			) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+			) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8mb4_general_ci;
 		");
 
 		$this->db->query("INSERT INTO `" . DB_PREFIX . "order_status` (`language_id`, `name`) VALUES (1, 'Fraud');");
 		$status_fraud_id = $this->db->getLastId();
 
 		$this->db->query("INSERT INTO `" . DB_PREFIX . "order_status` (`language_id`, `name`) VALUES (1, 'Fraud Review');");
-		
+
 		$status_fraud_review_id = $this->db->getLastId();
 
 		$this->db->query("INSERT INTO `" . DB_PREFIX . "setting` (`code`, `key`, `value`, `serialized`) VALUES ('fraudlabspro', 'fraud_fraudlabspro_score', '80', '0');");
