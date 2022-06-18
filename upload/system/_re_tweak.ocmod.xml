@@ -260,4 +260,19 @@
         </operation>
     </file>
 <!-- / -->
+
+<!-- Исправление проблемы с ненулевым значением session.cookie_lifetime. -->
+    <file path="upload/catalog/controller/startup/session.php">
+        <operation>
+            <search><![CDATA[setcookie($this->config->get('session_name'), $this->session->getId(), ini_get('session.cookie_lifetime'), ini_get('session.cookie_path'), ini_get('session.cookie_domain'));]]></search>
+            <add position="replace" trim="true"><![CDATA[setcookie($this->config->get('session_name'), $this->session->getId(), ini_get('session.cookie_lifetime') > 0 ? (time() + ini_get('session.cookie_lifetime')) : 0, ini_get('session.cookie_path'), ini_get('session.cookie_domain'));]]></add>
+        </operation>
+    </file>
+    <file path="admin/controller/extension/extension/payment.php">
+        <operation>
+            <search><![CDATA[setcookie($config->get('session_name'), $session->getId(), ini_get('session.cookie_lifetime'), ini_get('session.cookie_path'), ini_get('session.cookie_domain'));]]></search>
+            <add position="replace" trim="true"><![CDATA[setcookie($config->get('session_name'), $session->getId(), ini_get('session.cookie_lifetime') > 0 ? (time() + ini_get('session.cookie_lifetime')) : 0, ini_get('session.cookie_path'), ini_get('session.cookie_domain'));]]></add>
+        </operation>
+    </file>
+<!-- / -->
 </modification>
