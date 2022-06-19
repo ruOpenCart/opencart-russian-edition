@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+  <name>Исправление работы шаблонизатора Twig</name>
+  <code>ocn_fix_twig</code>
+  <version>3.0.0.0</version>
+  <author>Hkr</author>
+  <link>https://forum.opencart.name</link>
+  <file path="system/library/template/twig.php">
+    <operation>
+      <search><![CDATA[$loader = new \Twig\Loader\ArrayLoader(array($filename . '.twig' => $code));]]></search>
+      <add position="replace"><![CDATA[
+        $array_loader = new \Twig\Loader\ArrayLoader(array($filename . '.twig' => $code));
+      $filesystem_loader = new \Twig\Loader\FilesystemLoader(DIR_TEMPLATE);
+      $loader = new \Twig\Loader\ChainLoader(array($array_loader, $filesystem_loader));
+      ]]></add>
+    </operation>
+  </file>
+</modification>
