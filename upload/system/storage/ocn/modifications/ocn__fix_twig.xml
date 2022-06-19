@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <modification>
   <name>Исправление работы шаблонизатора Twig</name>
-  <code>ocn_fix_twig</code>
+  <code>ocn__fix_twig</code>
   <version>3.0.0.0</version>
   <author>Hkr</author>
   <link>https://forum.opencart.name</link>
